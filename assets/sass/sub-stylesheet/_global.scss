@@ -1,0 +1,134 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+}
+body {
+  position: relative;
+}
+body,
+button,
+input,
+select,
+textarea {
+  color: $desc-color;
+  font-family: $roboto;
+  font-size: 1rem;
+  font-weight: 400;
+  outline: none;
+  border: none;
+  input::-webkit-inner-spin-button,
+  input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
+
+h1 {
+  font-size: $fs-h2;
+}
+h2 {
+  font-size: $fs-h2;
+}
+h3 {
+  font-size: $fs-h3;
+}
+h4 {
+  font-size: $fs-h4;
+}
+h5 {
+  font-size: $fs-h5;
+}
+h6 {
+  font-size: $fs-h6;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $title-color;
+  font-weight: 700;
+  font-family: $roboto;
+  line-height: 1.5;
+  text-transform: capitalize;
+}
+h1 > a,
+h2 > a,
+h3 > a,
+h4 > a,
+h5 > a,
+h6 > a {
+  color: inherit;
+  font-size: inherit;
+  font-weight: 700;
+  font-family: $roboto;
+}
+
+@media screen and (min-width: 576px) {
+  h1 {
+    font-size: $fs-h1;
+  }
+  h2 {
+    font-size: $fs-h2;
+  }
+  h3 {
+    font-size: $fs-h3;
+  }
+  h4 {
+    font-size: $fs-h4;
+  }
+  h5 {
+    font-size: $fs-h5;
+  }
+  h6 {
+    font-size: $fs-h6;
+  }
+}
+
+p {
+  font-size: $fs-small-x;
+  margin: 0 0 15px;
+  color: $title-color;
+  line-height: 1.5;
+  font-family: $roboto;
+}
+
+span {
+  font-family: $roboto;
+  font-size: $fs-small-x;
+}
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a {
+  color: $desc-color;
+  text-decoration: none;
+  display: inline-block;
+  outline: none;
+  font-family: $roboto;
+  @include transition($transition);
+  &:hover {
+    text-decoration: none;
+  }
+}
+a:focus {
+  outline: none;
+}
+a:hover,
+a:active {
+  color: #000;
+  outline: 0;
+}
+img,
+video {
+  height: auto;
+  max-width: 100%;
+  @include transition($transition);
+}
