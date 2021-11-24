@@ -138,4 +138,43 @@
         $button.parent().find("input").val(newVal);
     });
 
+    // categori slider
+    $('.cate-slider-js').owlCarousel({
+      loop:true,
+      margin:10,
+      nav:true,
+      dots: false,
+      responsive:{
+          0:{
+              items:1
+          },
+          600:{
+              items:3
+          },
+          1000:{
+              items:5
+          }
+      }
+    })
+
+    // new arrivals slider
+    $('.foods-slider-js').owlCarousel ({
+      loop: true,
+      margin: 10,
+      nav: true,
+      dots: false,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 3
+        },
+        1000: {
+          items: 5
+        }
+      }
+    })
+
+
 })(jQuery);
