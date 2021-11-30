@@ -1,714 +1,1060 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- favicon hear -->
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <!-- google fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
     <!-- fontawesome css -->
-    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/all.min.css" />
     <!-- animate css -->
-    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/animate.css" />
     <!-- Bootstrap hear -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <!-- page css hear -->
-    <link rel="stylesheet" href="assets/css/app-ecommerce-shop.css">
+    <link rel="stylesheet" href="assets/css/app-ecommerce-shop.css" />
     <!-- style css -->
-    <link rel="stylesheet" href="assets/sass/style.css">
+    <link rel="stylesheet" href="assets/sass/style.css" />
 
     <title>British Market Place</title>
-</head>
-<body>
-    
+  </head>
+  <body>
     <!-- page header start -->
     <section class="page-header style-one style-four pt-4">
-        <div class="container pl-0">
-            <div class="bread-content">
-            </div>
-        </div>
+      <div class="container pl-0">
+        <div class="bread-content"></div>
+      </div>
     </section>
     <!-- page header ends  -->
 
     <!-- shop view area start -->
     <div class="shop-page style-one">
-        <div class="container">
-          <div class="row">
-              <div class="col-lg-3 col-12 sticky-widget pl-sm-0">
-                  <div class="widget-shop mt-0">
-                    <div class="widget-title">
-                      <h4>Popular Store</h4>
-                    </div>
-                    <div class="shop-item">
-                      <ul>
-                        <li>
-                          <img src="assets/images/shop/popShop/01.png" alt="">
-                          <span>KFC</span>
-                        </li>
-                        <li>
-                          <img src="assets/images/shop/popShop/04.png" alt="">
-                          <span>Good Chef</span>
-                        </li>
-                        <li>
-                          <img src="assets/images/shop/popShop/03.png" alt="">
-                          <span>Burger King</span>
-                        </li>
-                        <li>
-                          <img src="assets/images/shop/popShop/04.png" alt="">
-                          <span>Pizza Hut</span>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="widget-shop">
-                    <div class="widget-title">
-                      <h4>Popular Brands</h4>
-                    </div>
-                    <div class="brand-item">
-                      <ul>
-                        <li>
-                          <span>SONY</span>
-                        </li>
-                        <li>
-                          <span>adidos</span>
-                        </li>
-                        <li>
-                          <span>NIKE</span>
-                        </li>
-                        <li>
-                          <span>CocoCola</span>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="widget-shop">
-                    <div class="widget-tumb">
-                      <img src="assets/images/shop/widget.png" alt="">
-                    </div>
-                  </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-12 sticky-widget pl-sm-0">
+            <div class="widget-shop mt-0">
+              <div class="widget-title">
+                <h4>Popular Store</h4>
               </div>
-              <div class="col-lg-9 col-12 sticky-widget">
-                <div class="shop-title d-flex flex-wrap align-items-center justify-content-between">
-                  <div class="filter-content">
-                    <div class="price-filer">
-                      <div class="filter-title">
-                        <span>Sort By:</span>
-                        <select class="form-select" name="" id="">
-                          <option value="0" selected>Price Low to High</option>
-                          <option value="0">Price High to Low</option>
-                        </select>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="product-view-mode">
-                    <a class="active" data-target="grid"><i class="fa fa-th"></i></a>
-                    <a data-target="list" class="list"><i class="fa fa-list"></i></a>
-                  </div>
-                </div>
-                <div class="allshop-header">
-                  <h3>Shop By Store</h3>
-                </div>
-                <div class="shop-product-wrap row grid p-0">
-                  <div class="product-col">
-                    <div class="product-item">
-                      <div class="product-thumb">
-                        <img src="assets/images/shop/shopBy/01.png" alt="shop">
-                        <div class="product-action-link">
-                          <a href="#">
-                            <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M0 4.65674C0.0739267 4.29264 0.123659 3.92204 0.225812 3.56445C0.854861 1.35126 2.93556 -0.0934268 5.3039 0.0145019C6.89803 0.0873213 8.24081 0.72189 9.43842 1.69845C9.47605 1.72966 9.51369 1.76087 9.56208 1.79988C9.72606 1.67244 9.88601 1.54111 10.0527 1.41758C11.0352 0.691982 12.1213 0.210854 13.3579 0.0470106C16.0555 -0.311885 18.5287 1.42018 19.026 4.01177C19.3352 5.6203 18.9373 7.07928 18.1026 8.45765C17.3728 9.66437 16.4252 10.6994 15.3794 11.6539C13.7356 13.1519 11.9089 14.4106 9.97338 15.5302C9.69918 15.6889 9.44783 15.6954 9.16959 15.5341C6.93835 14.2429 4.84421 12.7787 3.03368 10.9608C1.97317 9.89843 1.04841 8.73853 0.467754 7.35366C0.24463 6.82182 0.088712 6.27177 0.0309148 5.69832C0.0282265 5.66321 0.010753 5.6307 0 5.59689C0 5.28351 0 4.97012 0 4.65674ZM5.1211 1.16791C3.49875 1.1289 2.0471 2.07555 1.4866 3.54754C1.01078 4.79848 1.13444 6.0169 1.71107 7.20932C2.28904 8.40434 3.1318 9.4121 4.08075 10.3419C5.68294 11.9114 7.50826 13.2026 9.44783 14.3495C9.5446 14.4067 9.60912 14.395 9.69783 14.3417C11.167 13.4744 12.5689 12.5173 13.8646 11.4198C15.0931 10.3796 16.2222 9.25476 17.0569 7.8829C17.7276 6.7802 18.1161 5.61249 17.8634 4.31345C17.5838 2.87526 16.7746 1.84799 15.3176 1.36816C14.1321 0.976758 12.9842 1.16401 11.8793 1.67634C11.1871 1.99753 10.5863 2.44095 10.0433 2.96239C9.73009 3.26277 9.41154 3.26017 9.09432 2.96629C8.97335 2.85316 8.85373 2.73873 8.72603 2.6334C7.68837 1.76867 6.52168 1.20042 5.1211 1.16791Z" fill="#fff"></path>
-                            </svg>
-                          </a>
-                        </div>
-                      </div>
-                      <div class="product-content">
-                        <h5><a href="#">KFC</a></h5>
-                        <p>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                        </p>
-                        <p class="text-des">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit sunt possimus corrupti.</p>
-                      </div>
-                    </div>
-                    <div class="product-list-item">
-                      <div class="product-thumb">
-                        <img src="assets/images/shop/shopBy/01.png" alt="shop">
-                        <div class="product-action-link">
-                          <a href="#">
-                            <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M0 4.65674C0.0739267 4.29264 0.123659 3.92204 0.225812 3.56445C0.854861 1.35126 2.93556 -0.0934268 5.3039 0.0145019C6.89803 0.0873213 8.24081 0.72189 9.43842 1.69845C9.47605 1.72966 9.51369 1.76087 9.56208 1.79988C9.72606 1.67244 9.88601 1.54111 10.0527 1.41758C11.0352 0.691982 12.1213 0.210854 13.3579 0.0470106C16.0555 -0.311885 18.5287 1.42018 19.026 4.01177C19.3352 5.6203 18.9373 7.07928 18.1026 8.45765C17.3728 9.66437 16.4252 10.6994 15.3794 11.6539C13.7356 13.1519 11.9089 14.4106 9.97338 15.5302C9.69918 15.6889 9.44783 15.6954 9.16959 15.5341C6.93835 14.2429 4.84421 12.7787 3.03368 10.9608C1.97317 9.89843 1.04841 8.73853 0.467754 7.35366C0.24463 6.82182 0.088712 6.27177 0.0309148 5.69832C0.0282265 5.66321 0.010753 5.6307 0 5.59689C0 5.28351 0 4.97012 0 4.65674ZM5.1211 1.16791C3.49875 1.1289 2.0471 2.07555 1.4866 3.54754C1.01078 4.79848 1.13444 6.0169 1.71107 7.20932C2.28904 8.40434 3.1318 9.4121 4.08075 10.3419C5.68294 11.9114 7.50826 13.2026 9.44783 14.3495C9.5446 14.4067 9.60912 14.395 9.69783 14.3417C11.167 13.4744 12.5689 12.5173 13.8646 11.4198C15.0931 10.3796 16.2222 9.25476 17.0569 7.8829C17.7276 6.7802 18.1161 5.61249 17.8634 4.31345C17.5838 2.87526 16.7746 1.84799 15.3176 1.36816C14.1321 0.976758 12.9842 1.16401 11.8793 1.67634C11.1871 1.99753 10.5863 2.44095 10.0433 2.96239C9.73009 3.26277 9.41154 3.26017 9.09432 2.96629C8.97335 2.85316 8.85373 2.73873 8.72603 2.6334C7.68837 1.76867 6.52168 1.20042 5.1211 1.16791Z" fill="#fff"></path>
-                            </svg>
-                          </a>
-                        </div>
-                      </div>
-                      <div class="product-content">
-                        <h5><a href="#">KFC</a></h5>
-                        <p>
-                          <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
-                        </p>
-                        <p class="text-des">
-                          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="product-col">
-                    <div class="product-item">
-                      <div class="product-thumb">
-                        <img src="assets/images/shop/shopBy/02.png" alt="shop">
-                        <div class="product-action-link">
-                          <a href="#">
-                            <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M0 4.65674C0.0739267 4.29264 0.123659 3.92204 0.225812 3.56445C0.854861 1.35126 2.93556 -0.0934268 5.3039 0.0145019C6.89803 0.0873213 8.24081 0.72189 9.43842 1.69845C9.47605 1.72966 9.51369 1.76087 9.56208 1.79988C9.72606 1.67244 9.88601 1.54111 10.0527 1.41758C11.0352 0.691982 12.1213 0.210854 13.3579 0.0470106C16.0555 -0.311885 18.5287 1.42018 19.026 4.01177C19.3352 5.6203 18.9373 7.07928 18.1026 8.45765C17.3728 9.66437 16.4252 10.6994 15.3794 11.6539C13.7356 13.1519 11.9089 14.4106 9.97338 15.5302C9.69918 15.6889 9.44783 15.6954 9.16959 15.5341C6.93835 14.2429 4.84421 12.7787 3.03368 10.9608C1.97317 9.89843 1.04841 8.73853 0.467754 7.35366C0.24463 6.82182 0.088712 6.27177 0.0309148 5.69832C0.0282265 5.66321 0.010753 5.6307 0 5.59689C0 5.28351 0 4.97012 0 4.65674ZM5.1211 1.16791C3.49875 1.1289 2.0471 2.07555 1.4866 3.54754C1.01078 4.79848 1.13444 6.0169 1.71107 7.20932C2.28904 8.40434 3.1318 9.4121 4.08075 10.3419C5.68294 11.9114 7.50826 13.2026 9.44783 14.3495C9.5446 14.4067 9.60912 14.395 9.69783 14.3417C11.167 13.4744 12.5689 12.5173 13.8646 11.4198C15.0931 10.3796 16.2222 9.25476 17.0569 7.8829C17.7276 6.7802 18.1161 5.61249 17.8634 4.31345C17.5838 2.87526 16.7746 1.84799 15.3176 1.36816C14.1321 0.976758 12.9842 1.16401 11.8793 1.67634C11.1871 1.99753 10.5863 2.44095 10.0433 2.96239C9.73009 3.26277 9.41154 3.26017 9.09432 2.96629C8.97335 2.85316 8.85373 2.73873 8.72603 2.6334C7.68837 1.76867 6.52168 1.20042 5.1211 1.16791Z" fill="#fff"></path>
-                            </svg>
-                          </a>
-                        </div>
-                      </div>
-                      <div class="product-content">
-                        <h5><a href="#">GOOD Chef</a></h5>
-                        <p>
-                          <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
-                        </p>
-                        <p class="text-des">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit sunt possimus corrupti.</p>
-                      </div>
-                    </div>
-                    <div class="product-list-item">
-                      <div class="product-thumb">
-                        <img src="assets/images/shop/shopBy/02.png" alt="shop">
-                        <div class="product-action-link">
-                          <a href="#">
-                            <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M0 4.65674C0.0739267 4.29264 0.123659 3.92204 0.225812 3.56445C0.854861 1.35126 2.93556 -0.0934268 5.3039 0.0145019C6.89803 0.0873213 8.24081 0.72189 9.43842 1.69845C9.47605 1.72966 9.51369 1.76087 9.56208 1.79988C9.72606 1.67244 9.88601 1.54111 10.0527 1.41758C11.0352 0.691982 12.1213 0.210854 13.3579 0.0470106C16.0555 -0.311885 18.5287 1.42018 19.026 4.01177C19.3352 5.6203 18.9373 7.07928 18.1026 8.45765C17.3728 9.66437 16.4252 10.6994 15.3794 11.6539C13.7356 13.1519 11.9089 14.4106 9.97338 15.5302C9.69918 15.6889 9.44783 15.6954 9.16959 15.5341C6.93835 14.2429 4.84421 12.7787 3.03368 10.9608C1.97317 9.89843 1.04841 8.73853 0.467754 7.35366C0.24463 6.82182 0.088712 6.27177 0.0309148 5.69832C0.0282265 5.66321 0.010753 5.6307 0 5.59689C0 5.28351 0 4.97012 0 4.65674ZM5.1211 1.16791C3.49875 1.1289 2.0471 2.07555 1.4866 3.54754C1.01078 4.79848 1.13444 6.0169 1.71107 7.20932C2.28904 8.40434 3.1318 9.4121 4.08075 10.3419C5.68294 11.9114 7.50826 13.2026 9.44783 14.3495C9.5446 14.4067 9.60912 14.395 9.69783 14.3417C11.167 13.4744 12.5689 12.5173 13.8646 11.4198C15.0931 10.3796 16.2222 9.25476 17.0569 7.8829C17.7276 6.7802 18.1161 5.61249 17.8634 4.31345C17.5838 2.87526 16.7746 1.84799 15.3176 1.36816C14.1321 0.976758 12.9842 1.16401 11.8793 1.67634C11.1871 1.99753 10.5863 2.44095 10.0433 2.96239C9.73009 3.26277 9.41154 3.26017 9.09432 2.96629C8.97335 2.85316 8.85373 2.73873 8.72603 2.6334C7.68837 1.76867 6.52168 1.20042 5.1211 1.16791Z" fill="#fff"></path>
-                            </svg>
-                          </a>
-                        </div>
-                      </div>
-                      <div class="product-content">
-                        <h5><a href="#">GOOD Chef</a></h5>
-                        <p>
-                          <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
-                        </p>
-                        <p class="text-des">
-                          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="product-col">
-                    <div class="product-item">
-                      <div class="product-thumb">
-                        <img src="assets/images/shop/shopBy/03.png" alt="shop">
-                        <div class="product-action-link">
-                          <a href="#">
-                            <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M0 4.65674C0.0739267 4.29264 0.123659 3.92204 0.225812 3.56445C0.854861 1.35126 2.93556 -0.0934268 5.3039 0.0145019C6.89803 0.0873213 8.24081 0.72189 9.43842 1.69845C9.47605 1.72966 9.51369 1.76087 9.56208 1.79988C9.72606 1.67244 9.88601 1.54111 10.0527 1.41758C11.0352 0.691982 12.1213 0.210854 13.3579 0.0470106C16.0555 -0.311885 18.5287 1.42018 19.026 4.01177C19.3352 5.6203 18.9373 7.07928 18.1026 8.45765C17.3728 9.66437 16.4252 10.6994 15.3794 11.6539C13.7356 13.1519 11.9089 14.4106 9.97338 15.5302C9.69918 15.6889 9.44783 15.6954 9.16959 15.5341C6.93835 14.2429 4.84421 12.7787 3.03368 10.9608C1.97317 9.89843 1.04841 8.73853 0.467754 7.35366C0.24463 6.82182 0.088712 6.27177 0.0309148 5.69832C0.0282265 5.66321 0.010753 5.6307 0 5.59689C0 5.28351 0 4.97012 0 4.65674ZM5.1211 1.16791C3.49875 1.1289 2.0471 2.07555 1.4866 3.54754C1.01078 4.79848 1.13444 6.0169 1.71107 7.20932C2.28904 8.40434 3.1318 9.4121 4.08075 10.3419C5.68294 11.9114 7.50826 13.2026 9.44783 14.3495C9.5446 14.4067 9.60912 14.395 9.69783 14.3417C11.167 13.4744 12.5689 12.5173 13.8646 11.4198C15.0931 10.3796 16.2222 9.25476 17.0569 7.8829C17.7276 6.7802 18.1161 5.61249 17.8634 4.31345C17.5838 2.87526 16.7746 1.84799 15.3176 1.36816C14.1321 0.976758 12.9842 1.16401 11.8793 1.67634C11.1871 1.99753 10.5863 2.44095 10.0433 2.96239C9.73009 3.26277 9.41154 3.26017 9.09432 2.96629C8.97335 2.85316 8.85373 2.73873 8.72603 2.6334C7.68837 1.76867 6.52168 1.20042 5.1211 1.16791Z" fill="#fff"></path>
-                            </svg>
-                          </a>
-                        </div>
-                      </div>
-                      <div class="product-content">
-                        <h5><a href="#">BURGER KING</a></h5>
-                        <p>
-                          <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
-                        </p>
-                        <p class="text-des">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit sunt possimus corrupti.</p>
-                      </div>
-                    </div>
-                    <div class="product-list-item">
-                      <div class="product-thumb">
-                        <img src="assets/images/shop/shopBy/03.png" alt="shop">
-                        <div class="product-action-link">
-                          <a href="#">
-                            <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M0 4.65674C0.0739267 4.29264 0.123659 3.92204 0.225812 3.56445C0.854861 1.35126 2.93556 -0.0934268 5.3039 0.0145019C6.89803 0.0873213 8.24081 0.72189 9.43842 1.69845C9.47605 1.72966 9.51369 1.76087 9.56208 1.79988C9.72606 1.67244 9.88601 1.54111 10.0527 1.41758C11.0352 0.691982 12.1213 0.210854 13.3579 0.0470106C16.0555 -0.311885 18.5287 1.42018 19.026 4.01177C19.3352 5.6203 18.9373 7.07928 18.1026 8.45765C17.3728 9.66437 16.4252 10.6994 15.3794 11.6539C13.7356 13.1519 11.9089 14.4106 9.97338 15.5302C9.69918 15.6889 9.44783 15.6954 9.16959 15.5341C6.93835 14.2429 4.84421 12.7787 3.03368 10.9608C1.97317 9.89843 1.04841 8.73853 0.467754 7.35366C0.24463 6.82182 0.088712 6.27177 0.0309148 5.69832C0.0282265 5.66321 0.010753 5.6307 0 5.59689C0 5.28351 0 4.97012 0 4.65674ZM5.1211 1.16791C3.49875 1.1289 2.0471 2.07555 1.4866 3.54754C1.01078 4.79848 1.13444 6.0169 1.71107 7.20932C2.28904 8.40434 3.1318 9.4121 4.08075 10.3419C5.68294 11.9114 7.50826 13.2026 9.44783 14.3495C9.5446 14.4067 9.60912 14.395 9.69783 14.3417C11.167 13.4744 12.5689 12.5173 13.8646 11.4198C15.0931 10.3796 16.2222 9.25476 17.0569 7.8829C17.7276 6.7802 18.1161 5.61249 17.8634 4.31345C17.5838 2.87526 16.7746 1.84799 15.3176 1.36816C14.1321 0.976758 12.9842 1.16401 11.8793 1.67634C11.1871 1.99753 10.5863 2.44095 10.0433 2.96239C9.73009 3.26277 9.41154 3.26017 9.09432 2.96629C8.97335 2.85316 8.85373 2.73873 8.72603 2.6334C7.68837 1.76867 6.52168 1.20042 5.1211 1.16791Z" fill="#fff"></path>
-                            </svg>
-                          </a>
-                        </div>
-                      </div>
-                      <div class="product-content">
-                        <h5><a href="#">BURGER KING</a></h5>
-                        <p>
-                          <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
-                        </p>
-                        <p class="text-des">
-                          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="product-col">
-                    <div class="product-item">
-                      <div class="product-thumb">
-                        <img src="assets/images/shop/shopBy/04.png" alt="shop">
-                        <div class="product-action-link">
-                          <a href="#">
-                            <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M0 4.65674C0.0739267 4.29264 0.123659 3.92204 0.225812 3.56445C0.854861 1.35126 2.93556 -0.0934268 5.3039 0.0145019C6.89803 0.0873213 8.24081 0.72189 9.43842 1.69845C9.47605 1.72966 9.51369 1.76087 9.56208 1.79988C9.72606 1.67244 9.88601 1.54111 10.0527 1.41758C11.0352 0.691982 12.1213 0.210854 13.3579 0.0470106C16.0555 -0.311885 18.5287 1.42018 19.026 4.01177C19.3352 5.6203 18.9373 7.07928 18.1026 8.45765C17.3728 9.66437 16.4252 10.6994 15.3794 11.6539C13.7356 13.1519 11.9089 14.4106 9.97338 15.5302C9.69918 15.6889 9.44783 15.6954 9.16959 15.5341C6.93835 14.2429 4.84421 12.7787 3.03368 10.9608C1.97317 9.89843 1.04841 8.73853 0.467754 7.35366C0.24463 6.82182 0.088712 6.27177 0.0309148 5.69832C0.0282265 5.66321 0.010753 5.6307 0 5.59689C0 5.28351 0 4.97012 0 4.65674ZM5.1211 1.16791C3.49875 1.1289 2.0471 2.07555 1.4866 3.54754C1.01078 4.79848 1.13444 6.0169 1.71107 7.20932C2.28904 8.40434 3.1318 9.4121 4.08075 10.3419C5.68294 11.9114 7.50826 13.2026 9.44783 14.3495C9.5446 14.4067 9.60912 14.395 9.69783 14.3417C11.167 13.4744 12.5689 12.5173 13.8646 11.4198C15.0931 10.3796 16.2222 9.25476 17.0569 7.8829C17.7276 6.7802 18.1161 5.61249 17.8634 4.31345C17.5838 2.87526 16.7746 1.84799 15.3176 1.36816C14.1321 0.976758 12.9842 1.16401 11.8793 1.67634C11.1871 1.99753 10.5863 2.44095 10.0433 2.96239C9.73009 3.26277 9.41154 3.26017 9.09432 2.96629C8.97335 2.85316 8.85373 2.73873 8.72603 2.6334C7.68837 1.76867 6.52168 1.20042 5.1211 1.16791Z" fill="#fff"></path>
-                            </svg>
-                          </a>
-                        </div>
-                      </div>
-                      <div class="product-content">
-                        <h5><a href="#">Foodies</a></h5>
-                        <p>
-                          <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
-                        </p>
-                        <p class="text-des">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit sunt possimus corrupti.</p>
-                      </div>
-                    </div>
-                    <div class="product-list-item">
-                      <div class="product-thumb">
-                        <img src="assets/images/shop/shopBy/04.png" alt="shop">
-                        <div class="product-action-link">
-                          <a href="#">
-                            <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M0 4.65674C0.0739267 4.29264 0.123659 3.92204 0.225812 3.56445C0.854861 1.35126 2.93556 -0.0934268 5.3039 0.0145019C6.89803 0.0873213 8.24081 0.72189 9.43842 1.69845C9.47605 1.72966 9.51369 1.76087 9.56208 1.79988C9.72606 1.67244 9.88601 1.54111 10.0527 1.41758C11.0352 0.691982 12.1213 0.210854 13.3579 0.0470106C16.0555 -0.311885 18.5287 1.42018 19.026 4.01177C19.3352 5.6203 18.9373 7.07928 18.1026 8.45765C17.3728 9.66437 16.4252 10.6994 15.3794 11.6539C13.7356 13.1519 11.9089 14.4106 9.97338 15.5302C9.69918 15.6889 9.44783 15.6954 9.16959 15.5341C6.93835 14.2429 4.84421 12.7787 3.03368 10.9608C1.97317 9.89843 1.04841 8.73853 0.467754 7.35366C0.24463 6.82182 0.088712 6.27177 0.0309148 5.69832C0.0282265 5.66321 0.010753 5.6307 0 5.59689C0 5.28351 0 4.97012 0 4.65674ZM5.1211 1.16791C3.49875 1.1289 2.0471 2.07555 1.4866 3.54754C1.01078 4.79848 1.13444 6.0169 1.71107 7.20932C2.28904 8.40434 3.1318 9.4121 4.08075 10.3419C5.68294 11.9114 7.50826 13.2026 9.44783 14.3495C9.5446 14.4067 9.60912 14.395 9.69783 14.3417C11.167 13.4744 12.5689 12.5173 13.8646 11.4198C15.0931 10.3796 16.2222 9.25476 17.0569 7.8829C17.7276 6.7802 18.1161 5.61249 17.8634 4.31345C17.5838 2.87526 16.7746 1.84799 15.3176 1.36816C14.1321 0.976758 12.9842 1.16401 11.8793 1.67634C11.1871 1.99753 10.5863 2.44095 10.0433 2.96239C9.73009 3.26277 9.41154 3.26017 9.09432 2.96629C8.97335 2.85316 8.85373 2.73873 8.72603 2.6334C7.68837 1.76867 6.52168 1.20042 5.1211 1.16791Z" fill="#fff"></path>
-                            </svg>
-                          </a>
-                        </div>
-                      </div>
-                      <div class="product-content">
-                        <h5><a href="#">Foodies</a></h5>
-                        <p>
-                          <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
-                        </p>
-                        <p class="text-des">
-                          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="product-col">
-                    <div class="product-item">
-                      <div class="product-thumb">
-                        <img src="assets/images/shop/shopBy/05.png" alt="shop">
-                        <div class="product-action-link">
-                          <a href="#">
-                            <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M0 4.65674C0.0739267 4.29264 0.123659 3.92204 0.225812 3.56445C0.854861 1.35126 2.93556 -0.0934268 5.3039 0.0145019C6.89803 0.0873213 8.24081 0.72189 9.43842 1.69845C9.47605 1.72966 9.51369 1.76087 9.56208 1.79988C9.72606 1.67244 9.88601 1.54111 10.0527 1.41758C11.0352 0.691982 12.1213 0.210854 13.3579 0.0470106C16.0555 -0.311885 18.5287 1.42018 19.026 4.01177C19.3352 5.6203 18.9373 7.07928 18.1026 8.45765C17.3728 9.66437 16.4252 10.6994 15.3794 11.6539C13.7356 13.1519 11.9089 14.4106 9.97338 15.5302C9.69918 15.6889 9.44783 15.6954 9.16959 15.5341C6.93835 14.2429 4.84421 12.7787 3.03368 10.9608C1.97317 9.89843 1.04841 8.73853 0.467754 7.35366C0.24463 6.82182 0.088712 6.27177 0.0309148 5.69832C0.0282265 5.66321 0.010753 5.6307 0 5.59689C0 5.28351 0 4.97012 0 4.65674ZM5.1211 1.16791C3.49875 1.1289 2.0471 2.07555 1.4866 3.54754C1.01078 4.79848 1.13444 6.0169 1.71107 7.20932C2.28904 8.40434 3.1318 9.4121 4.08075 10.3419C5.68294 11.9114 7.50826 13.2026 9.44783 14.3495C9.5446 14.4067 9.60912 14.395 9.69783 14.3417C11.167 13.4744 12.5689 12.5173 13.8646 11.4198C15.0931 10.3796 16.2222 9.25476 17.0569 7.8829C17.7276 6.7802 18.1161 5.61249 17.8634 4.31345C17.5838 2.87526 16.7746 1.84799 15.3176 1.36816C14.1321 0.976758 12.9842 1.16401 11.8793 1.67634C11.1871 1.99753 10.5863 2.44095 10.0433 2.96239C9.73009 3.26277 9.41154 3.26017 9.09432 2.96629C8.97335 2.85316 8.85373 2.73873 8.72603 2.6334C7.68837 1.76867 6.52168 1.20042 5.1211 1.16791Z" fill="#fff"></path>
-                            </svg>
-                          </a>
-                        </div>
-                      </div>
-                      <div class="product-content">
-                        <h5><a href="#">Custard apple</a></h5>
-                        <p>
-                          <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
-                        </p>
-                        <p class="text-des">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit sunt possimus corrupti.</p>
-                      </div>
-                    </div>
-                    <div class="product-list-item">
-                      <div class="product-thumb">
-                        <img src="assets/images/shop/shopBy/05.png" alt="shop">
-                        <div class="product-action-link">
-                          <a href="#">
-                            <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M0 4.65674C0.0739267 4.29264 0.123659 3.92204 0.225812 3.56445C0.854861 1.35126 2.93556 -0.0934268 5.3039 0.0145019C6.89803 0.0873213 8.24081 0.72189 9.43842 1.69845C9.47605 1.72966 9.51369 1.76087 9.56208 1.79988C9.72606 1.67244 9.88601 1.54111 10.0527 1.41758C11.0352 0.691982 12.1213 0.210854 13.3579 0.0470106C16.0555 -0.311885 18.5287 1.42018 19.026 4.01177C19.3352 5.6203 18.9373 7.07928 18.1026 8.45765C17.3728 9.66437 16.4252 10.6994 15.3794 11.6539C13.7356 13.1519 11.9089 14.4106 9.97338 15.5302C9.69918 15.6889 9.44783 15.6954 9.16959 15.5341C6.93835 14.2429 4.84421 12.7787 3.03368 10.9608C1.97317 9.89843 1.04841 8.73853 0.467754 7.35366C0.24463 6.82182 0.088712 6.27177 0.0309148 5.69832C0.0282265 5.66321 0.010753 5.6307 0 5.59689C0 5.28351 0 4.97012 0 4.65674ZM5.1211 1.16791C3.49875 1.1289 2.0471 2.07555 1.4866 3.54754C1.01078 4.79848 1.13444 6.0169 1.71107 7.20932C2.28904 8.40434 3.1318 9.4121 4.08075 10.3419C5.68294 11.9114 7.50826 13.2026 9.44783 14.3495C9.5446 14.4067 9.60912 14.395 9.69783 14.3417C11.167 13.4744 12.5689 12.5173 13.8646 11.4198C15.0931 10.3796 16.2222 9.25476 17.0569 7.8829C17.7276 6.7802 18.1161 5.61249 17.8634 4.31345C17.5838 2.87526 16.7746 1.84799 15.3176 1.36816C14.1321 0.976758 12.9842 1.16401 11.8793 1.67634C11.1871 1.99753 10.5863 2.44095 10.0433 2.96239C9.73009 3.26277 9.41154 3.26017 9.09432 2.96629C8.97335 2.85316 8.85373 2.73873 8.72603 2.6334C7.68837 1.76867 6.52168 1.20042 5.1211 1.16791Z" fill="#fff"></path>
-                            </svg>
-                          </a>
-                        </div>
-                      </div>
-                      <div class="product-content">
-                        <h5><a href="#">Pizza Hut</a></h5>
-                        <p>
-                          <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
-                        </p>
-                        <p class="text-des">
-                          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="product-col">
-                    <div class="product-item">
-                      <div class="product-thumb">
-                        <img src="assets/images/shop/shopBy/06.png" alt="shop">
-                        <div class="product-action-link">
-                          <a href="#">
-                            <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M0 4.65674C0.0739267 4.29264 0.123659 3.92204 0.225812 3.56445C0.854861 1.35126 2.93556 -0.0934268 5.3039 0.0145019C6.89803 0.0873213 8.24081 0.72189 9.43842 1.69845C9.47605 1.72966 9.51369 1.76087 9.56208 1.79988C9.72606 1.67244 9.88601 1.54111 10.0527 1.41758C11.0352 0.691982 12.1213 0.210854 13.3579 0.0470106C16.0555 -0.311885 18.5287 1.42018 19.026 4.01177C19.3352 5.6203 18.9373 7.07928 18.1026 8.45765C17.3728 9.66437 16.4252 10.6994 15.3794 11.6539C13.7356 13.1519 11.9089 14.4106 9.97338 15.5302C9.69918 15.6889 9.44783 15.6954 9.16959 15.5341C6.93835 14.2429 4.84421 12.7787 3.03368 10.9608C1.97317 9.89843 1.04841 8.73853 0.467754 7.35366C0.24463 6.82182 0.088712 6.27177 0.0309148 5.69832C0.0282265 5.66321 0.010753 5.6307 0 5.59689C0 5.28351 0 4.97012 0 4.65674ZM5.1211 1.16791C3.49875 1.1289 2.0471 2.07555 1.4866 3.54754C1.01078 4.79848 1.13444 6.0169 1.71107 7.20932C2.28904 8.40434 3.1318 9.4121 4.08075 10.3419C5.68294 11.9114 7.50826 13.2026 9.44783 14.3495C9.5446 14.4067 9.60912 14.395 9.69783 14.3417C11.167 13.4744 12.5689 12.5173 13.8646 11.4198C15.0931 10.3796 16.2222 9.25476 17.0569 7.8829C17.7276 6.7802 18.1161 5.61249 17.8634 4.31345C17.5838 2.87526 16.7746 1.84799 15.3176 1.36816C14.1321 0.976758 12.9842 1.16401 11.8793 1.67634C11.1871 1.99753 10.5863 2.44095 10.0433 2.96239C9.73009 3.26277 9.41154 3.26017 9.09432 2.96629C8.97335 2.85316 8.85373 2.73873 8.72603 2.6334C7.68837 1.76867 6.52168 1.20042 5.1211 1.16791Z" fill="#fff"></path>
-                            </svg>
-                          </a>
-                        </div>
-                      </div>
-                      <div class="product-content">
-                        <h5><a href="#">Fresh</a></h5>
-                        <p>
-                          <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
-                        </p>
-                        <p class="text-des">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit sunt possimus corrupti.</p>
-                      </div>
-                    </div>
-                    <div class="product-list-item">
-                      <div class="product-thumb">
-                        <img src="assets/images/shop/shopBy/06.png" alt="shop">
-                        <div class="product-action-link">
-                          <a href="#">
-                            <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M0 4.65674C0.0739267 4.29264 0.123659 3.92204 0.225812 3.56445C0.854861 1.35126 2.93556 -0.0934268 5.3039 0.0145019C6.89803 0.0873213 8.24081 0.72189 9.43842 1.69845C9.47605 1.72966 9.51369 1.76087 9.56208 1.79988C9.72606 1.67244 9.88601 1.54111 10.0527 1.41758C11.0352 0.691982 12.1213 0.210854 13.3579 0.0470106C16.0555 -0.311885 18.5287 1.42018 19.026 4.01177C19.3352 5.6203 18.9373 7.07928 18.1026 8.45765C17.3728 9.66437 16.4252 10.6994 15.3794 11.6539C13.7356 13.1519 11.9089 14.4106 9.97338 15.5302C9.69918 15.6889 9.44783 15.6954 9.16959 15.5341C6.93835 14.2429 4.84421 12.7787 3.03368 10.9608C1.97317 9.89843 1.04841 8.73853 0.467754 7.35366C0.24463 6.82182 0.088712 6.27177 0.0309148 5.69832C0.0282265 5.66321 0.010753 5.6307 0 5.59689C0 5.28351 0 4.97012 0 4.65674ZM5.1211 1.16791C3.49875 1.1289 2.0471 2.07555 1.4866 3.54754C1.01078 4.79848 1.13444 6.0169 1.71107 7.20932C2.28904 8.40434 3.1318 9.4121 4.08075 10.3419C5.68294 11.9114 7.50826 13.2026 9.44783 14.3495C9.5446 14.4067 9.60912 14.395 9.69783 14.3417C11.167 13.4744 12.5689 12.5173 13.8646 11.4198C15.0931 10.3796 16.2222 9.25476 17.0569 7.8829C17.7276 6.7802 18.1161 5.61249 17.8634 4.31345C17.5838 2.87526 16.7746 1.84799 15.3176 1.36816C14.1321 0.976758 12.9842 1.16401 11.8793 1.67634C11.1871 1.99753 10.5863 2.44095 10.0433 2.96239C9.73009 3.26277 9.41154 3.26017 9.09432 2.96629C8.97335 2.85316 8.85373 2.73873 8.72603 2.6334C7.68837 1.76867 6.52168 1.20042 5.1211 1.16791Z" fill="#fff"></path>
-                            </svg>
-                          </a>
-                        </div>
-                      </div>
-                      <div class="product-content">
-                        <h5><a href="#">Fresh</a></h5>
-                        <p>
-                          <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
-                        </p>
-                        <p class="text-des">
-                          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="product-col">
-                    <div class="product-item">
-                      <div class="product-thumb">
-                        <img src="assets/images/shop/shopBy/01.png" alt="shop">
-                        <div class="product-action-link">
-                          <a href="#">
-                            <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M0 4.65674C0.0739267 4.29264 0.123659 3.92204 0.225812 3.56445C0.854861 1.35126 2.93556 -0.0934268 5.3039 0.0145019C6.89803 0.0873213 8.24081 0.72189 9.43842 1.69845C9.47605 1.72966 9.51369 1.76087 9.56208 1.79988C9.72606 1.67244 9.88601 1.54111 10.0527 1.41758C11.0352 0.691982 12.1213 0.210854 13.3579 0.0470106C16.0555 -0.311885 18.5287 1.42018 19.026 4.01177C19.3352 5.6203 18.9373 7.07928 18.1026 8.45765C17.3728 9.66437 16.4252 10.6994 15.3794 11.6539C13.7356 13.1519 11.9089 14.4106 9.97338 15.5302C9.69918 15.6889 9.44783 15.6954 9.16959 15.5341C6.93835 14.2429 4.84421 12.7787 3.03368 10.9608C1.97317 9.89843 1.04841 8.73853 0.467754 7.35366C0.24463 6.82182 0.088712 6.27177 0.0309148 5.69832C0.0282265 5.66321 0.010753 5.6307 0 5.59689C0 5.28351 0 4.97012 0 4.65674ZM5.1211 1.16791C3.49875 1.1289 2.0471 2.07555 1.4866 3.54754C1.01078 4.79848 1.13444 6.0169 1.71107 7.20932C2.28904 8.40434 3.1318 9.4121 4.08075 10.3419C5.68294 11.9114 7.50826 13.2026 9.44783 14.3495C9.5446 14.4067 9.60912 14.395 9.69783 14.3417C11.167 13.4744 12.5689 12.5173 13.8646 11.4198C15.0931 10.3796 16.2222 9.25476 17.0569 7.8829C17.7276 6.7802 18.1161 5.61249 17.8634 4.31345C17.5838 2.87526 16.7746 1.84799 15.3176 1.36816C14.1321 0.976758 12.9842 1.16401 11.8793 1.67634C11.1871 1.99753 10.5863 2.44095 10.0433 2.96239C9.73009 3.26277 9.41154 3.26017 9.09432 2.96629C8.97335 2.85316 8.85373 2.73873 8.72603 2.6334C7.68837 1.76867 6.52168 1.20042 5.1211 1.16791Z" fill="#fff"></path>
-                            </svg>
-                          </a>
-                        </div>
-                      </div>
-                      <div class="product-content">
-                        <h5><a href="#">KFC</a></h5>
-                        <p>
-                          <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
-                        </p>
-                        <p class="text-des">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit sunt possimus corrupti.</p>
-                      </div>
-                    </div>
-                    <div class="product-list-item">
-                      <div class="product-thumb">
-                        <img src="assets/images/shop/shopBy/01.png" alt="shop">
-                        <div class="product-action-link">
-                          <a href="#">
-                            <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M0 4.65674C0.0739267 4.29264 0.123659 3.92204 0.225812 3.56445C0.854861 1.35126 2.93556 -0.0934268 5.3039 0.0145019C6.89803 0.0873213 8.24081 0.72189 9.43842 1.69845C9.47605 1.72966 9.51369 1.76087 9.56208 1.79988C9.72606 1.67244 9.88601 1.54111 10.0527 1.41758C11.0352 0.691982 12.1213 0.210854 13.3579 0.0470106C16.0555 -0.311885 18.5287 1.42018 19.026 4.01177C19.3352 5.6203 18.9373 7.07928 18.1026 8.45765C17.3728 9.66437 16.4252 10.6994 15.3794 11.6539C13.7356 13.1519 11.9089 14.4106 9.97338 15.5302C9.69918 15.6889 9.44783 15.6954 9.16959 15.5341C6.93835 14.2429 4.84421 12.7787 3.03368 10.9608C1.97317 9.89843 1.04841 8.73853 0.467754 7.35366C0.24463 6.82182 0.088712 6.27177 0.0309148 5.69832C0.0282265 5.66321 0.010753 5.6307 0 5.59689C0 5.28351 0 4.97012 0 4.65674ZM5.1211 1.16791C3.49875 1.1289 2.0471 2.07555 1.4866 3.54754C1.01078 4.79848 1.13444 6.0169 1.71107 7.20932C2.28904 8.40434 3.1318 9.4121 4.08075 10.3419C5.68294 11.9114 7.50826 13.2026 9.44783 14.3495C9.5446 14.4067 9.60912 14.395 9.69783 14.3417C11.167 13.4744 12.5689 12.5173 13.8646 11.4198C15.0931 10.3796 16.2222 9.25476 17.0569 7.8829C17.7276 6.7802 18.1161 5.61249 17.8634 4.31345C17.5838 2.87526 16.7746 1.84799 15.3176 1.36816C14.1321 0.976758 12.9842 1.16401 11.8793 1.67634C11.1871 1.99753 10.5863 2.44095 10.0433 2.96239C9.73009 3.26277 9.41154 3.26017 9.09432 2.96629C8.97335 2.85316 8.85373 2.73873 8.72603 2.6334C7.68837 1.76867 6.52168 1.20042 5.1211 1.16791Z" fill="#fff"></path>
-                            </svg>
-                          </a>
-                        </div>
-                      </div>
-                      <div class="product-content">
-                        <h5><a href="#">KFC</a></h5>
-                        <p>
-                          <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
-                        </p>
-                        <p class="text-des">
-                          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="product-col">
-                    <div class="product-item">
-                      <div class="product-thumb">
-                        <img src="assets/images/shop/shopBy/02.png" alt="shop">
-                        <div class="product-action-link">
-                          <a href="#">
-                            <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M0 4.65674C0.0739267 4.29264 0.123659 3.92204 0.225812 3.56445C0.854861 1.35126 2.93556 -0.0934268 5.3039 0.0145019C6.89803 0.0873213 8.24081 0.72189 9.43842 1.69845C9.47605 1.72966 9.51369 1.76087 9.56208 1.79988C9.72606 1.67244 9.88601 1.54111 10.0527 1.41758C11.0352 0.691982 12.1213 0.210854 13.3579 0.0470106C16.0555 -0.311885 18.5287 1.42018 19.026 4.01177C19.3352 5.6203 18.9373 7.07928 18.1026 8.45765C17.3728 9.66437 16.4252 10.6994 15.3794 11.6539C13.7356 13.1519 11.9089 14.4106 9.97338 15.5302C9.69918 15.6889 9.44783 15.6954 9.16959 15.5341C6.93835 14.2429 4.84421 12.7787 3.03368 10.9608C1.97317 9.89843 1.04841 8.73853 0.467754 7.35366C0.24463 6.82182 0.088712 6.27177 0.0309148 5.69832C0.0282265 5.66321 0.010753 5.6307 0 5.59689C0 5.28351 0 4.97012 0 4.65674ZM5.1211 1.16791C3.49875 1.1289 2.0471 2.07555 1.4866 3.54754C1.01078 4.79848 1.13444 6.0169 1.71107 7.20932C2.28904 8.40434 3.1318 9.4121 4.08075 10.3419C5.68294 11.9114 7.50826 13.2026 9.44783 14.3495C9.5446 14.4067 9.60912 14.395 9.69783 14.3417C11.167 13.4744 12.5689 12.5173 13.8646 11.4198C15.0931 10.3796 16.2222 9.25476 17.0569 7.8829C17.7276 6.7802 18.1161 5.61249 17.8634 4.31345C17.5838 2.87526 16.7746 1.84799 15.3176 1.36816C14.1321 0.976758 12.9842 1.16401 11.8793 1.67634C11.1871 1.99753 10.5863 2.44095 10.0433 2.96239C9.73009 3.26277 9.41154 3.26017 9.09432 2.96629C8.97335 2.85316 8.85373 2.73873 8.72603 2.6334C7.68837 1.76867 6.52168 1.20042 5.1211 1.16791Z" fill="#fff"></path>
-                            </svg>
-                          </a>
-                        </div>
-                      </div>
-                      <div class="product-content">
-                        <h5><a href="#">GOOD Chef</a></h5>
-                        <p>
-                          <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
-                        </p>
-                        <p class="text-des">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit sunt possimus corrupti.</p>
-                      </div>
-                    </div>
-                    <div class="product-list-item">
-                      <div class="product-thumb">
-                        <img src="assets/images/shop/shopBy/02.png" alt="shop">
-                        <div class="product-action-link">
-                          <a href="#">
-                            <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M0 4.65674C0.0739267 4.29264 0.123659 3.92204 0.225812 3.56445C0.854861 1.35126 2.93556 -0.0934268 5.3039 0.0145019C6.89803 0.0873213 8.24081 0.72189 9.43842 1.69845C9.47605 1.72966 9.51369 1.76087 9.56208 1.79988C9.72606 1.67244 9.88601 1.54111 10.0527 1.41758C11.0352 0.691982 12.1213 0.210854 13.3579 0.0470106C16.0555 -0.311885 18.5287 1.42018 19.026 4.01177C19.3352 5.6203 18.9373 7.07928 18.1026 8.45765C17.3728 9.66437 16.4252 10.6994 15.3794 11.6539C13.7356 13.1519 11.9089 14.4106 9.97338 15.5302C9.69918 15.6889 9.44783 15.6954 9.16959 15.5341C6.93835 14.2429 4.84421 12.7787 3.03368 10.9608C1.97317 9.89843 1.04841 8.73853 0.467754 7.35366C0.24463 6.82182 0.088712 6.27177 0.0309148 5.69832C0.0282265 5.66321 0.010753 5.6307 0 5.59689C0 5.28351 0 4.97012 0 4.65674ZM5.1211 1.16791C3.49875 1.1289 2.0471 2.07555 1.4866 3.54754C1.01078 4.79848 1.13444 6.0169 1.71107 7.20932C2.28904 8.40434 3.1318 9.4121 4.08075 10.3419C5.68294 11.9114 7.50826 13.2026 9.44783 14.3495C9.5446 14.4067 9.60912 14.395 9.69783 14.3417C11.167 13.4744 12.5689 12.5173 13.8646 11.4198C15.0931 10.3796 16.2222 9.25476 17.0569 7.8829C17.7276 6.7802 18.1161 5.61249 17.8634 4.31345C17.5838 2.87526 16.7746 1.84799 15.3176 1.36816C14.1321 0.976758 12.9842 1.16401 11.8793 1.67634C11.1871 1.99753 10.5863 2.44095 10.0433 2.96239C9.73009 3.26277 9.41154 3.26017 9.09432 2.96629C8.97335 2.85316 8.85373 2.73873 8.72603 2.6334C7.68837 1.76867 6.52168 1.20042 5.1211 1.16791Z" fill="#fff"></path>
-                            </svg>
-                          </a>
-                        </div>
-                      </div>
-                      <div class="product-content">
-                        <h5><a href="#">GOOD Chef</a></h5>
-                        <p>
-                          <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
-                        </p>
-                        <p class="text-des">
-                          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="product-col">
-                    <div class="product-item">
-                      <div class="product-thumb">
-                        <img src="assets/images/shop/shopBy/03.png" alt="shop">
-                        <div class="product-action-link">
-                          <a href="#">
-                            <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M0 4.65674C0.0739267 4.29264 0.123659 3.92204 0.225812 3.56445C0.854861 1.35126 2.93556 -0.0934268 5.3039 0.0145019C6.89803 0.0873213 8.24081 0.72189 9.43842 1.69845C9.47605 1.72966 9.51369 1.76087 9.56208 1.79988C9.72606 1.67244 9.88601 1.54111 10.0527 1.41758C11.0352 0.691982 12.1213 0.210854 13.3579 0.0470106C16.0555 -0.311885 18.5287 1.42018 19.026 4.01177C19.3352 5.6203 18.9373 7.07928 18.1026 8.45765C17.3728 9.66437 16.4252 10.6994 15.3794 11.6539C13.7356 13.1519 11.9089 14.4106 9.97338 15.5302C9.69918 15.6889 9.44783 15.6954 9.16959 15.5341C6.93835 14.2429 4.84421 12.7787 3.03368 10.9608C1.97317 9.89843 1.04841 8.73853 0.467754 7.35366C0.24463 6.82182 0.088712 6.27177 0.0309148 5.69832C0.0282265 5.66321 0.010753 5.6307 0 5.59689C0 5.28351 0 4.97012 0 4.65674ZM5.1211 1.16791C3.49875 1.1289 2.0471 2.07555 1.4866 3.54754C1.01078 4.79848 1.13444 6.0169 1.71107 7.20932C2.28904 8.40434 3.1318 9.4121 4.08075 10.3419C5.68294 11.9114 7.50826 13.2026 9.44783 14.3495C9.5446 14.4067 9.60912 14.395 9.69783 14.3417C11.167 13.4744 12.5689 12.5173 13.8646 11.4198C15.0931 10.3796 16.2222 9.25476 17.0569 7.8829C17.7276 6.7802 18.1161 5.61249 17.8634 4.31345C17.5838 2.87526 16.7746 1.84799 15.3176 1.36816C14.1321 0.976758 12.9842 1.16401 11.8793 1.67634C11.1871 1.99753 10.5863 2.44095 10.0433 2.96239C9.73009 3.26277 9.41154 3.26017 9.09432 2.96629C8.97335 2.85316 8.85373 2.73873 8.72603 2.6334C7.68837 1.76867 6.52168 1.20042 5.1211 1.16791Z" fill="#fff"></path>
-                            </svg>
-                          </a>
-                        </div>
-                      </div>
-                      <div class="product-content">
-                        <h5><a href="#">Custard apple</a></h5>
-                        <p>
-                          <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
-                        </p>
-                        <p class="text-des">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit sunt possimus corrupti.</p>
-                      </div>
-                    </div>
-                    <div class="product-list-item">
-                      <div class="product-thumb">
-                        <img src="assets/images/shop/shopBy/03.png" alt="shop">
-                        <div class="product-action-link">
-                          <a href="#">
-                            <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M0 4.65674C0.0739267 4.29264 0.123659 3.92204 0.225812 3.56445C0.854861 1.35126 2.93556 -0.0934268 5.3039 0.0145019C6.89803 0.0873213 8.24081 0.72189 9.43842 1.69845C9.47605 1.72966 9.51369 1.76087 9.56208 1.79988C9.72606 1.67244 9.88601 1.54111 10.0527 1.41758C11.0352 0.691982 12.1213 0.210854 13.3579 0.0470106C16.0555 -0.311885 18.5287 1.42018 19.026 4.01177C19.3352 5.6203 18.9373 7.07928 18.1026 8.45765C17.3728 9.66437 16.4252 10.6994 15.3794 11.6539C13.7356 13.1519 11.9089 14.4106 9.97338 15.5302C9.69918 15.6889 9.44783 15.6954 9.16959 15.5341C6.93835 14.2429 4.84421 12.7787 3.03368 10.9608C1.97317 9.89843 1.04841 8.73853 0.467754 7.35366C0.24463 6.82182 0.088712 6.27177 0.0309148 5.69832C0.0282265 5.66321 0.010753 5.6307 0 5.59689C0 5.28351 0 4.97012 0 4.65674ZM5.1211 1.16791C3.49875 1.1289 2.0471 2.07555 1.4866 3.54754C1.01078 4.79848 1.13444 6.0169 1.71107 7.20932C2.28904 8.40434 3.1318 9.4121 4.08075 10.3419C5.68294 11.9114 7.50826 13.2026 9.44783 14.3495C9.5446 14.4067 9.60912 14.395 9.69783 14.3417C11.167 13.4744 12.5689 12.5173 13.8646 11.4198C15.0931 10.3796 16.2222 9.25476 17.0569 7.8829C17.7276 6.7802 18.1161 5.61249 17.8634 4.31345C17.5838 2.87526 16.7746 1.84799 15.3176 1.36816C14.1321 0.976758 12.9842 1.16401 11.8793 1.67634C11.1871 1.99753 10.5863 2.44095 10.0433 2.96239C9.73009 3.26277 9.41154 3.26017 9.09432 2.96629C8.97335 2.85316 8.85373 2.73873 8.72603 2.6334C7.68837 1.76867 6.52168 1.20042 5.1211 1.16791Z" fill="#fff"></path>
-                            </svg>
-                          </a>
-                        </div>
-                      </div>
-                      <div class="product-content">
-                        <h5><a href="#">Product Title Here</a></h5>
-                        <p>
-                          <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
-                        </p>
-                        <p class="text-des">
-                          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="product-col">
-                    <div class="product-item">
-                      <div class="product-thumb">
-                        <img src="assets/images/shop/shopBy/05.png" alt="shop">
-                        <div class="product-action-link">
-                          <a href="#">
-                            <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M0 4.65674C0.0739267 4.29264 0.123659 3.92204 0.225812 3.56445C0.854861 1.35126 2.93556 -0.0934268 5.3039 0.0145019C6.89803 0.0873213 8.24081 0.72189 9.43842 1.69845C9.47605 1.72966 9.51369 1.76087 9.56208 1.79988C9.72606 1.67244 9.88601 1.54111 10.0527 1.41758C11.0352 0.691982 12.1213 0.210854 13.3579 0.0470106C16.0555 -0.311885 18.5287 1.42018 19.026 4.01177C19.3352 5.6203 18.9373 7.07928 18.1026 8.45765C17.3728 9.66437 16.4252 10.6994 15.3794 11.6539C13.7356 13.1519 11.9089 14.4106 9.97338 15.5302C9.69918 15.6889 9.44783 15.6954 9.16959 15.5341C6.93835 14.2429 4.84421 12.7787 3.03368 10.9608C1.97317 9.89843 1.04841 8.73853 0.467754 7.35366C0.24463 6.82182 0.088712 6.27177 0.0309148 5.69832C0.0282265 5.66321 0.010753 5.6307 0 5.59689C0 5.28351 0 4.97012 0 4.65674ZM5.1211 1.16791C3.49875 1.1289 2.0471 2.07555 1.4866 3.54754C1.01078 4.79848 1.13444 6.0169 1.71107 7.20932C2.28904 8.40434 3.1318 9.4121 4.08075 10.3419C5.68294 11.9114 7.50826 13.2026 9.44783 14.3495C9.5446 14.4067 9.60912 14.395 9.69783 14.3417C11.167 13.4744 12.5689 12.5173 13.8646 11.4198C15.0931 10.3796 16.2222 9.25476 17.0569 7.8829C17.7276 6.7802 18.1161 5.61249 17.8634 4.31345C17.5838 2.87526 16.7746 1.84799 15.3176 1.36816C14.1321 0.976758 12.9842 1.16401 11.8793 1.67634C11.1871 1.99753 10.5863 2.44095 10.0433 2.96239C9.73009 3.26277 9.41154 3.26017 9.09432 2.96629C8.97335 2.85316 8.85373 2.73873 8.72603 2.6334C7.68837 1.76867 6.52168 1.20042 5.1211 1.16791Z" fill="#fff"></path>
-                            </svg>
-                          </a>
-                        </div>
-                      </div>
-                      <div class="product-content">
-                        <h5><a href="#">Pizza Hut</a></h5>
-                        <p>
-                          <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
-                        </p>
-                        <p class="text-des">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit sunt possimus corrupti.</p>
-                      </div>
-                    </div>
-                    <div class="product-list-item">
-                      <div class="product-thumb">
-                        <img src="assets/images/shop/shopBy/05.png" alt="shop">
-                        <div class="product-action-link">
-                          <a href="#">
-                            <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M0 4.65674C0.0739267 4.29264 0.123659 3.92204 0.225812 3.56445C0.854861 1.35126 2.93556 -0.0934268 5.3039 0.0145019C6.89803 0.0873213 8.24081 0.72189 9.43842 1.69845C9.47605 1.72966 9.51369 1.76087 9.56208 1.79988C9.72606 1.67244 9.88601 1.54111 10.0527 1.41758C11.0352 0.691982 12.1213 0.210854 13.3579 0.0470106C16.0555 -0.311885 18.5287 1.42018 19.026 4.01177C19.3352 5.6203 18.9373 7.07928 18.1026 8.45765C17.3728 9.66437 16.4252 10.6994 15.3794 11.6539C13.7356 13.1519 11.9089 14.4106 9.97338 15.5302C9.69918 15.6889 9.44783 15.6954 9.16959 15.5341C6.93835 14.2429 4.84421 12.7787 3.03368 10.9608C1.97317 9.89843 1.04841 8.73853 0.467754 7.35366C0.24463 6.82182 0.088712 6.27177 0.0309148 5.69832C0.0282265 5.66321 0.010753 5.6307 0 5.59689C0 5.28351 0 4.97012 0 4.65674ZM5.1211 1.16791C3.49875 1.1289 2.0471 2.07555 1.4866 3.54754C1.01078 4.79848 1.13444 6.0169 1.71107 7.20932C2.28904 8.40434 3.1318 9.4121 4.08075 10.3419C5.68294 11.9114 7.50826 13.2026 9.44783 14.3495C9.5446 14.4067 9.60912 14.395 9.69783 14.3417C11.167 13.4744 12.5689 12.5173 13.8646 11.4198C15.0931 10.3796 16.2222 9.25476 17.0569 7.8829C17.7276 6.7802 18.1161 5.61249 17.8634 4.31345C17.5838 2.87526 16.7746 1.84799 15.3176 1.36816C14.1321 0.976758 12.9842 1.16401 11.8793 1.67634C11.1871 1.99753 10.5863 2.44095 10.0433 2.96239C9.73009 3.26277 9.41154 3.26017 9.09432 2.96629C8.97335 2.85316 8.85373 2.73873 8.72603 2.6334C7.68837 1.76867 6.52168 1.20042 5.1211 1.16791Z" fill="#fff"></path>
-                            </svg>
-                          </a>
-                        </div>
-                      </div>
-                      <div class="product-content">
-                        <h5><a href="#">Pizza Hut</a></h5>
-                        <p>
-                          <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
-                        </p>
-                        <p class="text-des">
-                          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="product-col">
-                    <div class="product-item">
-                      <div class="product-thumb">
-                        <img src="assets/images/shop/shopBy/04.png" alt="shop">
-                        <div class="product-action-link">
-                          <a href="#">
-                            <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M0 4.65674C0.0739267 4.29264 0.123659 3.92204 0.225812 3.56445C0.854861 1.35126 2.93556 -0.0934268 5.3039 0.0145019C6.89803 0.0873213 8.24081 0.72189 9.43842 1.69845C9.47605 1.72966 9.51369 1.76087 9.56208 1.79988C9.72606 1.67244 9.88601 1.54111 10.0527 1.41758C11.0352 0.691982 12.1213 0.210854 13.3579 0.0470106C16.0555 -0.311885 18.5287 1.42018 19.026 4.01177C19.3352 5.6203 18.9373 7.07928 18.1026 8.45765C17.3728 9.66437 16.4252 10.6994 15.3794 11.6539C13.7356 13.1519 11.9089 14.4106 9.97338 15.5302C9.69918 15.6889 9.44783 15.6954 9.16959 15.5341C6.93835 14.2429 4.84421 12.7787 3.03368 10.9608C1.97317 9.89843 1.04841 8.73853 0.467754 7.35366C0.24463 6.82182 0.088712 6.27177 0.0309148 5.69832C0.0282265 5.66321 0.010753 5.6307 0 5.59689C0 5.28351 0 4.97012 0 4.65674ZM5.1211 1.16791C3.49875 1.1289 2.0471 2.07555 1.4866 3.54754C1.01078 4.79848 1.13444 6.0169 1.71107 7.20932C2.28904 8.40434 3.1318 9.4121 4.08075 10.3419C5.68294 11.9114 7.50826 13.2026 9.44783 14.3495C9.5446 14.4067 9.60912 14.395 9.69783 14.3417C11.167 13.4744 12.5689 12.5173 13.8646 11.4198C15.0931 10.3796 16.2222 9.25476 17.0569 7.8829C17.7276 6.7802 18.1161 5.61249 17.8634 4.31345C17.5838 2.87526 16.7746 1.84799 15.3176 1.36816C14.1321 0.976758 12.9842 1.16401 11.8793 1.67634C11.1871 1.99753 10.5863 2.44095 10.0433 2.96239C9.73009 3.26277 9.41154 3.26017 9.09432 2.96629C8.97335 2.85316 8.85373 2.73873 8.72603 2.6334C7.68837 1.76867 6.52168 1.20042 5.1211 1.16791Z" fill="#fff"></path>
-                            </svg>
-                          </a>
-                        </div>
-                      </div>
-                      <div class="product-content">
-                        <h5><a href="#">Foodies</a></h5>
-                        <p>
-                          <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
-                        </p>
-                        <p class="text-des">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit sunt possimus corrupti.</p>
-                      </div>
-                    </div>
-                    <div class="product-list-item">
-                      <div class="product-thumb">
-                        <img src="assets/images/shop/shopBy/04.png" alt="shop">
-                        <div class="product-action-link">
-                          <a href="#">
-                            <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M0 4.65674C0.0739267 4.29264 0.123659 3.92204 0.225812 3.56445C0.854861 1.35126 2.93556 -0.0934268 5.3039 0.0145019C6.89803 0.0873213 8.24081 0.72189 9.43842 1.69845C9.47605 1.72966 9.51369 1.76087 9.56208 1.79988C9.72606 1.67244 9.88601 1.54111 10.0527 1.41758C11.0352 0.691982 12.1213 0.210854 13.3579 0.0470106C16.0555 -0.311885 18.5287 1.42018 19.026 4.01177C19.3352 5.6203 18.9373 7.07928 18.1026 8.45765C17.3728 9.66437 16.4252 10.6994 15.3794 11.6539C13.7356 13.1519 11.9089 14.4106 9.97338 15.5302C9.69918 15.6889 9.44783 15.6954 9.16959 15.5341C6.93835 14.2429 4.84421 12.7787 3.03368 10.9608C1.97317 9.89843 1.04841 8.73853 0.467754 7.35366C0.24463 6.82182 0.088712 6.27177 0.0309148 5.69832C0.0282265 5.66321 0.010753 5.6307 0 5.59689C0 5.28351 0 4.97012 0 4.65674ZM5.1211 1.16791C3.49875 1.1289 2.0471 2.07555 1.4866 3.54754C1.01078 4.79848 1.13444 6.0169 1.71107 7.20932C2.28904 8.40434 3.1318 9.4121 4.08075 10.3419C5.68294 11.9114 7.50826 13.2026 9.44783 14.3495C9.5446 14.4067 9.60912 14.395 9.69783 14.3417C11.167 13.4744 12.5689 12.5173 13.8646 11.4198C15.0931 10.3796 16.2222 9.25476 17.0569 7.8829C17.7276 6.7802 18.1161 5.61249 17.8634 4.31345C17.5838 2.87526 16.7746 1.84799 15.3176 1.36816C14.1321 0.976758 12.9842 1.16401 11.8793 1.67634C11.1871 1.99753 10.5863 2.44095 10.0433 2.96239C9.73009 3.26277 9.41154 3.26017 9.09432 2.96629C8.97335 2.85316 8.85373 2.73873 8.72603 2.6334C7.68837 1.76867 6.52168 1.20042 5.1211 1.16791Z" fill="#fff"></path>
-                            </svg>
-                          </a>
-                        </div>
-                      </div>
-                      <div class="product-content">
-                        <h5><a href="#">Foodies</a></h5>
-                        <p>
-                          <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
-                        </p>
-                        <p class="text-des">
-                          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="product-col">
-                    <div class="product-item">
-                      <div class="product-thumb">
-                        <img src="assets/images/shop/02.png" alt="shop">
-                        <div class="product-action-link">
-                          <a href="#">
-                            <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M0 4.65674C0.0739267 4.29264 0.123659 3.92204 0.225812 3.56445C0.854861 1.35126 2.93556 -0.0934268 5.3039 0.0145019C6.89803 0.0873213 8.24081 0.72189 9.43842 1.69845C9.47605 1.72966 9.51369 1.76087 9.56208 1.79988C9.72606 1.67244 9.88601 1.54111 10.0527 1.41758C11.0352 0.691982 12.1213 0.210854 13.3579 0.0470106C16.0555 -0.311885 18.5287 1.42018 19.026 4.01177C19.3352 5.6203 18.9373 7.07928 18.1026 8.45765C17.3728 9.66437 16.4252 10.6994 15.3794 11.6539C13.7356 13.1519 11.9089 14.4106 9.97338 15.5302C9.69918 15.6889 9.44783 15.6954 9.16959 15.5341C6.93835 14.2429 4.84421 12.7787 3.03368 10.9608C1.97317 9.89843 1.04841 8.73853 0.467754 7.35366C0.24463 6.82182 0.088712 6.27177 0.0309148 5.69832C0.0282265 5.66321 0.010753 5.6307 0 5.59689C0 5.28351 0 4.97012 0 4.65674ZM5.1211 1.16791C3.49875 1.1289 2.0471 2.07555 1.4866 3.54754C1.01078 4.79848 1.13444 6.0169 1.71107 7.20932C2.28904 8.40434 3.1318 9.4121 4.08075 10.3419C5.68294 11.9114 7.50826 13.2026 9.44783 14.3495C9.5446 14.4067 9.60912 14.395 9.69783 14.3417C11.167 13.4744 12.5689 12.5173 13.8646 11.4198C15.0931 10.3796 16.2222 9.25476 17.0569 7.8829C17.7276 6.7802 18.1161 5.61249 17.8634 4.31345C17.5838 2.87526 16.7746 1.84799 15.3176 1.36816C14.1321 0.976758 12.9842 1.16401 11.8793 1.67634C11.1871 1.99753 10.5863 2.44095 10.0433 2.96239C9.73009 3.26277 9.41154 3.26017 9.09432 2.96629C8.97335 2.85316 8.85373 2.73873 8.72603 2.6334C7.68837 1.76867 6.52168 1.20042 5.1211 1.16791Z" fill="#fff"></path>
-                            </svg>
-                          </a>
-                        </div>
-                      </div>
-                      <div class="product-content">
-                        <h5><a href="#">GOOD chef</a></h5>
-                        <p>
-                          <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
-                        </p>
-                        <p class="text-des">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit sunt possimus corrupti.</p>
-                      </div>
-                    </div>
-                    <div class="product-list-item">
-                      <div class="product-thumb">
-                        <img src="assets/images/shop/02.png" alt="shop">
-                        <div class="product-action-link">
-                          <a href="#">
-                            <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M0 4.65674C0.0739267 4.29264 0.123659 3.92204 0.225812 3.56445C0.854861 1.35126 2.93556 -0.0934268 5.3039 0.0145019C6.89803 0.0873213 8.24081 0.72189 9.43842 1.69845C9.47605 1.72966 9.51369 1.76087 9.56208 1.79988C9.72606 1.67244 9.88601 1.54111 10.0527 1.41758C11.0352 0.691982 12.1213 0.210854 13.3579 0.0470106C16.0555 -0.311885 18.5287 1.42018 19.026 4.01177C19.3352 5.6203 18.9373 7.07928 18.1026 8.45765C17.3728 9.66437 16.4252 10.6994 15.3794 11.6539C13.7356 13.1519 11.9089 14.4106 9.97338 15.5302C9.69918 15.6889 9.44783 15.6954 9.16959 15.5341C6.93835 14.2429 4.84421 12.7787 3.03368 10.9608C1.97317 9.89843 1.04841 8.73853 0.467754 7.35366C0.24463 6.82182 0.088712 6.27177 0.0309148 5.69832C0.0282265 5.66321 0.010753 5.6307 0 5.59689C0 5.28351 0 4.97012 0 4.65674ZM5.1211 1.16791C3.49875 1.1289 2.0471 2.07555 1.4866 3.54754C1.01078 4.79848 1.13444 6.0169 1.71107 7.20932C2.28904 8.40434 3.1318 9.4121 4.08075 10.3419C5.68294 11.9114 7.50826 13.2026 9.44783 14.3495C9.5446 14.4067 9.60912 14.395 9.69783 14.3417C11.167 13.4744 12.5689 12.5173 13.8646 11.4198C15.0931 10.3796 16.2222 9.25476 17.0569 7.8829C17.7276 6.7802 18.1161 5.61249 17.8634 4.31345C17.5838 2.87526 16.7746 1.84799 15.3176 1.36816C14.1321 0.976758 12.9842 1.16401 11.8793 1.67634C11.1871 1.99753 10.5863 2.44095 10.0433 2.96239C9.73009 3.26277 9.41154 3.26017 9.09432 2.96629C8.97335 2.85316 8.85373 2.73873 8.72603 2.6334C7.68837 1.76867 6.52168 1.20042 5.1211 1.16791Z" fill="#fff"></path>
-                            </svg>
-                          </a>
-                        </div>
-                      </div>
-                      <div class="product-content">
-                        <h5><a href="#">GOOD chef</a></h5>
-                        <p>
-                          <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
-                        </p>
-                        <p class="text-des">
-                          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="allshop-header">
-                  <h3>Shop By Brand</h3>
-                </div>
-                <div class="all-barnds">
-                  <div class="brands-row">
-                    <div class="brands-col">
-                      <div class="brand-item">
-                        <h4>SONY</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore!</p>
-                      </div>
-                    </div>
-                    <div class="brands-col">
-                      <div class="brand-item">
-                        <h4>adidos</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore!</p>
-                      </div>
-                    </div>
-                    <div class="brands-col">
-                      <div class="brand-item">
-                        <h4>NIKE</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore!</p>
-                      </div>
-                    </div>
-                    <div class="brands-col">
-                      <div class="brand-item">
-                        <h4>CocoCola</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore!</p>
-                      </div>
-                    </div>
-                    <div class="brands-col">
-                      <div class="brand-item">
-                        <h4>NIKE</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore!</p>
-                      </div>
-                    </div>
-                    <div class="brands-col">
-                      <div class="brand-item">
-                        <h4>adidos</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore!</p>
-                      </div>
-                    </div>
-                    <div class="brands-col">
-                      <div class="brand-item">
-                        <h4>SONY</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore!</p>
-                      </div>
-                    </div>
-                    <div class="brands-col">
-                      <div class="brand-item">
-                        <h4>CocoCola</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore!</p>
-                      </div>
-                    </div>
+              <div class="shop-item">
+                <ul>
+                  <li>
+                    <img src="assets/images/shop/popShop/01.png" alt="" />
+                    <span>KFC</span>
+                  </li>
+                  <li>
+                    <img src="assets/images/shop/popShop/04.png" alt="" />
+                    <span>Good Chef</span>
+                  </li>
+                  <li>
+                    <img src="assets/images/shop/popShop/03.png" alt="" />
+                    <span>Burger King</span>
+                  </li>
+                  <li>
+                    <img src="assets/images/shop/popShop/04.png" alt="" />
+                    <span>Pizza Hut</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="widget-shop">
+              <div class="widget-title">
+                <h4>Popular Brands</h4>
+              </div>
+              <div class="brand-item">
+                <ul>
+                  <li>
+                    <span>SONY</span>
+                  </li>
+                  <li>
+                    <span>adidos</span>
+                  </li>
+                  <li>
+                    <span>NIKE</span>
+                  </li>
+                  <li>
+                    <span>CocoCola</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="widget-shop">
+              <div class="widget-tumb">
+                <img src="assets/images/shop/widget.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-9 col-12 sticky-widget">
+            <div
+              class="
+                shop-title
+                d-flex
+                flex-wrap
+                align-items-center
+                justify-content-between
+              "
+            >
+              <div class="filter-content">
+                <div class="price-filer">
+                  <div class="filter-title">
+                    <span>Sort By:</span>
+                    <select class="form-select" name="" id="">
+                      <option value="0" selected>Price Low to High</option>
+                      <option value="0">Price High to Low</option>
+                    </select>
                   </div>
                 </div>
               </div>
+              <div class="product-view-mode">
+                <a class="active" data-target="grid"
+                  ><i class="fa fa-th"></i
+                ></a>
+                <a data-target="list" class="list"
+                  ><i class="fa fa-list"></i
+                ></a>
+              </div>
+            </div>
+            <div class="allshop-header">
+              <h3>Shop By Store</h3>
+            </div>
+            <div class="shop-product-wrap row grid p-0">
+              <div class="product-col">
+                <div class="product-item">
+                  <div class="product-thumb">
+                    <img src="assets/images/shop/shopBy/01.png" alt="shop" />
+                    <div class="product-action-link">
+                      <a href="#">
+                        <svg
+                          width="20"
+                          height="16"
+                          viewBox="0 0 20 16"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M0 4.65674C0.0739267 4.29264 0.123659 3.92204 0.225812 3.56445C0.854861 1.35126 2.93556 -0.0934268 5.3039 0.0145019C6.89803 0.0873213 8.24081 0.72189 9.43842 1.69845C9.47605 1.72966 9.51369 1.76087 9.56208 1.79988C9.72606 1.67244 9.88601 1.54111 10.0527 1.41758C11.0352 0.691982 12.1213 0.210854 13.3579 0.0470106C16.0555 -0.311885 18.5287 1.42018 19.026 4.01177C19.3352 5.6203 18.9373 7.07928 18.1026 8.45765C17.3728 9.66437 16.4252 10.6994 15.3794 11.6539C13.7356 13.1519 11.9089 14.4106 9.97338 15.5302C9.69918 15.6889 9.44783 15.6954 9.16959 15.5341C6.93835 14.2429 4.84421 12.7787 3.03368 10.9608C1.97317 9.89843 1.04841 8.73853 0.467754 7.35366C0.24463 6.82182 0.088712 6.27177 0.0309148 5.69832C0.0282265 5.66321 0.010753 5.6307 0 5.59689C0 5.28351 0 4.97012 0 4.65674ZM5.1211 1.16791C3.49875 1.1289 2.0471 2.07555 1.4866 3.54754C1.01078 4.79848 1.13444 6.0169 1.71107 7.20932C2.28904 8.40434 3.1318 9.4121 4.08075 10.3419C5.68294 11.9114 7.50826 13.2026 9.44783 14.3495C9.5446 14.4067 9.60912 14.395 9.69783 14.3417C11.167 13.4744 12.5689 12.5173 13.8646 11.4198C15.0931 10.3796 16.2222 9.25476 17.0569 7.8829C17.7276 6.7802 18.1161 5.61249 17.8634 4.31345C17.5838 2.87526 16.7746 1.84799 15.3176 1.36816C14.1321 0.976758 12.9842 1.16401 11.8793 1.67634C11.1871 1.99753 10.5863 2.44095 10.0433 2.96239C9.73009 3.26277 9.41154 3.26017 9.09432 2.96629C8.97335 2.85316 8.85373 2.73873 8.72603 2.6334C7.68837 1.76867 6.52168 1.20042 5.1211 1.16791Z"
+                            fill="#fff"
+                          ></path>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="product-content">
+                    <h5><a href="#">KFC</a></h5>
+                    <p>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                    </p>
+                    <p class="text-des">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Velit sunt possimus corrupti.
+                    </p>
+                  </div>
+                </div>
+                <div class="product-list-item">
+                  <div class="product-thumb">
+                    <img src="assets/images/shop/shopBy/01.png" alt="shop" />
+                    <div class="product-action-link">
+                      <a href="#">
+                        <svg
+                          width="20"
+                          height="16"
+                          viewBox="0 0 20 16"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M0 4.65674C0.0739267 4.29264 0.123659 3.92204 0.225812 3.56445C0.854861 1.35126 2.93556 -0.0934268 5.3039 0.0145019C6.89803 0.0873213 8.24081 0.72189 9.43842 1.69845C9.47605 1.72966 9.51369 1.76087 9.56208 1.79988C9.72606 1.67244 9.88601 1.54111 10.0527 1.41758C11.0352 0.691982 12.1213 0.210854 13.3579 0.0470106C16.0555 -0.311885 18.5287 1.42018 19.026 4.01177C19.3352 5.6203 18.9373 7.07928 18.1026 8.45765C17.3728 9.66437 16.4252 10.6994 15.3794 11.6539C13.7356 13.1519 11.9089 14.4106 9.97338 15.5302C9.69918 15.6889 9.44783 15.6954 9.16959 15.5341C6.93835 14.2429 4.84421 12.7787 3.03368 10.9608C1.97317 9.89843 1.04841 8.73853 0.467754 7.35366C0.24463 6.82182 0.088712 6.27177 0.0309148 5.69832C0.0282265 5.66321 0.010753 5.6307 0 5.59689C0 5.28351 0 4.97012 0 4.65674ZM5.1211 1.16791C3.49875 1.1289 2.0471 2.07555 1.4866 3.54754C1.01078 4.79848 1.13444 6.0169 1.71107 7.20932C2.28904 8.40434 3.1318 9.4121 4.08075 10.3419C5.68294 11.9114 7.50826 13.2026 9.44783 14.3495C9.5446 14.4067 9.60912 14.395 9.69783 14.3417C11.167 13.4744 12.5689 12.5173 13.8646 11.4198C15.0931 10.3796 16.2222 9.25476 17.0569 7.8829C17.7276 6.7802 18.1161 5.61249 17.8634 4.31345C17.5838 2.87526 16.7746 1.84799 15.3176 1.36816C14.1321 0.976758 12.9842 1.16401 11.8793 1.67634C11.1871 1.99753 10.5863 2.44095 10.0433 2.96239C9.73009 3.26277 9.41154 3.26017 9.09432 2.96629C8.97335 2.85316 8.85373 2.73873 8.72603 2.6334C7.68837 1.76867 6.52168 1.20042 5.1211 1.16791Z"
+                            fill="#fff"
+                          ></path>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="product-content">
+                    <h5><a href="#">KFC</a></h5>
+                    <p>
+                      <i class="fa fa-star"></i><i class="fa fa-star"></i
+                      ><i class="fa fa-star"></i><i class="fa fa-star"></i
+                      ><i class="fa fa-star"></i>
+                    </p>
+                    <p class="text-des">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="product-col">
+                <div class="product-item">
+                  <div class="product-thumb">
+                    <img src="assets/images/shop/shopBy/02.png" alt="shop" />
+                    <div class="product-action-link">
+                      <a href="#">
+                        <svg
+                          width="20"
+                          height="16"
+                          viewBox="0 0 20 16"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M0 4.65674C0.0739267 4.29264 0.123659 3.92204 0.225812 3.56445C0.854861 1.35126 2.93556 -0.0934268 5.3039 0.0145019C6.89803 0.0873213 8.24081 0.72189 9.43842 1.69845C9.47605 1.72966 9.51369 1.76087 9.56208 1.79988C9.72606 1.67244 9.88601 1.54111 10.0527 1.41758C11.0352 0.691982 12.1213 0.210854 13.3579 0.0470106C16.0555 -0.311885 18.5287 1.42018 19.026 4.01177C19.3352 5.6203 18.9373 7.07928 18.1026 8.45765C17.3728 9.66437 16.4252 10.6994 15.3794 11.6539C13.7356 13.1519 11.9089 14.4106 9.97338 15.5302C9.69918 15.6889 9.44783 15.6954 9.16959 15.5341C6.93835 14.2429 4.84421 12.7787 3.03368 10.9608C1.97317 9.89843 1.04841 8.73853 0.467754 7.35366C0.24463 6.82182 0.088712 6.27177 0.0309148 5.69832C0.0282265 5.66321 0.010753 5.6307 0 5.59689C0 5.28351 0 4.97012 0 4.65674ZM5.1211 1.16791C3.49875 1.1289 2.0471 2.07555 1.4866 3.54754C1.01078 4.79848 1.13444 6.0169 1.71107 7.20932C2.28904 8.40434 3.1318 9.4121 4.08075 10.3419C5.68294 11.9114 7.50826 13.2026 9.44783 14.3495C9.5446 14.4067 9.60912 14.395 9.69783 14.3417C11.167 13.4744 12.5689 12.5173 13.8646 11.4198C15.0931 10.3796 16.2222 9.25476 17.0569 7.8829C17.7276 6.7802 18.1161 5.61249 17.8634 4.31345C17.5838 2.87526 16.7746 1.84799 15.3176 1.36816C14.1321 0.976758 12.9842 1.16401 11.8793 1.67634C11.1871 1.99753 10.5863 2.44095 10.0433 2.96239C9.73009 3.26277 9.41154 3.26017 9.09432 2.96629C8.97335 2.85316 8.85373 2.73873 8.72603 2.6334C7.68837 1.76867 6.52168 1.20042 5.1211 1.16791Z"
+                            fill="#fff"
+                          ></path>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="product-content">
+                    <h5><a href="#">GOOD Chef</a></h5>
+                    <p>
+                      <i class="fa fa-star"></i><i class="fa fa-star"></i
+                      ><i class="fa fa-star"></i><i class="fa fa-star"></i
+                      ><i class="fa fa-star"></i>
+                    </p>
+                    <p class="text-des">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Velit sunt possimus corrupti.
+                    </p>
+                  </div>
+                </div>
+                <div class="product-list-item">
+                  <div class="product-thumb">
+                    <img src="assets/images/shop/shopBy/02.png" alt="shop" />
+                    <div class="product-action-link">
+                      <a href="#">
+                        <svg
+                          width="20"
+                          height="16"
+                          viewBox="0 0 20 16"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M0 4.65674C0.0739267 4.29264 0.123659 3.92204 0.225812 3.56445C0.854861 1.35126 2.93556 -0.0934268 5.3039 0.0145019C6.89803 0.0873213 8.24081 0.72189 9.43842 1.69845C9.47605 1.72966 9.51369 1.76087 9.56208 1.79988C9.72606 1.67244 9.88601 1.54111 10.0527 1.41758C11.0352 0.691982 12.1213 0.210854 13.3579 0.0470106C16.0555 -0.311885 18.5287 1.42018 19.026 4.01177C19.3352 5.6203 18.9373 7.07928 18.1026 8.45765C17.3728 9.66437 16.4252 10.6994 15.3794 11.6539C13.7356 13.1519 11.9089 14.4106 9.97338 15.5302C9.69918 15.6889 9.44783 15.6954 9.16959 15.5341C6.93835 14.2429 4.84421 12.7787 3.03368 10.9608C1.97317 9.89843 1.04841 8.73853 0.467754 7.35366C0.24463 6.82182 0.088712 6.27177 0.0309148 5.69832C0.0282265 5.66321 0.010753 5.6307 0 5.59689C0 5.28351 0 4.97012 0 4.65674ZM5.1211 1.16791C3.49875 1.1289 2.0471 2.07555 1.4866 3.54754C1.01078 4.79848 1.13444 6.0169 1.71107 7.20932C2.28904 8.40434 3.1318 9.4121 4.08075 10.3419C5.68294 11.9114 7.50826 13.2026 9.44783 14.3495C9.5446 14.4067 9.60912 14.395 9.69783 14.3417C11.167 13.4744 12.5689 12.5173 13.8646 11.4198C15.0931 10.3796 16.2222 9.25476 17.0569 7.8829C17.7276 6.7802 18.1161 5.61249 17.8634 4.31345C17.5838 2.87526 16.7746 1.84799 15.3176 1.36816C14.1321 0.976758 12.9842 1.16401 11.8793 1.67634C11.1871 1.99753 10.5863 2.44095 10.0433 2.96239C9.73009 3.26277 9.41154 3.26017 9.09432 2.96629C8.97335 2.85316 8.85373 2.73873 8.72603 2.6334C7.68837 1.76867 6.52168 1.20042 5.1211 1.16791Z"
+                            fill="#fff"
+                          ></path>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="product-content">
+                    <h5><a href="#">GOOD Chef</a></h5>
+                    <p>
+                      <i class="fa fa-star"></i><i class="fa fa-star"></i
+                      ><i class="fa fa-star"></i><i class="fa fa-star"></i
+                      ><i class="fa fa-star"></i>
+                    </p>
+                    <p class="text-des">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="product-col">
+                <div class="product-item">
+                  <div class="product-thumb">
+                    <img src="assets/images/shop/shopBy/03.png" alt="shop" />
+                    <div class="product-action-link">
+                      <a href="#">
+                        <svg
+                          width="20"
+                          height="16"
+                          viewBox="0 0 20 16"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M0 4.65674C0.0739267 4.29264 0.123659 3.92204 0.225812 3.56445C0.854861 1.35126 2.93556 -0.0934268 5.3039 0.0145019C6.89803 0.0873213 8.24081 0.72189 9.43842 1.69845C9.47605 1.72966 9.51369 1.76087 9.56208 1.79988C9.72606 1.67244 9.88601 1.54111 10.0527 1.41758C11.0352 0.691982 12.1213 0.210854 13.3579 0.0470106C16.0555 -0.311885 18.5287 1.42018 19.026 4.01177C19.3352 5.6203 18.9373 7.07928 18.1026 8.45765C17.3728 9.66437 16.4252 10.6994 15.3794 11.6539C13.7356 13.1519 11.9089 14.4106 9.97338 15.5302C9.69918 15.6889 9.44783 15.6954 9.16959 15.5341C6.93835 14.2429 4.84421 12.7787 3.03368 10.9608C1.97317 9.89843 1.04841 8.73853 0.467754 7.35366C0.24463 6.82182 0.088712 6.27177 0.0309148 5.69832C0.0282265 5.66321 0.010753 5.6307 0 5.59689C0 5.28351 0 4.97012 0 4.65674ZM5.1211 1.16791C3.49875 1.1289 2.0471 2.07555 1.4866 3.54754C1.01078 4.79848 1.13444 6.0169 1.71107 7.20932C2.28904 8.40434 3.1318 9.4121 4.08075 10.3419C5.68294 11.9114 7.50826 13.2026 9.44783 14.3495C9.5446 14.4067 9.60912 14.395 9.69783 14.3417C11.167 13.4744 12.5689 12.5173 13.8646 11.4198C15.0931 10.3796 16.2222 9.25476 17.0569 7.8829C17.7276 6.7802 18.1161 5.61249 17.8634 4.31345C17.5838 2.87526 16.7746 1.84799 15.3176 1.36816C14.1321 0.976758 12.9842 1.16401 11.8793 1.67634C11.1871 1.99753 10.5863 2.44095 10.0433 2.96239C9.73009 3.26277 9.41154 3.26017 9.09432 2.96629C8.97335 2.85316 8.85373 2.73873 8.72603 2.6334C7.68837 1.76867 6.52168 1.20042 5.1211 1.16791Z"
+                            fill="#fff"
+                          ></path>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="product-content">
+                    <h5><a href="#">BURGER KING</a></h5>
+                    <p>
+                      <i class="fa fa-star"></i><i class="fa fa-star"></i
+                      ><i class="fa fa-star"></i><i class="fa fa-star"></i
+                      ><i class="fa fa-star"></i>
+                    </p>
+                    <p class="text-des">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Velit sunt possimus corrupti.
+                    </p>
+                  </div>
+                </div>
+                <div class="product-list-item">
+                  <div class="product-thumb">
+                    <img src="assets/images/shop/shopBy/03.png" alt="shop" />
+                    <div class="product-action-link">
+                      <a href="#">
+                        <svg
+                          width="20"
+                          height="16"
+                          viewBox="0 0 20 16"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M0 4.65674C0.0739267 4.29264 0.123659 3.92204 0.225812 3.56445C0.854861 1.35126 2.93556 -0.0934268 5.3039 0.0145019C6.89803 0.0873213 8.24081 0.72189 9.43842 1.69845C9.47605 1.72966 9.51369 1.76087 9.56208 1.79988C9.72606 1.67244 9.88601 1.54111 10.0527 1.41758C11.0352 0.691982 12.1213 0.210854 13.3579 0.0470106C16.0555 -0.311885 18.5287 1.42018 19.026 4.01177C19.3352 5.6203 18.9373 7.07928 18.1026 8.45765C17.3728 9.66437 16.4252 10.6994 15.3794 11.6539C13.7356 13.1519 11.9089 14.4106 9.97338 15.5302C9.69918 15.6889 9.44783 15.6954 9.16959 15.5341C6.93835 14.2429 4.84421 12.7787 3.03368 10.9608C1.97317 9.89843 1.04841 8.73853 0.467754 7.35366C0.24463 6.82182 0.088712 6.27177 0.0309148 5.69832C0.0282265 5.66321 0.010753 5.6307 0 5.59689C0 5.28351 0 4.97012 0 4.65674ZM5.1211 1.16791C3.49875 1.1289 2.0471 2.07555 1.4866 3.54754C1.01078 4.79848 1.13444 6.0169 1.71107 7.20932C2.28904 8.40434 3.1318 9.4121 4.08075 10.3419C5.68294 11.9114 7.50826 13.2026 9.44783 14.3495C9.5446 14.4067 9.60912 14.395 9.69783 14.3417C11.167 13.4744 12.5689 12.5173 13.8646 11.4198C15.0931 10.3796 16.2222 9.25476 17.0569 7.8829C17.7276 6.7802 18.1161 5.61249 17.8634 4.31345C17.5838 2.87526 16.7746 1.84799 15.3176 1.36816C14.1321 0.976758 12.9842 1.16401 11.8793 1.67634C11.1871 1.99753 10.5863 2.44095 10.0433 2.96239C9.73009 3.26277 9.41154 3.26017 9.09432 2.96629C8.97335 2.85316 8.85373 2.73873 8.72603 2.6334C7.68837 1.76867 6.52168 1.20042 5.1211 1.16791Z"
+                            fill="#fff"
+                          ></path>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="product-content">
+                    <h5><a href="#">BURGER KING</a></h5>
+                    <p>
+                      <i class="fa fa-star"></i><i class="fa fa-star"></i
+                      ><i class="fa fa-star"></i><i class="fa fa-star"></i
+                      ><i class="fa fa-star"></i>
+                    </p>
+                    <p class="text-des">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="product-col">
+                <div class="product-item">
+                  <div class="product-thumb">
+                    <img src="assets/images/shop/shopBy/04.png" alt="shop" />
+                    <div class="product-action-link">
+                      <a href="#">
+                        <svg
+                          width="20"
+                          height="16"
+                          viewBox="0 0 20 16"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M0 4.65674C0.0739267 4.29264 0.123659 3.92204 0.225812 3.56445C0.854861 1.35126 2.93556 -0.0934268 5.3039 0.0145019C6.89803 0.0873213 8.24081 0.72189 9.43842 1.69845C9.47605 1.72966 9.51369 1.76087 9.56208 1.79988C9.72606 1.67244 9.88601 1.54111 10.0527 1.41758C11.0352 0.691982 12.1213 0.210854 13.3579 0.0470106C16.0555 -0.311885 18.5287 1.42018 19.026 4.01177C19.3352 5.6203 18.9373 7.07928 18.1026 8.45765C17.3728 9.66437 16.4252 10.6994 15.3794 11.6539C13.7356 13.1519 11.9089 14.4106 9.97338 15.5302C9.69918 15.6889 9.44783 15.6954 9.16959 15.5341C6.93835 14.2429 4.84421 12.7787 3.03368 10.9608C1.97317 9.89843 1.04841 8.73853 0.467754 7.35366C0.24463 6.82182 0.088712 6.27177 0.0309148 5.69832C0.0282265 5.66321 0.010753 5.6307 0 5.59689C0 5.28351 0 4.97012 0 4.65674ZM5.1211 1.16791C3.49875 1.1289 2.0471 2.07555 1.4866 3.54754C1.01078 4.79848 1.13444 6.0169 1.71107 7.20932C2.28904 8.40434 3.1318 9.4121 4.08075 10.3419C5.68294 11.9114 7.50826 13.2026 9.44783 14.3495C9.5446 14.4067 9.60912 14.395 9.69783 14.3417C11.167 13.4744 12.5689 12.5173 13.8646 11.4198C15.0931 10.3796 16.2222 9.25476 17.0569 7.8829C17.7276 6.7802 18.1161 5.61249 17.8634 4.31345C17.5838 2.87526 16.7746 1.84799 15.3176 1.36816C14.1321 0.976758 12.9842 1.16401 11.8793 1.67634C11.1871 1.99753 10.5863 2.44095 10.0433 2.96239C9.73009 3.26277 9.41154 3.26017 9.09432 2.96629C8.97335 2.85316 8.85373 2.73873 8.72603 2.6334C7.68837 1.76867 6.52168 1.20042 5.1211 1.16791Z"
+                            fill="#fff"
+                          ></path>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="product-content">
+                    <h5><a href="#">Foodies</a></h5>
+                    <p>
+                      <i class="fa fa-star"></i><i class="fa fa-star"></i
+                      ><i class="fa fa-star"></i><i class="fa fa-star"></i
+                      ><i class="fa fa-star"></i>
+                    </p>
+                    <p class="text-des">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Velit sunt possimus corrupti.
+                    </p>
+                  </div>
+                </div>
+                <div class="product-list-item">
+                  <div class="product-thumb">
+                    <img src="assets/images/shop/shopBy/04.png" alt="shop" />
+                    <div class="product-action-link">
+                      <a href="#">
+                        <svg
+                          width="20"
+                          height="16"
+                          viewBox="0 0 20 16"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M0 4.65674C0.0739267 4.29264 0.123659 3.92204 0.225812 3.56445C0.854861 1.35126 2.93556 -0.0934268 5.3039 0.0145019C6.89803 0.0873213 8.24081 0.72189 9.43842 1.69845C9.47605 1.72966 9.51369 1.76087 9.56208 1.79988C9.72606 1.67244 9.88601 1.54111 10.0527 1.41758C11.0352 0.691982 12.1213 0.210854 13.3579 0.0470106C16.0555 -0.311885 18.5287 1.42018 19.026 4.01177C19.3352 5.6203 18.9373 7.07928 18.1026 8.45765C17.3728 9.66437 16.4252 10.6994 15.3794 11.6539C13.7356 13.1519 11.9089 14.4106 9.97338 15.5302C9.69918 15.6889 9.44783 15.6954 9.16959 15.5341C6.93835 14.2429 4.84421 12.7787 3.03368 10.9608C1.97317 9.89843 1.04841 8.73853 0.467754 7.35366C0.24463 6.82182 0.088712 6.27177 0.0309148 5.69832C0.0282265 5.66321 0.010753 5.6307 0 5.59689C0 5.28351 0 4.97012 0 4.65674ZM5.1211 1.16791C3.49875 1.1289 2.0471 2.07555 1.4866 3.54754C1.01078 4.79848 1.13444 6.0169 1.71107 7.20932C2.28904 8.40434 3.1318 9.4121 4.08075 10.3419C5.68294 11.9114 7.50826 13.2026 9.44783 14.3495C9.5446 14.4067 9.60912 14.395 9.69783 14.3417C11.167 13.4744 12.5689 12.5173 13.8646 11.4198C15.0931 10.3796 16.2222 9.25476 17.0569 7.8829C17.7276 6.7802 18.1161 5.61249 17.8634 4.31345C17.5838 2.87526 16.7746 1.84799 15.3176 1.36816C14.1321 0.976758 12.9842 1.16401 11.8793 1.67634C11.1871 1.99753 10.5863 2.44095 10.0433 2.96239C9.73009 3.26277 9.41154 3.26017 9.09432 2.96629C8.97335 2.85316 8.85373 2.73873 8.72603 2.6334C7.68837 1.76867 6.52168 1.20042 5.1211 1.16791Z"
+                            fill="#fff"
+                          ></path>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="product-content">
+                    <h5><a href="#">Foodies</a></h5>
+                    <p>
+                      <i class="fa fa-star"></i><i class="fa fa-star"></i
+                      ><i class="fa fa-star"></i><i class="fa fa-star"></i
+                      ><i class="fa fa-star"></i>
+                    </p>
+                    <p class="text-des">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="product-col">
+                <div class="product-item">
+                  <div class="product-thumb">
+                    <img src="assets/images/shop/shopBy/05.png" alt="shop" />
+                    <div class="product-action-link">
+                      <a href="#">
+                        <svg
+                          width="20"
+                          height="16"
+                          viewBox="0 0 20 16"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M0 4.65674C0.0739267 4.29264 0.123659 3.92204 0.225812 3.56445C0.854861 1.35126 2.93556 -0.0934268 5.3039 0.0145019C6.89803 0.0873213 8.24081 0.72189 9.43842 1.69845C9.47605 1.72966 9.51369 1.76087 9.56208 1.79988C9.72606 1.67244 9.88601 1.54111 10.0527 1.41758C11.0352 0.691982 12.1213 0.210854 13.3579 0.0470106C16.0555 -0.311885 18.5287 1.42018 19.026 4.01177C19.3352 5.6203 18.9373 7.07928 18.1026 8.45765C17.3728 9.66437 16.4252 10.6994 15.3794 11.6539C13.7356 13.1519 11.9089 14.4106 9.97338 15.5302C9.69918 15.6889 9.44783 15.6954 9.16959 15.5341C6.93835 14.2429 4.84421 12.7787 3.03368 10.9608C1.97317 9.89843 1.04841 8.73853 0.467754 7.35366C0.24463 6.82182 0.088712 6.27177 0.0309148 5.69832C0.0282265 5.66321 0.010753 5.6307 0 5.59689C0 5.28351 0 4.97012 0 4.65674ZM5.1211 1.16791C3.49875 1.1289 2.0471 2.07555 1.4866 3.54754C1.01078 4.79848 1.13444 6.0169 1.71107 7.20932C2.28904 8.40434 3.1318 9.4121 4.08075 10.3419C5.68294 11.9114 7.50826 13.2026 9.44783 14.3495C9.5446 14.4067 9.60912 14.395 9.69783 14.3417C11.167 13.4744 12.5689 12.5173 13.8646 11.4198C15.0931 10.3796 16.2222 9.25476 17.0569 7.8829C17.7276 6.7802 18.1161 5.61249 17.8634 4.31345C17.5838 2.87526 16.7746 1.84799 15.3176 1.36816C14.1321 0.976758 12.9842 1.16401 11.8793 1.67634C11.1871 1.99753 10.5863 2.44095 10.0433 2.96239C9.73009 3.26277 9.41154 3.26017 9.09432 2.96629C8.97335 2.85316 8.85373 2.73873 8.72603 2.6334C7.68837 1.76867 6.52168 1.20042 5.1211 1.16791Z"
+                            fill="#fff"
+                          ></path>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="product-content">
+                    <h5><a href="#">Custard apple</a></h5>
+                    <p>
+                      <i class="fa fa-star"></i><i class="fa fa-star"></i
+                      ><i class="fa fa-star"></i><i class="fa fa-star"></i
+                      ><i class="fa fa-star"></i>
+                    </p>
+                    <p class="text-des">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Velit sunt possimus corrupti.
+                    </p>
+                  </div>
+                </div>
+                <div class="product-list-item">
+                  <div class="product-thumb">
+                    <img src="assets/images/shop/shopBy/05.png" alt="shop" />
+                    <div class="product-action-link">
+                      <a href="#">
+                        <svg
+                          width="20"
+                          height="16"
+                          viewBox="0 0 20 16"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M0 4.65674C0.0739267 4.29264 0.123659 3.92204 0.225812 3.56445C0.854861 1.35126 2.93556 -0.0934268 5.3039 0.0145019C6.89803 0.0873213 8.24081 0.72189 9.43842 1.69845C9.47605 1.72966 9.51369 1.76087 9.56208 1.79988C9.72606 1.67244 9.88601 1.54111 10.0527 1.41758C11.0352 0.691982 12.1213 0.210854 13.3579 0.0470106C16.0555 -0.311885 18.5287 1.42018 19.026 4.01177C19.3352 5.6203 18.9373 7.07928 18.1026 8.45765C17.3728 9.66437 16.4252 10.6994 15.3794 11.6539C13.7356 13.1519 11.9089 14.4106 9.97338 15.5302C9.69918 15.6889 9.44783 15.6954 9.16959 15.5341C6.93835 14.2429 4.84421 12.7787 3.03368 10.9608C1.97317 9.89843 1.04841 8.73853 0.467754 7.35366C0.24463 6.82182 0.088712 6.27177 0.0309148 5.69832C0.0282265 5.66321 0.010753 5.6307 0 5.59689C0 5.28351 0 4.97012 0 4.65674ZM5.1211 1.16791C3.49875 1.1289 2.0471 2.07555 1.4866 3.54754C1.01078 4.79848 1.13444 6.0169 1.71107 7.20932C2.28904 8.40434 3.1318 9.4121 4.08075 10.3419C5.68294 11.9114 7.50826 13.2026 9.44783 14.3495C9.5446 14.4067 9.60912 14.395 9.69783 14.3417C11.167 13.4744 12.5689 12.5173 13.8646 11.4198C15.0931 10.3796 16.2222 9.25476 17.0569 7.8829C17.7276 6.7802 18.1161 5.61249 17.8634 4.31345C17.5838 2.87526 16.7746 1.84799 15.3176 1.36816C14.1321 0.976758 12.9842 1.16401 11.8793 1.67634C11.1871 1.99753 10.5863 2.44095 10.0433 2.96239C9.73009 3.26277 9.41154 3.26017 9.09432 2.96629C8.97335 2.85316 8.85373 2.73873 8.72603 2.6334C7.68837 1.76867 6.52168 1.20042 5.1211 1.16791Z"
+                            fill="#fff"
+                          ></path>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="product-content">
+                    <h5><a href="#">Pizza Hut</a></h5>
+                    <p>
+                      <i class="fa fa-star"></i><i class="fa fa-star"></i
+                      ><i class="fa fa-star"></i><i class="fa fa-star"></i
+                      ><i class="fa fa-star"></i>
+                    </p>
+                    <p class="text-des">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="product-col">
+                <div class="product-item">
+                  <div class="product-thumb">
+                    <img src="assets/images/shop/shopBy/06.png" alt="shop" />
+                    <div class="product-action-link">
+                      <a href="#">
+                        <svg
+                          width="20"
+                          height="16"
+                          viewBox="0 0 20 16"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M0 4.65674C0.0739267 4.29264 0.123659 3.92204 0.225812 3.56445C0.854861 1.35126 2.93556 -0.0934268 5.3039 0.0145019C6.89803 0.0873213 8.24081 0.72189 9.43842 1.69845C9.47605 1.72966 9.51369 1.76087 9.56208 1.79988C9.72606 1.67244 9.88601 1.54111 10.0527 1.41758C11.0352 0.691982 12.1213 0.210854 13.3579 0.0470106C16.0555 -0.311885 18.5287 1.42018 19.026 4.01177C19.3352 5.6203 18.9373 7.07928 18.1026 8.45765C17.3728 9.66437 16.4252 10.6994 15.3794 11.6539C13.7356 13.1519 11.9089 14.4106 9.97338 15.5302C9.69918 15.6889 9.44783 15.6954 9.16959 15.5341C6.93835 14.2429 4.84421 12.7787 3.03368 10.9608C1.97317 9.89843 1.04841 8.73853 0.467754 7.35366C0.24463 6.82182 0.088712 6.27177 0.0309148 5.69832C0.0282265 5.66321 0.010753 5.6307 0 5.59689C0 5.28351 0 4.97012 0 4.65674ZM5.1211 1.16791C3.49875 1.1289 2.0471 2.07555 1.4866 3.54754C1.01078 4.79848 1.13444 6.0169 1.71107 7.20932C2.28904 8.40434 3.1318 9.4121 4.08075 10.3419C5.68294 11.9114 7.50826 13.2026 9.44783 14.3495C9.5446 14.4067 9.60912 14.395 9.69783 14.3417C11.167 13.4744 12.5689 12.5173 13.8646 11.4198C15.0931 10.3796 16.2222 9.25476 17.0569 7.8829C17.7276 6.7802 18.1161 5.61249 17.8634 4.31345C17.5838 2.87526 16.7746 1.84799 15.3176 1.36816C14.1321 0.976758 12.9842 1.16401 11.8793 1.67634C11.1871 1.99753 10.5863 2.44095 10.0433 2.96239C9.73009 3.26277 9.41154 3.26017 9.09432 2.96629C8.97335 2.85316 8.85373 2.73873 8.72603 2.6334C7.68837 1.76867 6.52168 1.20042 5.1211 1.16791Z"
+                            fill="#fff"
+                          ></path>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="product-content">
+                    <h5><a href="#">Fresh</a></h5>
+                    <p>
+                      <i class="fa fa-star"></i><i class="fa fa-star"></i
+                      ><i class="fa fa-star"></i><i class="fa fa-star"></i
+                      ><i class="fa fa-star"></i>
+                    </p>
+                    <p class="text-des">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Velit sunt possimus corrupti.
+                    </p>
+                  </div>
+                </div>
+                <div class="product-list-item">
+                  <div class="product-thumb">
+                    <img src="assets/images/shop/shopBy/06.png" alt="shop" />
+                    <div class="product-action-link">
+                      <a href="#">
+                        <svg
+                          width="20"
+                          height="16"
+                          viewBox="0 0 20 16"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M0 4.65674C0.0739267 4.29264 0.123659 3.92204 0.225812 3.56445C0.854861 1.35126 2.93556 -0.0934268 5.3039 0.0145019C6.89803 0.0873213 8.24081 0.72189 9.43842 1.69845C9.47605 1.72966 9.51369 1.76087 9.56208 1.79988C9.72606 1.67244 9.88601 1.54111 10.0527 1.41758C11.0352 0.691982 12.1213 0.210854 13.3579 0.0470106C16.0555 -0.311885 18.5287 1.42018 19.026 4.01177C19.3352 5.6203 18.9373 7.07928 18.1026 8.45765C17.3728 9.66437 16.4252 10.6994 15.3794 11.6539C13.7356 13.1519 11.9089 14.4106 9.97338 15.5302C9.69918 15.6889 9.44783 15.6954 9.16959 15.5341C6.93835 14.2429 4.84421 12.7787 3.03368 10.9608C1.97317 9.89843 1.04841 8.73853 0.467754 7.35366C0.24463 6.82182 0.088712 6.27177 0.0309148 5.69832C0.0282265 5.66321 0.010753 5.6307 0 5.59689C0 5.28351 0 4.97012 0 4.65674ZM5.1211 1.16791C3.49875 1.1289 2.0471 2.07555 1.4866 3.54754C1.01078 4.79848 1.13444 6.0169 1.71107 7.20932C2.28904 8.40434 3.1318 9.4121 4.08075 10.3419C5.68294 11.9114 7.50826 13.2026 9.44783 14.3495C9.5446 14.4067 9.60912 14.395 9.69783 14.3417C11.167 13.4744 12.5689 12.5173 13.8646 11.4198C15.0931 10.3796 16.2222 9.25476 17.0569 7.8829C17.7276 6.7802 18.1161 5.61249 17.8634 4.31345C17.5838 2.87526 16.7746 1.84799 15.3176 1.36816C14.1321 0.976758 12.9842 1.16401 11.8793 1.67634C11.1871 1.99753 10.5863 2.44095 10.0433 2.96239C9.73009 3.26277 9.41154 3.26017 9.09432 2.96629C8.97335 2.85316 8.85373 2.73873 8.72603 2.6334C7.68837 1.76867 6.52168 1.20042 5.1211 1.16791Z"
+                            fill="#fff"
+                          ></path>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="product-content">
+                    <h5><a href="#">Fresh</a></h5>
+                    <p>
+                      <i class="fa fa-star"></i><i class="fa fa-star"></i
+                      ><i class="fa fa-star"></i><i class="fa fa-star"></i
+                      ><i class="fa fa-star"></i>
+                    </p>
+                    <p class="text-des">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="product-col">
+                <div class="product-item">
+                  <div class="product-thumb">
+                    <img src="assets/images/shop/shopBy/01.png" alt="shop" />
+                    <div class="product-action-link">
+                      <a href="#">
+                        <svg
+                          width="20"
+                          height="16"
+                          viewBox="0 0 20 16"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M0 4.65674C0.0739267 4.29264 0.123659 3.92204 0.225812 3.56445C0.854861 1.35126 2.93556 -0.0934268 5.3039 0.0145019C6.89803 0.0873213 8.24081 0.72189 9.43842 1.69845C9.47605 1.72966 9.51369 1.76087 9.56208 1.79988C9.72606 1.67244 9.88601 1.54111 10.0527 1.41758C11.0352 0.691982 12.1213 0.210854 13.3579 0.0470106C16.0555 -0.311885 18.5287 1.42018 19.026 4.01177C19.3352 5.6203 18.9373 7.07928 18.1026 8.45765C17.3728 9.66437 16.4252 10.6994 15.3794 11.6539C13.7356 13.1519 11.9089 14.4106 9.97338 15.5302C9.69918 15.6889 9.44783 15.6954 9.16959 15.5341C6.93835 14.2429 4.84421 12.7787 3.03368 10.9608C1.97317 9.89843 1.04841 8.73853 0.467754 7.35366C0.24463 6.82182 0.088712 6.27177 0.0309148 5.69832C0.0282265 5.66321 0.010753 5.6307 0 5.59689C0 5.28351 0 4.97012 0 4.65674ZM5.1211 1.16791C3.49875 1.1289 2.0471 2.07555 1.4866 3.54754C1.01078 4.79848 1.13444 6.0169 1.71107 7.20932C2.28904 8.40434 3.1318 9.4121 4.08075 10.3419C5.68294 11.9114 7.50826 13.2026 9.44783 14.3495C9.5446 14.4067 9.60912 14.395 9.69783 14.3417C11.167 13.4744 12.5689 12.5173 13.8646 11.4198C15.0931 10.3796 16.2222 9.25476 17.0569 7.8829C17.7276 6.7802 18.1161 5.61249 17.8634 4.31345C17.5838 2.87526 16.7746 1.84799 15.3176 1.36816C14.1321 0.976758 12.9842 1.16401 11.8793 1.67634C11.1871 1.99753 10.5863 2.44095 10.0433 2.96239C9.73009 3.26277 9.41154 3.26017 9.09432 2.96629C8.97335 2.85316 8.85373 2.73873 8.72603 2.6334C7.68837 1.76867 6.52168 1.20042 5.1211 1.16791Z"
+                            fill="#fff"
+                          ></path>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="product-content">
+                    <h5><a href="#">KFC</a></h5>
+                    <p>
+                      <i class="fa fa-star"></i><i class="fa fa-star"></i
+                      ><i class="fa fa-star"></i><i class="fa fa-star"></i
+                      ><i class="fa fa-star"></i>
+                    </p>
+                    <p class="text-des">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Velit sunt possimus corrupti.
+                    </p>
+                  </div>
+                </div>
+                <div class="product-list-item">
+                  <div class="product-thumb">
+                    <img src="assets/images/shop/shopBy/01.png" alt="shop" />
+                    <div class="product-action-link">
+                      <a href="#">
+                        <svg
+                          width="20"
+                          height="16"
+                          viewBox="0 0 20 16"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M0 4.65674C0.0739267 4.29264 0.123659 3.92204 0.225812 3.56445C0.854861 1.35126 2.93556 -0.0934268 5.3039 0.0145019C6.89803 0.0873213 8.24081 0.72189 9.43842 1.69845C9.47605 1.72966 9.51369 1.76087 9.56208 1.79988C9.72606 1.67244 9.88601 1.54111 10.0527 1.41758C11.0352 0.691982 12.1213 0.210854 13.3579 0.0470106C16.0555 -0.311885 18.5287 1.42018 19.026 4.01177C19.3352 5.6203 18.9373 7.07928 18.1026 8.45765C17.3728 9.66437 16.4252 10.6994 15.3794 11.6539C13.7356 13.1519 11.9089 14.4106 9.97338 15.5302C9.69918 15.6889 9.44783 15.6954 9.16959 15.5341C6.93835 14.2429 4.84421 12.7787 3.03368 10.9608C1.97317 9.89843 1.04841 8.73853 0.467754 7.35366C0.24463 6.82182 0.088712 6.27177 0.0309148 5.69832C0.0282265 5.66321 0.010753 5.6307 0 5.59689C0 5.28351 0 4.97012 0 4.65674ZM5.1211 1.16791C3.49875 1.1289 2.0471 2.07555 1.4866 3.54754C1.01078 4.79848 1.13444 6.0169 1.71107 7.20932C2.28904 8.40434 3.1318 9.4121 4.08075 10.3419C5.68294 11.9114 7.50826 13.2026 9.44783 14.3495C9.5446 14.4067 9.60912 14.395 9.69783 14.3417C11.167 13.4744 12.5689 12.5173 13.8646 11.4198C15.0931 10.3796 16.2222 9.25476 17.0569 7.8829C17.7276 6.7802 18.1161 5.61249 17.8634 4.31345C17.5838 2.87526 16.7746 1.84799 15.3176 1.36816C14.1321 0.976758 12.9842 1.16401 11.8793 1.67634C11.1871 1.99753 10.5863 2.44095 10.0433 2.96239C9.73009 3.26277 9.41154 3.26017 9.09432 2.96629C8.97335 2.85316 8.85373 2.73873 8.72603 2.6334C7.68837 1.76867 6.52168 1.20042 5.1211 1.16791Z"
+                            fill="#fff"
+                          ></path>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="product-content">
+                    <h5><a href="#">KFC</a></h5>
+                    <p>
+                      <i class="fa fa-star"></i><i class="fa fa-star"></i
+                      ><i class="fa fa-star"></i><i class="fa fa-star"></i
+                      ><i class="fa fa-star"></i>
+                    </p>
+                    <p class="text-des">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="product-col">
+                <div class="product-item">
+                  <div class="product-thumb">
+                    <img src="assets/images/shop/shopBy/02.png" alt="shop" />
+                    <div class="product-action-link">
+                      <a href="#">
+                        <svg
+                          width="20"
+                          height="16"
+                          viewBox="0 0 20 16"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M0 4.65674C0.0739267 4.29264 0.123659 3.92204 0.225812 3.56445C0.854861 1.35126 2.93556 -0.0934268 5.3039 0.0145019C6.89803 0.0873213 8.24081 0.72189 9.43842 1.69845C9.47605 1.72966 9.51369 1.76087 9.56208 1.79988C9.72606 1.67244 9.88601 1.54111 10.0527 1.41758C11.0352 0.691982 12.1213 0.210854 13.3579 0.0470106C16.0555 -0.311885 18.5287 1.42018 19.026 4.01177C19.3352 5.6203 18.9373 7.07928 18.1026 8.45765C17.3728 9.66437 16.4252 10.6994 15.3794 11.6539C13.7356 13.1519 11.9089 14.4106 9.97338 15.5302C9.69918 15.6889 9.44783 15.6954 9.16959 15.5341C6.93835 14.2429 4.84421 12.7787 3.03368 10.9608C1.97317 9.89843 1.04841 8.73853 0.467754 7.35366C0.24463 6.82182 0.088712 6.27177 0.0309148 5.69832C0.0282265 5.66321 0.010753 5.6307 0 5.59689C0 5.28351 0 4.97012 0 4.65674ZM5.1211 1.16791C3.49875 1.1289 2.0471 2.07555 1.4866 3.54754C1.01078 4.79848 1.13444 6.0169 1.71107 7.20932C2.28904 8.40434 3.1318 9.4121 4.08075 10.3419C5.68294 11.9114 7.50826 13.2026 9.44783 14.3495C9.5446 14.4067 9.60912 14.395 9.69783 14.3417C11.167 13.4744 12.5689 12.5173 13.8646 11.4198C15.0931 10.3796 16.2222 9.25476 17.0569 7.8829C17.7276 6.7802 18.1161 5.61249 17.8634 4.31345C17.5838 2.87526 16.7746 1.84799 15.3176 1.36816C14.1321 0.976758 12.9842 1.16401 11.8793 1.67634C11.1871 1.99753 10.5863 2.44095 10.0433 2.96239C9.73009 3.26277 9.41154 3.26017 9.09432 2.96629C8.97335 2.85316 8.85373 2.73873 8.72603 2.6334C7.68837 1.76867 6.52168 1.20042 5.1211 1.16791Z"
+                            fill="#fff"
+                          ></path>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="product-content">
+                    <h5><a href="#">GOOD Chef</a></h5>
+                    <p>
+                      <i class="fa fa-star"></i><i class="fa fa-star"></i
+                      ><i class="fa fa-star"></i><i class="fa fa-star"></i
+                      ><i class="fa fa-star"></i>
+                    </p>
+                    <p class="text-des">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Velit sunt possimus corrupti.
+                    </p>
+                  </div>
+                </div>
+                <div class="product-list-item">
+                  <div class="product-thumb">
+                    <img src="assets/images/shop/shopBy/02.png" alt="shop" />
+                    <div class="product-action-link">
+                      <a href="#">
+                        <svg
+                          width="20"
+                          height="16"
+                          viewBox="0 0 20 16"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M0 4.65674C0.0739267 4.29264 0.123659 3.92204 0.225812 3.56445C0.854861 1.35126 2.93556 -0.0934268 5.3039 0.0145019C6.89803 0.0873213 8.24081 0.72189 9.43842 1.69845C9.47605 1.72966 9.51369 1.76087 9.56208 1.79988C9.72606 1.67244 9.88601 1.54111 10.0527 1.41758C11.0352 0.691982 12.1213 0.210854 13.3579 0.0470106C16.0555 -0.311885 18.5287 1.42018 19.026 4.01177C19.3352 5.6203 18.9373 7.07928 18.1026 8.45765C17.3728 9.66437 16.4252 10.6994 15.3794 11.6539C13.7356 13.1519 11.9089 14.4106 9.97338 15.5302C9.69918 15.6889 9.44783 15.6954 9.16959 15.5341C6.93835 14.2429 4.84421 12.7787 3.03368 10.9608C1.97317 9.89843 1.04841 8.73853 0.467754 7.35366C0.24463 6.82182 0.088712 6.27177 0.0309148 5.69832C0.0282265 5.66321 0.010753 5.6307 0 5.59689C0 5.28351 0 4.97012 0 4.65674ZM5.1211 1.16791C3.49875 1.1289 2.0471 2.07555 1.4866 3.54754C1.01078 4.79848 1.13444 6.0169 1.71107 7.20932C2.28904 8.40434 3.1318 9.4121 4.08075 10.3419C5.68294 11.9114 7.50826 13.2026 9.44783 14.3495C9.5446 14.4067 9.60912 14.395 9.69783 14.3417C11.167 13.4744 12.5689 12.5173 13.8646 11.4198C15.0931 10.3796 16.2222 9.25476 17.0569 7.8829C17.7276 6.7802 18.1161 5.61249 17.8634 4.31345C17.5838 2.87526 16.7746 1.84799 15.3176 1.36816C14.1321 0.976758 12.9842 1.16401 11.8793 1.67634C11.1871 1.99753 10.5863 2.44095 10.0433 2.96239C9.73009 3.26277 9.41154 3.26017 9.09432 2.96629C8.97335 2.85316 8.85373 2.73873 8.72603 2.6334C7.68837 1.76867 6.52168 1.20042 5.1211 1.16791Z"
+                            fill="#fff"
+                          ></path>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="product-content">
+                    <h5><a href="#">GOOD Chef</a></h5>
+                    <p>
+                      <i class="fa fa-star"></i><i class="fa fa-star"></i
+                      ><i class="fa fa-star"></i><i class="fa fa-star"></i
+                      ><i class="fa fa-star"></i>
+                    </p>
+                    <p class="text-des">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="product-col">
+                <div class="product-item">
+                  <div class="product-thumb">
+                    <img src="assets/images/shop/shopBy/03.png" alt="shop" />
+                    <div class="product-action-link">
+                      <a href="#">
+                        <svg
+                          width="20"
+                          height="16"
+                          viewBox="0 0 20 16"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M0 4.65674C0.0739267 4.29264 0.123659 3.92204 0.225812 3.56445C0.854861 1.35126 2.93556 -0.0934268 5.3039 0.0145019C6.89803 0.0873213 8.24081 0.72189 9.43842 1.69845C9.47605 1.72966 9.51369 1.76087 9.56208 1.79988C9.72606 1.67244 9.88601 1.54111 10.0527 1.41758C11.0352 0.691982 12.1213 0.210854 13.3579 0.0470106C16.0555 -0.311885 18.5287 1.42018 19.026 4.01177C19.3352 5.6203 18.9373 7.07928 18.1026 8.45765C17.3728 9.66437 16.4252 10.6994 15.3794 11.6539C13.7356 13.1519 11.9089 14.4106 9.97338 15.5302C9.69918 15.6889 9.44783 15.6954 9.16959 15.5341C6.93835 14.2429 4.84421 12.7787 3.03368 10.9608C1.97317 9.89843 1.04841 8.73853 0.467754 7.35366C0.24463 6.82182 0.088712 6.27177 0.0309148 5.69832C0.0282265 5.66321 0.010753 5.6307 0 5.59689C0 5.28351 0 4.97012 0 4.65674ZM5.1211 1.16791C3.49875 1.1289 2.0471 2.07555 1.4866 3.54754C1.01078 4.79848 1.13444 6.0169 1.71107 7.20932C2.28904 8.40434 3.1318 9.4121 4.08075 10.3419C5.68294 11.9114 7.50826 13.2026 9.44783 14.3495C9.5446 14.4067 9.60912 14.395 9.69783 14.3417C11.167 13.4744 12.5689 12.5173 13.8646 11.4198C15.0931 10.3796 16.2222 9.25476 17.0569 7.8829C17.7276 6.7802 18.1161 5.61249 17.8634 4.31345C17.5838 2.87526 16.7746 1.84799 15.3176 1.36816C14.1321 0.976758 12.9842 1.16401 11.8793 1.67634C11.1871 1.99753 10.5863 2.44095 10.0433 2.96239C9.73009 3.26277 9.41154 3.26017 9.09432 2.96629C8.97335 2.85316 8.85373 2.73873 8.72603 2.6334C7.68837 1.76867 6.52168 1.20042 5.1211 1.16791Z"
+                            fill="#fff"
+                          ></path>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="product-content">
+                    <h5><a href="#">Custard apple</a></h5>
+                    <p>
+                      <i class="fa fa-star"></i><i class="fa fa-star"></i
+                      ><i class="fa fa-star"></i><i class="fa fa-star"></i
+                      ><i class="fa fa-star"></i>
+                    </p>
+                    <p class="text-des">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Velit sunt possimus corrupti.
+                    </p>
+                  </div>
+                </div>
+                <div class="product-list-item">
+                  <div class="product-thumb">
+                    <img src="assets/images/shop/shopBy/03.png" alt="shop" />
+                    <div class="product-action-link">
+                      <a href="#">
+                        <svg
+                          width="20"
+                          height="16"
+                          viewBox="0 0 20 16"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M0 4.65674C0.0739267 4.29264 0.123659 3.92204 0.225812 3.56445C0.854861 1.35126 2.93556 -0.0934268 5.3039 0.0145019C6.89803 0.0873213 8.24081 0.72189 9.43842 1.69845C9.47605 1.72966 9.51369 1.76087 9.56208 1.79988C9.72606 1.67244 9.88601 1.54111 10.0527 1.41758C11.0352 0.691982 12.1213 0.210854 13.3579 0.0470106C16.0555 -0.311885 18.5287 1.42018 19.026 4.01177C19.3352 5.6203 18.9373 7.07928 18.1026 8.45765C17.3728 9.66437 16.4252 10.6994 15.3794 11.6539C13.7356 13.1519 11.9089 14.4106 9.97338 15.5302C9.69918 15.6889 9.44783 15.6954 9.16959 15.5341C6.93835 14.2429 4.84421 12.7787 3.03368 10.9608C1.97317 9.89843 1.04841 8.73853 0.467754 7.35366C0.24463 6.82182 0.088712 6.27177 0.0309148 5.69832C0.0282265 5.66321 0.010753 5.6307 0 5.59689C0 5.28351 0 4.97012 0 4.65674ZM5.1211 1.16791C3.49875 1.1289 2.0471 2.07555 1.4866 3.54754C1.01078 4.79848 1.13444 6.0169 1.71107 7.20932C2.28904 8.40434 3.1318 9.4121 4.08075 10.3419C5.68294 11.9114 7.50826 13.2026 9.44783 14.3495C9.5446 14.4067 9.60912 14.395 9.69783 14.3417C11.167 13.4744 12.5689 12.5173 13.8646 11.4198C15.0931 10.3796 16.2222 9.25476 17.0569 7.8829C17.7276 6.7802 18.1161 5.61249 17.8634 4.31345C17.5838 2.87526 16.7746 1.84799 15.3176 1.36816C14.1321 0.976758 12.9842 1.16401 11.8793 1.67634C11.1871 1.99753 10.5863 2.44095 10.0433 2.96239C9.73009 3.26277 9.41154 3.26017 9.09432 2.96629C8.97335 2.85316 8.85373 2.73873 8.72603 2.6334C7.68837 1.76867 6.52168 1.20042 5.1211 1.16791Z"
+                            fill="#fff"
+                          ></path>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="product-content">
+                    <h5><a href="#">Product Title Here</a></h5>
+                    <p>
+                      <i class="fa fa-star"></i><i class="fa fa-star"></i
+                      ><i class="fa fa-star"></i><i class="fa fa-star"></i
+                      ><i class="fa fa-star"></i>
+                    </p>
+                    <p class="text-des">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="product-col">
+                <div class="product-item">
+                  <div class="product-thumb">
+                    <img src="assets/images/shop/shopBy/05.png" alt="shop" />
+                    <div class="product-action-link">
+                      <a href="#">
+                        <svg
+                          width="20"
+                          height="16"
+                          viewBox="0 0 20 16"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M0 4.65674C0.0739267 4.29264 0.123659 3.92204 0.225812 3.56445C0.854861 1.35126 2.93556 -0.0934268 5.3039 0.0145019C6.89803 0.0873213 8.24081 0.72189 9.43842 1.69845C9.47605 1.72966 9.51369 1.76087 9.56208 1.79988C9.72606 1.67244 9.88601 1.54111 10.0527 1.41758C11.0352 0.691982 12.1213 0.210854 13.3579 0.0470106C16.0555 -0.311885 18.5287 1.42018 19.026 4.01177C19.3352 5.6203 18.9373 7.07928 18.1026 8.45765C17.3728 9.66437 16.4252 10.6994 15.3794 11.6539C13.7356 13.1519 11.9089 14.4106 9.97338 15.5302C9.69918 15.6889 9.44783 15.6954 9.16959 15.5341C6.93835 14.2429 4.84421 12.7787 3.03368 10.9608C1.97317 9.89843 1.04841 8.73853 0.467754 7.35366C0.24463 6.82182 0.088712 6.27177 0.0309148 5.69832C0.0282265 5.66321 0.010753 5.6307 0 5.59689C0 5.28351 0 4.97012 0 4.65674ZM5.1211 1.16791C3.49875 1.1289 2.0471 2.07555 1.4866 3.54754C1.01078 4.79848 1.13444 6.0169 1.71107 7.20932C2.28904 8.40434 3.1318 9.4121 4.08075 10.3419C5.68294 11.9114 7.50826 13.2026 9.44783 14.3495C9.5446 14.4067 9.60912 14.395 9.69783 14.3417C11.167 13.4744 12.5689 12.5173 13.8646 11.4198C15.0931 10.3796 16.2222 9.25476 17.0569 7.8829C17.7276 6.7802 18.1161 5.61249 17.8634 4.31345C17.5838 2.87526 16.7746 1.84799 15.3176 1.36816C14.1321 0.976758 12.9842 1.16401 11.8793 1.67634C11.1871 1.99753 10.5863 2.44095 10.0433 2.96239C9.73009 3.26277 9.41154 3.26017 9.09432 2.96629C8.97335 2.85316 8.85373 2.73873 8.72603 2.6334C7.68837 1.76867 6.52168 1.20042 5.1211 1.16791Z"
+                            fill="#fff"
+                          ></path>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="product-content">
+                    <h5><a href="#">Pizza Hut</a></h5>
+                    <p>
+                      <i class="fa fa-star"></i><i class="fa fa-star"></i
+                      ><i class="fa fa-star"></i><i class="fa fa-star"></i
+                      ><i class="fa fa-star"></i>
+                    </p>
+                    <p class="text-des">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Velit sunt possimus corrupti.
+                    </p>
+                  </div>
+                </div>
+                <div class="product-list-item">
+                  <div class="product-thumb">
+                    <img src="assets/images/shop/shopBy/05.png" alt="shop" />
+                    <div class="product-action-link">
+                      <a href="#">
+                        <svg
+                          width="20"
+                          height="16"
+                          viewBox="0 0 20 16"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M0 4.65674C0.0739267 4.29264 0.123659 3.92204 0.225812 3.56445C0.854861 1.35126 2.93556 -0.0934268 5.3039 0.0145019C6.89803 0.0873213 8.24081 0.72189 9.43842 1.69845C9.47605 1.72966 9.51369 1.76087 9.56208 1.79988C9.72606 1.67244 9.88601 1.54111 10.0527 1.41758C11.0352 0.691982 12.1213 0.210854 13.3579 0.0470106C16.0555 -0.311885 18.5287 1.42018 19.026 4.01177C19.3352 5.6203 18.9373 7.07928 18.1026 8.45765C17.3728 9.66437 16.4252 10.6994 15.3794 11.6539C13.7356 13.1519 11.9089 14.4106 9.97338 15.5302C9.69918 15.6889 9.44783 15.6954 9.16959 15.5341C6.93835 14.2429 4.84421 12.7787 3.03368 10.9608C1.97317 9.89843 1.04841 8.73853 0.467754 7.35366C0.24463 6.82182 0.088712 6.27177 0.0309148 5.69832C0.0282265 5.66321 0.010753 5.6307 0 5.59689C0 5.28351 0 4.97012 0 4.65674ZM5.1211 1.16791C3.49875 1.1289 2.0471 2.07555 1.4866 3.54754C1.01078 4.79848 1.13444 6.0169 1.71107 7.20932C2.28904 8.40434 3.1318 9.4121 4.08075 10.3419C5.68294 11.9114 7.50826 13.2026 9.44783 14.3495C9.5446 14.4067 9.60912 14.395 9.69783 14.3417C11.167 13.4744 12.5689 12.5173 13.8646 11.4198C15.0931 10.3796 16.2222 9.25476 17.0569 7.8829C17.7276 6.7802 18.1161 5.61249 17.8634 4.31345C17.5838 2.87526 16.7746 1.84799 15.3176 1.36816C14.1321 0.976758 12.9842 1.16401 11.8793 1.67634C11.1871 1.99753 10.5863 2.44095 10.0433 2.96239C9.73009 3.26277 9.41154 3.26017 9.09432 2.96629C8.97335 2.85316 8.85373 2.73873 8.72603 2.6334C7.68837 1.76867 6.52168 1.20042 5.1211 1.16791Z"
+                            fill="#fff"
+                          ></path>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="product-content">
+                    <h5><a href="#">Pizza Hut</a></h5>
+                    <p>
+                      <i class="fa fa-star"></i><i class="fa fa-star"></i
+                      ><i class="fa fa-star"></i><i class="fa fa-star"></i
+                      ><i class="fa fa-star"></i>
+                    </p>
+                    <p class="text-des">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="product-col">
+                <div class="product-item">
+                  <div class="product-thumb">
+                    <img src="assets/images/shop/shopBy/04.png" alt="shop" />
+                    <div class="product-action-link">
+                      <a href="#">
+                        <svg
+                          width="20"
+                          height="16"
+                          viewBox="0 0 20 16"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M0 4.65674C0.0739267 4.29264 0.123659 3.92204 0.225812 3.56445C0.854861 1.35126 2.93556 -0.0934268 5.3039 0.0145019C6.89803 0.0873213 8.24081 0.72189 9.43842 1.69845C9.47605 1.72966 9.51369 1.76087 9.56208 1.79988C9.72606 1.67244 9.88601 1.54111 10.0527 1.41758C11.0352 0.691982 12.1213 0.210854 13.3579 0.0470106C16.0555 -0.311885 18.5287 1.42018 19.026 4.01177C19.3352 5.6203 18.9373 7.07928 18.1026 8.45765C17.3728 9.66437 16.4252 10.6994 15.3794 11.6539C13.7356 13.1519 11.9089 14.4106 9.97338 15.5302C9.69918 15.6889 9.44783 15.6954 9.16959 15.5341C6.93835 14.2429 4.84421 12.7787 3.03368 10.9608C1.97317 9.89843 1.04841 8.73853 0.467754 7.35366C0.24463 6.82182 0.088712 6.27177 0.0309148 5.69832C0.0282265 5.66321 0.010753 5.6307 0 5.59689C0 5.28351 0 4.97012 0 4.65674ZM5.1211 1.16791C3.49875 1.1289 2.0471 2.07555 1.4866 3.54754C1.01078 4.79848 1.13444 6.0169 1.71107 7.20932C2.28904 8.40434 3.1318 9.4121 4.08075 10.3419C5.68294 11.9114 7.50826 13.2026 9.44783 14.3495C9.5446 14.4067 9.60912 14.395 9.69783 14.3417C11.167 13.4744 12.5689 12.5173 13.8646 11.4198C15.0931 10.3796 16.2222 9.25476 17.0569 7.8829C17.7276 6.7802 18.1161 5.61249 17.8634 4.31345C17.5838 2.87526 16.7746 1.84799 15.3176 1.36816C14.1321 0.976758 12.9842 1.16401 11.8793 1.67634C11.1871 1.99753 10.5863 2.44095 10.0433 2.96239C9.73009 3.26277 9.41154 3.26017 9.09432 2.96629C8.97335 2.85316 8.85373 2.73873 8.72603 2.6334C7.68837 1.76867 6.52168 1.20042 5.1211 1.16791Z"
+                            fill="#fff"
+                          ></path>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="product-content">
+                    <h5><a href="#">Foodies</a></h5>
+                    <p>
+                      <i class="fa fa-star"></i><i class="fa fa-star"></i
+                      ><i class="fa fa-star"></i><i class="fa fa-star"></i
+                      ><i class="fa fa-star"></i>
+                    </p>
+                    <p class="text-des">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Velit sunt possimus corrupti.
+                    </p>
+                  </div>
+                </div>
+                <div class="product-list-item">
+                  <div class="product-thumb">
+                    <img src="assets/images/shop/shopBy/04.png" alt="shop" />
+                    <div class="product-action-link">
+                      <a href="#">
+                        <svg
+                          width="20"
+                          height="16"
+                          viewBox="0 0 20 16"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M0 4.65674C0.0739267 4.29264 0.123659 3.92204 0.225812 3.56445C0.854861 1.35126 2.93556 -0.0934268 5.3039 0.0145019C6.89803 0.0873213 8.24081 0.72189 9.43842 1.69845C9.47605 1.72966 9.51369 1.76087 9.56208 1.79988C9.72606 1.67244 9.88601 1.54111 10.0527 1.41758C11.0352 0.691982 12.1213 0.210854 13.3579 0.0470106C16.0555 -0.311885 18.5287 1.42018 19.026 4.01177C19.3352 5.6203 18.9373 7.07928 18.1026 8.45765C17.3728 9.66437 16.4252 10.6994 15.3794 11.6539C13.7356 13.1519 11.9089 14.4106 9.97338 15.5302C9.69918 15.6889 9.44783 15.6954 9.16959 15.5341C6.93835 14.2429 4.84421 12.7787 3.03368 10.9608C1.97317 9.89843 1.04841 8.73853 0.467754 7.35366C0.24463 6.82182 0.088712 6.27177 0.0309148 5.69832C0.0282265 5.66321 0.010753 5.6307 0 5.59689C0 5.28351 0 4.97012 0 4.65674ZM5.1211 1.16791C3.49875 1.1289 2.0471 2.07555 1.4866 3.54754C1.01078 4.79848 1.13444 6.0169 1.71107 7.20932C2.28904 8.40434 3.1318 9.4121 4.08075 10.3419C5.68294 11.9114 7.50826 13.2026 9.44783 14.3495C9.5446 14.4067 9.60912 14.395 9.69783 14.3417C11.167 13.4744 12.5689 12.5173 13.8646 11.4198C15.0931 10.3796 16.2222 9.25476 17.0569 7.8829C17.7276 6.7802 18.1161 5.61249 17.8634 4.31345C17.5838 2.87526 16.7746 1.84799 15.3176 1.36816C14.1321 0.976758 12.9842 1.16401 11.8793 1.67634C11.1871 1.99753 10.5863 2.44095 10.0433 2.96239C9.73009 3.26277 9.41154 3.26017 9.09432 2.96629C8.97335 2.85316 8.85373 2.73873 8.72603 2.6334C7.68837 1.76867 6.52168 1.20042 5.1211 1.16791Z"
+                            fill="#fff"
+                          ></path>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="product-content">
+                    <h5><a href="#">Foodies</a></h5>
+                    <p>
+                      <i class="fa fa-star"></i><i class="fa fa-star"></i
+                      ><i class="fa fa-star"></i><i class="fa fa-star"></i
+                      ><i class="fa fa-star"></i>
+                    </p>
+                    <p class="text-des">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="product-col">
+                <div class="product-item">
+                  <div class="product-thumb">
+                    <img src="assets/images/shop/02.png" alt="shop" />
+                    <div class="product-action-link">
+                      <a href="#">
+                        <svg
+                          width="20"
+                          height="16"
+                          viewBox="0 0 20 16"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M0 4.65674C0.0739267 4.29264 0.123659 3.92204 0.225812 3.56445C0.854861 1.35126 2.93556 -0.0934268 5.3039 0.0145019C6.89803 0.0873213 8.24081 0.72189 9.43842 1.69845C9.47605 1.72966 9.51369 1.76087 9.56208 1.79988C9.72606 1.67244 9.88601 1.54111 10.0527 1.41758C11.0352 0.691982 12.1213 0.210854 13.3579 0.0470106C16.0555 -0.311885 18.5287 1.42018 19.026 4.01177C19.3352 5.6203 18.9373 7.07928 18.1026 8.45765C17.3728 9.66437 16.4252 10.6994 15.3794 11.6539C13.7356 13.1519 11.9089 14.4106 9.97338 15.5302C9.69918 15.6889 9.44783 15.6954 9.16959 15.5341C6.93835 14.2429 4.84421 12.7787 3.03368 10.9608C1.97317 9.89843 1.04841 8.73853 0.467754 7.35366C0.24463 6.82182 0.088712 6.27177 0.0309148 5.69832C0.0282265 5.66321 0.010753 5.6307 0 5.59689C0 5.28351 0 4.97012 0 4.65674ZM5.1211 1.16791C3.49875 1.1289 2.0471 2.07555 1.4866 3.54754C1.01078 4.79848 1.13444 6.0169 1.71107 7.20932C2.28904 8.40434 3.1318 9.4121 4.08075 10.3419C5.68294 11.9114 7.50826 13.2026 9.44783 14.3495C9.5446 14.4067 9.60912 14.395 9.69783 14.3417C11.167 13.4744 12.5689 12.5173 13.8646 11.4198C15.0931 10.3796 16.2222 9.25476 17.0569 7.8829C17.7276 6.7802 18.1161 5.61249 17.8634 4.31345C17.5838 2.87526 16.7746 1.84799 15.3176 1.36816C14.1321 0.976758 12.9842 1.16401 11.8793 1.67634C11.1871 1.99753 10.5863 2.44095 10.0433 2.96239C9.73009 3.26277 9.41154 3.26017 9.09432 2.96629C8.97335 2.85316 8.85373 2.73873 8.72603 2.6334C7.68837 1.76867 6.52168 1.20042 5.1211 1.16791Z"
+                            fill="#fff"
+                          ></path>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="product-content">
+                    <h5><a href="#">GOOD chef</a></h5>
+                    <p>
+                      <i class="fa fa-star"></i><i class="fa fa-star"></i
+                      ><i class="fa fa-star"></i><i class="fa fa-star"></i
+                      ><i class="fa fa-star"></i>
+                    </p>
+                    <p class="text-des">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Velit sunt possimus corrupti.
+                    </p>
+                  </div>
+                </div>
+                <div class="product-list-item">
+                  <div class="product-thumb">
+                    <img src="assets/images/shop/02.png" alt="shop" />
+                    <div class="product-action-link">
+                      <a href="#">
+                        <svg
+                          width="20"
+                          height="16"
+                          viewBox="0 0 20 16"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M0 4.65674C0.0739267 4.29264 0.123659 3.92204 0.225812 3.56445C0.854861 1.35126 2.93556 -0.0934268 5.3039 0.0145019C6.89803 0.0873213 8.24081 0.72189 9.43842 1.69845C9.47605 1.72966 9.51369 1.76087 9.56208 1.79988C9.72606 1.67244 9.88601 1.54111 10.0527 1.41758C11.0352 0.691982 12.1213 0.210854 13.3579 0.0470106C16.0555 -0.311885 18.5287 1.42018 19.026 4.01177C19.3352 5.6203 18.9373 7.07928 18.1026 8.45765C17.3728 9.66437 16.4252 10.6994 15.3794 11.6539C13.7356 13.1519 11.9089 14.4106 9.97338 15.5302C9.69918 15.6889 9.44783 15.6954 9.16959 15.5341C6.93835 14.2429 4.84421 12.7787 3.03368 10.9608C1.97317 9.89843 1.04841 8.73853 0.467754 7.35366C0.24463 6.82182 0.088712 6.27177 0.0309148 5.69832C0.0282265 5.66321 0.010753 5.6307 0 5.59689C0 5.28351 0 4.97012 0 4.65674ZM5.1211 1.16791C3.49875 1.1289 2.0471 2.07555 1.4866 3.54754C1.01078 4.79848 1.13444 6.0169 1.71107 7.20932C2.28904 8.40434 3.1318 9.4121 4.08075 10.3419C5.68294 11.9114 7.50826 13.2026 9.44783 14.3495C9.5446 14.4067 9.60912 14.395 9.69783 14.3417C11.167 13.4744 12.5689 12.5173 13.8646 11.4198C15.0931 10.3796 16.2222 9.25476 17.0569 7.8829C17.7276 6.7802 18.1161 5.61249 17.8634 4.31345C17.5838 2.87526 16.7746 1.84799 15.3176 1.36816C14.1321 0.976758 12.9842 1.16401 11.8793 1.67634C11.1871 1.99753 10.5863 2.44095 10.0433 2.96239C9.73009 3.26277 9.41154 3.26017 9.09432 2.96629C8.97335 2.85316 8.85373 2.73873 8.72603 2.6334C7.68837 1.76867 6.52168 1.20042 5.1211 1.16791Z"
+                            fill="#fff"
+                          ></path>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="product-content">
+                    <h5><a href="#">GOOD chef</a></h5>
+                    <p>
+                      <i class="fa fa-star"></i><i class="fa fa-star"></i
+                      ><i class="fa fa-star"></i><i class="fa fa-star"></i
+                      ><i class="fa fa-star"></i>
+                    </p>
+                    <p class="text-des">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="allshop-header">
+              <h3>Shop By Brand</h3>
+            </div>
+            <div class="all-barnds">
+              <div class="brands-row">
+                <div class="brands-col">
+                  <div class="brand-item">
+                    <h4>SONY</h4>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Tempore!
+                    </p>
+                  </div>
+                </div>
+                <div class="brands-col">
+                  <div class="brand-item">
+                    <h4>adidos</h4>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Tempore!
+                    </p>
+                  </div>
+                </div>
+                <div class="brands-col">
+                  <div class="brand-item">
+                    <h4>NIKE</h4>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Tempore!
+                    </p>
+                  </div>
+                </div>
+                <div class="brands-col">
+                  <div class="brand-item">
+                    <h4>CocoCola</h4>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Tempore!
+                    </p>
+                  </div>
+                </div>
+                <div class="brands-col">
+                  <div class="brand-item">
+                    <h4>NIKE</h4>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Tempore!
+                    </p>
+                  </div>
+                </div>
+                <div class="brands-col">
+                  <div class="brand-item">
+                    <h4>adidos</h4>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Tempore!
+                    </p>
+                  </div>
+                </div>
+                <div class="brands-col">
+                  <div class="brand-item">
+                    <h4>SONY</h4>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Tempore!
+                    </p>
+                  </div>
+                </div>
+                <div class="brands-col">
+                  <div class="brand-item">
+                    <h4>CocoCola</h4>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Tempore!
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
+      </div>
     </div>
     <!-- shop view area ends  -->
-    
+
     <!-- optional js -->
     <script src="assets/js/vendors.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/function.js"></script>
-
-</body>
+  </body>
 </html>
