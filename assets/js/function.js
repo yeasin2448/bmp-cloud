@@ -97,7 +97,13 @@
           bigimage.data("owl.carousel").to(number, 300, true);
         });
     });
-      
+    
+
+    // add item
+    $('.item-ico').on('click', function(){
+      $('.cart-style').toggleClass('d-block');
+      $('.item-ico').toggleClass('crose');
+    })
 
     // product view mode change js
     $('.product-view-mode').on('click', 'a', function (e) {
@@ -175,6 +181,26 @@
       loop: true,
       margin: 10,
       nav: true,
+      dots: false,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 3
+        },
+        1000: {
+          items: 5
+        }
+      }
+    })
+
+    // new arrivals slider
+    $('.product-slider-js').owlCarousel ({
+      loop: true,
+      margin: 10,
+      nav: true,
+      navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
       dots: false,
       responsive: {
         0: {
