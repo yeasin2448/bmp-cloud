@@ -30,7 +30,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-3 col-12 sticky-widget pl-sm-0">
-            <div class="shop-left style-one">
+            <div class="shop-left style-one" id="filterSindeBar">
               <div class="widget-item mt-0">
                 <div class="widget-title">
                   <span>
@@ -380,35 +380,27 @@
                   <ul class="color-list">
                     <li>
                       <button type="button" class="picker-btn"></button>
-                      <span>Black</span>
                     </li>
                     <li>
                       <button type="button" class="picker-btn"></button>
-                      <span>White</span>
                     </li>
                     <li>
                       <button type="button" class="picker-btn"></button>
-                      <span>Red</span>
                     </li>
                     <li>
                       <button type="button" class="picker-btn"></button>
-                      <span>Blue</span>
                     </li>
                     <li>
                       <button type="button" class="picker-btn"></button>
-                      <span>Green</span>
                     </li>
                     <li>
                       <button type="button" class="picker-btn"></button>
-                      <span>Pink</span>
                     </li>
                     <li>
                       <button type="button" class="picker-btn"></button>
-                      <span>Yellow</span>
                     </li>
                     <li>
                       <button type="button" class="picker-btn"></button>
-                      <span>Grey</span>
                     </li>
                   </ul>
                 </div>
@@ -477,8 +469,19 @@
                 </div>
               </div>
             </div>
+            <div class="filter-overlay" id="filterOverlay"></div>
           </div>
           <div class="col-lg-9 col-12 sticky-widget">
+            <div class="filter-menu d-lg-none">
+              <div class="filter-menuBtn">
+                <button type="button" class="filterBtn">
+                  <i class="fa fa-bars"></i>
+                </button>
+              </div>
+              <div class="search-result">
+                <h4>Search Filter</h4>
+              </div>
+            </div>
             <div
               class="
                 shop-title
@@ -509,7 +512,7 @@
                 ></a>
               </div>
             </div>
-            <div class="product-title">
+            <div class="product-title d-none d-lg-block">
               <h4>Toys & Gifts</h4>
               <span>(Showing 100 food) </span>
             </div>

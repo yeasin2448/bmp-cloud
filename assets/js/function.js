@@ -1,6 +1,17 @@
 (function($){
 	'use strict';
 
+    // filter menu js
+    $('.filterBtn').on('click', function() {
+      $('#filterSindeBar').addClass('show')
+      $('#filterOverlay').addClass('show')
+    })
+
+    $('#filterOverlay').on('click', function() {
+      $('#filterOverlay').removeClass('show')
+      $('#filterSindeBar').removeClass('show')
+    })
+
     $(document).ready(function() {
         var bigimage = $("#big");
         var thumbs = $("#thumbs");
