@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- favicon hear -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <!-- google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- fontawesome css -->
+    <link rel="stylesheet" href="assets/css/all.min.css" />
+    <!-- animate css -->
+    <link rel="stylesheet" href="assets/css/animate.css" />
+    <!-- Bootstrap hear -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <!-- page css hear -->
+    <link rel="stylesheet" href="assets/css/app-ecommerce-shop.css" />
+    <!-- style css -->
+    <link rel="stylesheet" href="assets/sass/style.css" />
+
+    <title>British Market Place</title>
+  </head>
+  <body>
+    <!-- new address area start -->
+    <button
+      type="button"
+      class="btn btn-primary"
+      data-toggle="modal"
+      data-target="#exampleModal"
+      data-whatever="@mdo"
+    >
+      Open modal
+    </button>
+    <div
+      class="modal fade new-address"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Delivery Address</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <svg
+                width="10"
+                height="10"
+                viewBox="0 0 12 12"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M7.4868 5.96952C7.68746 6.15186 7.8334 6.28862 7.97934 6.42538C8.97353 7.41917 9.96773 8.41295 10.9619 9.40673C11.3176 9.76231 11.4453 10.1635 11.272 10.6376C11.0349 11.294 10.214 11.5402 9.63025 11.139C9.52992 11.0661 9.43871 10.984 9.35662 10.8929C8.28945 9.82613 7.23141 8.76852 6.16425 7.7018C6.10952 7.6471 6.05479 7.59239 5.99095 7.53769C5.9271 7.60151 5.87237 7.65622 5.81765 7.71092C4.73224 8.79588 3.64683 9.88083 2.56143 10.9658C2.20571 11.3214 1.79526 11.4399 1.33008 11.2667C0.673368 11.0205 0.43622 10.1999 0.846668 9.62555C0.910516 9.53438 0.992605 9.45232 1.07469 9.37026C2.14186 8.30354 3.1999 7.23682 4.26707 6.17922C4.32179 6.12451 4.39476 6.08804 4.46773 6.02422C4.37652 5.92393 4.32179 5.86923 4.25795 5.80541C3.17254 4.72045 2.09625 3.64461 1.01085 2.56877C0.664247 2.2132 0.536552 1.80292 0.709853 1.32882C0.947 0.672377 1.7679 0.426211 2.35164 0.827371C2.45198 0.900309 2.54319 0.982365 2.62528 1.07354C3.69244 2.14026 4.75048 3.19786 5.81765 4.26459C5.87237 4.31929 5.9271 4.37399 5.99095 4.4287C6.05479 4.36488 6.10952 4.31017 6.16425 4.25547C7.24965 3.17051 8.33506 2.08556 9.42047 1.0006C9.77619 0.645025 10.1866 0.526501 10.6518 0.699729C11.3085 0.945896 11.5457 1.76645 11.1352 2.34084C11.0714 2.43201 10.9893 2.51407 10.9072 2.59612C9.84004 3.66285 8.78199 4.72957 7.71483 5.78717C7.6601 5.86011 7.58713 5.89658 7.4868 5.96952Z"
+                  fill="white"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="address-menu">
+              <ul class="nav mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <a
+                    class="nav-link active"
+                    id="pills-home-tab"
+                    data-toggle="pill"
+                    href="#pills-home"
+                    role="tab"
+                    aria-controls="pills-home"
+                    aria-selected="true"
+                  >
+                    <img src="assets/images/address/home.png" alt="" />
+                    <span>Home</span>
+                  </a>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a
+                    class="nav-link"
+                    id="pills-profile-tab"
+                    data-toggle="pill"
+                    href="#pills-profile"
+                    role="tab"
+                    aria-controls="pills-profile"
+                    aria-selected="false"
+                  >
+                    <img src="assets/images/address/office.png" alt="" />
+                    <span>Office</span>
+                  </a>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a
+                    class="nav-link"
+                    id="pills-contact-tab"
+                    data-toggle="pill"
+                    href="#pills-contact"
+                    role="tab"
+                    aria-controls="pills-contact"
+                    aria-selected="false"
+                  >
+                    <img src="assets/images/address/other.png" alt="" />
+                    <span>Other</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="tab-content" id="pills-tabContent">
+              <div
+                class="tab-pane fade show active"
+                id="pills-home"
+                role="tabpanel"
+                aria-labelledby="pills-home-tab"
+              >
+                <form>
+                  <div class="form-title">
+                    <h6>Contact</h6>
+                  </div>
+                  <div class="flex-fild">
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="fullName"
+                        placeholder="Your Full Name"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="emailId"
+                        placeholder="Your Email Address"
+                      />
+                    </div>
+                  </div>
+                  <div class="flex-fild">
+                    <div class="form-group">
+                      <input
+                        type="number"
+                        class="form-control"
+                        class="form-control"
+                        id="PhoneNo"
+                        placeholder="Phone Number"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="form-title pt-4">
+                    <h6>Address</h6>
+                  </div>
+                  <div class="flex-fild">
+                    <div class="form-group">
+                      <select class="custom-select" id="inputGroupSelect01">
+                        <option selected>United Kingdom</option>
+                        <option value="1">Bangladesh</option>
+                        <option value="2">USA</option>
+                        <option value="3">Turkey</option>
+                      </select>
+                      <div class="flag-list">
+                        <img src="assets/images/flag/uk.png" alt="" />
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="streetAd"
+                        placeholder="Street, house/apartment/unit"
+                      />
+                    </div>
+                  </div>
+                  <div class="flex-fild">
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="cityName"
+                        placeholder="City"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="zipCode"
+                        placeholder="Zip Code"
+                      />
+                    </div>
+                  </div>
+                  <div class="input-submit">
+                    <button type="submit">Submit</button>
+                  </div>
+                </form>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="pills-profile"
+                role="tabpanel"
+                aria-labelledby="pills-profile-tab"
+              >
+                <form>
+                  <div class="form-title">
+                    <h6>Contact</h6>
+                  </div>
+                  <div class="flex-fild">
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="fullName"
+                        placeholder="Your Full Name"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="emailId"
+                        placeholder="Your Email Address"
+                      />
+                    </div>
+                  </div>
+                  <div class="flex-fild">
+                    <div class="form-group">
+                      <input
+                        type="number"
+                        class="form-control"
+                        class="form-control"
+                        id="PhoneNo"
+                        placeholder="Phone Number"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="comName"
+                        placeholder="Company Name"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="form-title pt-4">
+                    <h6>Address</h6>
+                  </div>
+                  <div class="flex-fild">
+                    <div class="form-group">
+                      <select class="custom-select" id="inputGroupSelect01">
+                        <option selected>United Kingdom</option>
+                        <option value="1">Bangladesh</option>
+                        <option value="2">USA</option>
+                        <option value="3">Turkey</option>
+                      </select>
+                      <div class="flag-list">
+                        <img src="assets/images/flag/uk.png" alt="" />
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="streetAd"
+                        placeholder="Street, house/apartment/unit"
+                      />
+                    </div>
+                  </div>
+                  <div class="flex-fild">
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="cityName"
+                        placeholder="City"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="zipCode"
+                        placeholder="Zip Code"
+                      />
+                    </div>
+                  </div>
+                  <div class="input-submit">
+                    <button type="submit">Submit</button>
+                  </div>
+                </form>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="pills-contact"
+                role="tabpanel"
+                aria-labelledby="pills-contact-tab"
+              >
+                ...
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- new address area end -->
+
+    <!-- optional js -->
+    <script src="assets/js/vendors.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/nstslider.js"></script>
+    <script src="assets/js/function.js"></script>
+    <script></script>
+  </body>
+</html>

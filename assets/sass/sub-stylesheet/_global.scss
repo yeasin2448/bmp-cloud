@@ -14,7 +14,7 @@ input,
 select,
 textarea {
   color: $desc-color;
-  font-family: $roboto;
+  font-family: $rubik;
   font-size: 1rem;
   font-weight: 400;
   outline: none;
@@ -52,7 +52,7 @@ h5,
 h6 {
   color: $title-color;
   font-weight: 700;
-  font-family: $roboto;
+  font-family: $rubik;
   line-height: 1.5;
   text-transform: capitalize;
 }
@@ -65,7 +65,7 @@ h6 > a {
   color: inherit;
   font-size: inherit;
   font-weight: 700;
-  font-family: $roboto;
+  font-family: $rubik;
 }
 
 @media screen and (min-width: 576px) {
@@ -94,11 +94,11 @@ p {
   margin: 0 0 15px;
   color: $title-color;
   line-height: 1.5;
-  font-family: $roboto;
+  font-family: $rubik;
 }
 
 span {
-  font-family: $roboto;
+  font-family: $rubik;
   font-size: $fs-small-x;
 }
 ul {
@@ -112,7 +112,7 @@ a {
   text-decoration: none;
   display: inline-block;
   outline: none;
-  font-family: $roboto;
+  font-family: $rubik;
   @include transition($transition);
   &:hover {
     text-decoration: none;
