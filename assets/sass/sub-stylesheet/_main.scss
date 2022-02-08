@@ -7139,13 +7139,16 @@
 //*=== product category css ends  ===*//
 
 //*=== product category item css start ===*//
-html {
-  scroll-behavior: smooth;
-}
+
 .product-category-list {
   padding: 22px 0;
   .section-header {
     text-align: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+    background: #fff;
+    z-index: 111;
     h4 {
       margin: 0;
       font-style: normal;
@@ -7169,14 +7172,17 @@ html {
     }
     ul.section-menu {
       padding: 0;
-      margin: 0;
+      margin: 0 auto;
       list-style: none;
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: center;
-      padding-top: 22px;
-      padding-bottom: 14px;
+      padding-top: 6px;
+      padding-bottom: 6px;
+      &.swiper-wrapper {
+        .swiper-slide {
+          &.swiper-slide-active2 {
+            background-color: #95d5b2;
+          }
+        }
+      }
       &.fixed {
         position: fixed;
         top: 0;
@@ -7186,121 +7192,95 @@ html {
         background: #fff;
         box-shadow: 0px 1px 11px rgba(51, 73, 167, 0.09);
       }
-      li {
-        @include breakpoint(max-xs) {
-          width: calc(100% / 2);
-        }
-        &:nth-child(1) {
-          a {
-            &:hover,
-            &.active {
-              background: #fffadc;
-            }
-          }
-        }
-        &:nth-child(2) {
-          a {
-            &:hover,
-            &.active {
-              background: #ffd5cf;
-            }
-          }
-        }
-        &:nth-child(3) {
-          a {
-            &:hover,
-            &.active {
-              background: #e0f5ff;
-            }
-          }
-        }
-        &:nth-child(4) {
-          a {
-            &:hover,
-            &.active {
-              background: #d1bfbe;
-            }
-          }
-        }
-        &:nth-child(5) {
-          a {
-            &:hover,
-            &.active {
-              background: #e0f0f9;
-            }
-          }
-        }
-        a {
-          margin: 5px 11px;
-          padding: 8.5px 10.5px;
-          text-decoration: none;
-          background: #ffffff;
-          border-radius: 6px;
-          width: 140px;
-          border-radius: 6px;
-          box-shadow: 0px 1px 9px rgba(7, 111, 175, 0.13);
-          span {
-            font-style: normal;
-            font-weight: normal;
-            font-size: 14px;
-            line-height: 17px;
-            color: #000000;
-            margin-left: 10px;
-            display: inline-block;
-            font-family: "Rubik", sans-serif;
-          }
+      // @include breakpoint(max-xs) {
+      //   width: calc(100% / 2);
+      // }
+      // &:nth-child(1) {
+      //   a {
+      //     &:hover,
+      //     &.active {
+      //       background: #fffadc;
+      //     }
+      //   }
+      // }
+      // &:nth-child(2) {
+      //   a {
+      //     &:hover,
+      //     &.active {
+      //       background: #ffd5cf;
+      //     }
+      //   }
+      // }
+      // &:nth-child(3) {
+      //   a {
+      //     &:hover,
+      //     &.active {
+      //       background: #e0f5ff;
+      //     }
+      //   }
+      // }
+      // &:nth-child(4) {
+      //   a {
+      //     &:hover,
+      //     &.active {
+      //       background: #d1bfbe;
+      //     }
+      //   }
+      // }
+      // &:nth-child(5) {
+      //   a {
+      //     &:hover,
+      //     &.active {
+      //       background: #e0f0f9;
+      //     }
+      //   }
+      // }
+      a {
+        margin: 4px 6px;
+        padding: 4px 6px;
+        text-decoration: none;
+        background: #ffffff;
+        border-radius: 6px;
+        width: 140px;
+        border-radius: 6px;
+        box-shadow: 0px 1px 9px rgba(7, 111, 175, 0.13);
+        span {
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 17px;
+          color: #000000;
+          margin-left: 10px;
+          display: inline-block;
+          font-family: "Rubik", sans-serif;
         }
       }
-    }
-    .fixed {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      z-index: 111;
-      background: #fff;
-      box-shadow: 0px 1px 11px rgba(51, 73, 167, 0.09);
     }
   }
   .section-wrapper {
-    ul.product-list {
+    .cate-product-js {
       padding: 0;
       margin: 0;
       list-style: none;
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: space-between;
       &.next-list {
-        padding-top: 32px;
+        padding-top: 8px;
       }
-      li {
-        margin: 7.5px;
-        width: calc(100% / 2 - 15px);
-        @include breakpoint(md) {
-          width: calc(100% / 3 - 15px);
-        }
-        @include breakpoint(lg) {
-          width: calc(100% / 5 - 15px);
-        }
-        &:nth-child(1) {
-          margin-left: 0;
-        }
-        &:nth-child(5) {
-          margin-right: 0;
-        }
-        &:nth-child(6) {
-          margin-left: 0;
-        }
-        &:nth-child(10) {
-          margin-right: 0;
-        }
+      .item {
+        padding: 10px;
         .product-card {
           text-align: center;
+          transition: all 0.2s ease-in-out;
           &:hover {
+            box-shadow: 0px 1px 11px rgba(51, 73, 167, 0.09);
             .card-thumb {
+              box-shadow: none;
               .thumb-cart {
                 right: 10px;
+              }
+            }
+            .card-text {
+              .pr-btn button {
+                background: #c8102e;
               }
             }
           }
@@ -7410,51 +7390,80 @@ html {
           }
         }
       }
+      .owl-nav .owl-prev,
+      .owl-nav .owl-next {
+        position: absolute;
+        top: 40%;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+      }
+      .owl-nav .owl-next i,
+      .owl-nav .owl-prev i {
+        height: 30px;
+        width: 30px;
+        line-height: 30px;
+        font-size: 18px;
+        border-radius: 100%;
+        text-align: center;
+        color: #076faf;
+        background: rgba(255, 255, 255, 0.8);
+        box-shadow: 0px 0px 5px rgba(7, 111, 175, 0.2);
+      }
+      .owl-nav .owl-next:focus,
+      .owl-nav .owl-prev:focus {
+        outline: none;
+        border: none;
+      }
+      .owl-nav .owl-next {
+        right: -16px;
+        width: 40px;
+        height: 40px;
+        border: 0;
+        background: transparent;
+        @include breakpoint(lg) {
+          right: -22px;
+        }
+      }
+      .owl-nav .owl-prev {
+        left: -10px;
+        border: 0;
+        @include breakpoint(lg) {
+          right: -12px;
+        }
+      }
     }
     .prList-btn {
-      padding-top: 24px;
       display: flex;
-      justify-content: end;
+      align-items: center;
+      justify-content: space-between;
+      h4 {
+        margin: 0;
+        font-weight: 500;
+        font-size: 20px;
+        color: #000;
+        font-family: "Rubik", sans-serif;
+      }
       button {
         display: flex;
         align-items: center;
-        padding: 8px 28px;
         background: #c8102e;
-        border-radius: 4px;
         position: relative;
-        // transition: all 0.3s ease-in-out;
-        &::after {
-          position: absolute;
-          content: "";
-          top: 5px;
-          left: 5px;
-          right: -5px;
-          bottom: -5px;
-          border: 0.5px solid #c8102e;
-          border-radius: 4px;
-          z-index: -1;
-          // transition: all 0.3s ease-in-out;
-        }
+        background: transparent;
+        border-bottom: 0.5px solid #ed1c24;
         span {
           font-style: normal;
           font-weight: 500;
           font-size: 12px;
           line-height: 14px;
-          color: #ffffff;
+          color: #333;
           font-family: "Rubik", sans-serif;
         }
         i {
           font-size: 12px;
-          color: $white-color;
+          color: #333;
         }
         &:focus {
           outline: none;
-        }
-        &:hover {
-          background: linear-gradient(90deg, #253477 0%, #671a54 100%);
-          &::after {
-            border-color: $theme-color;
-          }
         }
       }
     }

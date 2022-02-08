@@ -246,29 +246,28 @@
       }
     })
 
-  // section menu js
-	$('.sec-menu-js').owlCarousel({
-		loop:false,
-		items: 2.5,
-		margin:10,
-		nav:true,
+  // product slider js
+	$('.cate-product-js').owlCarousel ({
+		loop: false,
+		margin: 10,
+		nav: false,
 		navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
-		responsive:{
-			0:{
-				items:2.5
-			},
-			575: {
-				items: 3.5
-			},
-			600:{
-				items:4
-			},
-			768: {
-				items: 4.5
-			},
-			1000:{
-				items:5
-			}
+		dots: false,
+		responsive: {
+		  0: {
+			items: 1.5,
+		  },
+		  576: {
+			  items: 3
+		  },
+		  600: {
+			items: 3.5
+		  },
+		  1000: {
+			items: 5,
+			nav: true,
+		  },
+		  
 		}
 	})
 
