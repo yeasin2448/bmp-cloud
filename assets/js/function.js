@@ -248,7 +248,7 @@
 
   // product slider js
 	$('.cate-product-js').owlCarousel ({
-		loop: false,
+		loop: true,
 		margin: 10,
 		nav: false,
 		navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],

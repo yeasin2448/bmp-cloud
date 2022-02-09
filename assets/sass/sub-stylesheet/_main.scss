@@ -7177,6 +7177,9 @@
       padding-top: 6px;
       padding-bottom: 6px;
       &.swiper-wrapper {
+        @include breakpoint(xl) {
+          justify-content: center;
+        }
         .swiper-slide {
           &.swiper-slide-active2 {
             background-color: #95d5b2;

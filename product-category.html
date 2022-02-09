@@ -8971,98 +8971,99 @@
         return document.querySelector(`.${className}`);
       }
 
-      const sections = [
-        selectElementByClass("sectionOne"),
-        selectElementByClass("sectionTwo"),
-        selectElementByClass("sectionThree"),
-        selectElementByClass("sectionFour"),
-        selectElementByClass("sectionFive"),
-        selectElementByClass("sectionSix"),
-      ];
+      // const sections = [
+      //   selectElementByClass("sectionOne"),
+      //   selectElementByClass("sectionTwo"),
+      //   selectElementByClass("sectionThree"),
+      //   selectElementByClass("sectionFour"),
+      //   selectElementByClass("sectionFive"),
+      //   selectElementByClass("sectionSix"),
+      // ];
 
-      const navItems = {
-        proListOne: selectElementByClass("navItemOne"),
-        proListTwo: selectElementByClass("navItemTwo"),
-        proListThree: selectElementByClass("navItemThree"),
-        proListFour: selectElementByClass("navItemFour"),
-        proListFive: selectElementByClass("navItemFive"),
-        proListSix: selectElementByClass("navItemSix"),
-      };
+      // const navItems = {
+      //   proListOne: selectElementByClass("navItemOne"),
+      //   proListTwo: selectElementByClass("navItemTwo"),
+      //   proListThree: selectElementByClass("navItemThree"),
+      //   proListFour: selectElementByClass("navItemFour"),
+      //   proListFive: selectElementByClass("navItemFive"),
+      //   proListSix: selectElementByClass("navItemSix"),
+      // };
 
-      // intersection observer setup
-      const observerOptions = {
-        root: null,
-        rootMargin: "0px",
-        threshold: 0.2,
-      };
+      // // intersection observer setup
+      // const observerOptions = {
+      //   root: null,
+      //   rootMargin: "0px",
+      //   threshold: 0.2,
+      // };
 
-      function observerCallback(entries, observer) {
-        // console.log({ entries });
-        // console.log({ observer });
-        entries.forEach((entry) => {
-          console.log(entry);
-          if (entry.isIntersecting) {
-            // get the nav item corresponding to the id of the section
-            // that is currently in view
-            console.log(entry.target.id);
-            const navItem = navItems[entry.target.id];
-            //get the "alt" tag of section in view
-            // alt tag equals slide index of swiper
-            const navItemAlt = navItem.getAttribute("alt");
-            // tell swiper to slide to the slide with index of "alt"
-            // swiper.slideTo(navItemAlt, 300, true);
-            swiper.slideTo($(".sectionThree").index(), 300, true);
-            // add 'active' class on the navItem
-            navItem.classList.add("swiper-slide-active2");
-            // // remove 'active' class from any navItem that is not
-            // // same as 'navItem' defined above
-            Object.values(navItems).forEach((item) => {
-              if (item != navItem) {
-                item.classList.remove("swiper-slide-active2");
-              }
-            });
-          }
-        });
+      // function observerCallback(entries, observer) {
+      //   // console.log({ entries });
+      //   // console.log({ observer });
+      //   entries.forEach((entry) => {
+      //     console.log(entry);
+      //     if (entry.isIntersecting) {
+      //       // get the nav item corresponding to the id of the section
+      //       // that is currently in view
+      //       console.log(entry.target.id);
+      //       const navItem = navItems[entry.target.id];
+      //       //get the "alt" tag of section in view
+      //       // alt tag equals slide index of swiper
+      //       const navItemAlt = navItem.getAttribute("alt");
+      //       // tell swiper to slide to the slide with index of "alt"
+      //       swiper.slideTo(navItemAlt, 300, true);
+      //       // swiper.slideTo($(".sectionThree").index(), 300, true);
+      //       // add 'active' class on the navItem
+      //       navItem.classList.add("swiper-slide-active2");
+      //       // // remove 'active' class from any navItem that is not
+      //       // // same as 'navItem' defined above
+      //       Object.values(navItems).forEach((item) => {
+      //         if (item != navItem) {
+      //           item.classList.remove("swiper-slide-active2");
+      //         }
+      //       });
+      //     }
+      //   });
+      // }
+
+      // const observer = new IntersectionObserver(
+      //   observerCallback,
+      //   observerOptions
+      // );
+
+      // sections.forEach((sec) => observer.observe(sec));
+
+      function getTargetTop(elem) {
+        var id = elem.attr("href");
+        var offset = 70;
+        // var offset = 10;
+        // console.log($(id).offset()?.top - offset);
+        return $(id).offset()?.top - offset;
       }
 
-      const observer = new IntersectionObserver(
-        observerCallback,
-        observerOptions
-      );
+      $(window).scroll(function (e) {
+        isSelected($(window).scrollTop());
+      });
 
-      sections.forEach((sec) => observer.observe(sec));
-      // function getTargetTop(elem) {
-      //   var id = elem.attr("href");
-      //   var offset = 70;
-      //   // var offset = 10;
-      //   console.log($(id).offset()?.top - offset);
-      //   return $(id).offset()?.top - offset;
-      // }
+      var sections2 = $('a[href^="#"]');
 
-      // $(window).scroll(function (e) {
-      //   isSelected($(window).scrollTop());
-      // });
+      function isSelected(scrolledTo) {
+        var threshold = 100;
+        var i;
 
-      // var sections2 = $('a[href^="#"]');
-      // console.log(sections2);
+        for (i = 0; i < sections2.length; i++) {
+          var section3 = $(sections2[i]);
+          var target = getTargetTop(section3);
 
-      // function isSelected(scrolledTo) {
-      //   var threshold = 100;
-      //   var i;
-
-      //   for (i = 0; i < sections2.length; i++) {
-      //     var section3 = $(sections2[i]);
-      //     var target = getTargetTop(section3);
-
-      //     if (
-      //       scrolledTo > target - threshold &&
-      //       scrolledTo < target + threshold
-      //     ) {
-      //       sections2.removeClass("swiper-slide-active2");
-      //       section3.addClass("swiper-slide-active2");
-      //     }
-      //   }
-      // }
+          if (
+            scrolledTo > target - threshold &&
+            scrolledTo < target + threshold
+          ) {
+            sections2.removeClass("swiper-slide-active2");
+            section3.addClass("swiper-slide-active2");
+            swiper.slideTo(section3.index(), 300, true);
+          }
+        }
+      }
     </script>
   </body>
 </html>
