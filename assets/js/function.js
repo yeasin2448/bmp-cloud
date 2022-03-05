@@ -228,7 +228,7 @@
 
     // new arrivals slider
     $('.category-slide').owlCarousel ({
-      loop: true,
+      loop: false,
       margin: 10,
       nav: true,
       navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
@@ -248,28 +248,45 @@
 
   // product slider js
 	$('.cate-product-js').owlCarousel ({
-		loop: true,
-		margin: 10,
-		nav: false,
-		navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
-		dots: false,
-		responsive: {
-		  0: {
-			items: 1.5,
-		  },
-		  576: {
-			  items: 3
-		  },
-		  600: {
-			items: 3.5
-		  },
-		  1000: {
-			items: 5,
-			nav: true,
-		  },
-		  
-		}
+    loop: false,
+    margin: 10,
+    nav: false,
+    rewind: true,
+    navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+    dots: false,
+    responsive: {
+      0: {
+        items: 2
+      },
+      600: {
+        items: 3
+      },
+      1000: {
+        items: 5,
+        nav: true,
+      }
+    }
 	})
+
+  // dashboard wishlist js
+  $(".wishlist-slider").owlCarousel({
+    loop: true,
+    margin: 20,
+    nav: true,
+    rewind: true,
+    navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+    responsive: {
+      0: {
+        items: 1,
+      },
+      600: {
+        items: 3,
+      },
+      1000: {
+        items: 5,
+      },
+    },
+  });
 
 
 

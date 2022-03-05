@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- favicon hear -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <!-- google fonts -->
+    <!-- <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    /> -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- fontawesome css -->
+    <link rel="stylesheet" href="assets/css/all.min.css" />
+    <!-- animate css -->
+    <link rel="stylesheet" href="assets/css/animate.css" />
+    <!-- Bootstrap hear -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <!-- page css hear -->
+    <link rel="stylesheet" href="assets/css/app-ecommerce-shop.css" />
+    <!-- owl css -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+    <!-- style css -->
+    <link rel="stylesheet" href="assets/sass/style.css" />
+
+    <title>British Market Place</title>
+  </head>
+  <body>
+    <!-- admin delivery start -->
+    <section class="delivery-admin">
+      <div class="delivery-left" style="height: 100vh">
+        <p>Add admin menu</p>
+      </div>
+      <div class="delivery-right">
+        <div class="search-wrapper">
+          <div class="wrap-heading">
+            <h4>Search</h4>
+          </div>
+          <form action="">
+            <div class="row">
+              <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                <div class="input-group">
+                  <select name="" id="" class="form-control">
+                    <option value="1">Country</option>
+                    <option value="2">UK</option>
+                    <option value="3">Bangladesh</option>
+                    <option value="4">Pakistan</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                <div class="input-group">
+                  <select name="" id="" class="form-control">
+                    <option value="1">City</option>
+                    <option value="2">London</option>
+                    <option value="3">Dhaka</option>
+                    <option value="4">Karachi</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                <div class="input-group">
+                  <input
+                    type="text"
+                    name="post"
+                    class="form-control"
+                    placeholder="Post Code"
+                  />
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                <div class="input-group">
+                  <input
+                    type="date"
+                    name="post"
+                    class="form-control"
+                    placeholder="Post Code"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="input-btn">
+              <button type="submit">Submit</button>
+            </div>
+          </form>
+        </div>
+        <div class="delivery-request style-one">
+          <h4>Delivery Request</h4>
+          <div class="row">
+            <div class="col-md-4 col-12">
+              <div class="req-card">
+                <div class="card-item">
+                  <p><span>City:</span> South West, England</p>
+                  <p><span>PostCode:</span> TQ264779</p>
+                  <p><span>Date:</span> 02/02/2022</p>
+                  <p><span>Request Time:</span> 14:00-16:00</p>
+                </div>
+                <div class="card-icon">
+                  <button type="button">
+                    <svg
+                      width="12"
+                      height="12"
+                      viewBox="0 0 12 12"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 2.47336C0.02218 2.39112 0.0416619 2.30829 0.0668392 2.22696C0.26616 1.58235 0.828753 1.16998 1.53552 1.16486C2.38675 1.15884 3.23798 1.16486 4.08922 1.16305C4.23339 1.16305 4.34998 1.20914 4.41892 1.34378C4.47437 1.45343 4.45459 1.55735 4.38115 1.65163C4.30772 1.74591 4.2154 1.76971 4.10271 1.76941C3.25927 1.767 2.41582 1.767 1.57238 1.76941C1.25527 1.76941 0.982214 1.86911 0.785291 2.13087C0.678449 2.26745 0.616728 2.43415 0.60875 2.6077C0.606952 2.65078 0.604257 2.69385 0.604257 2.73692C0.604257 5.2995 0.604257 7.86197 0.604257 10.4243C0.604257 10.7476 0.707962 11.0141 0.96603 11.2135C1.13718 11.3458 1.3365 11.3943 1.54661 11.3943C4.30712 11.3957 7.06774 11.3957 9.82845 11.3943C10.2933 11.3943 10.6308 11.1379 10.7441 10.7051C10.7677 10.6021 10.7783 10.4966 10.7759 10.3909C10.7786 9.55111 10.7759 8.71161 10.7777 7.87181C10.7777 7.67994 10.8745 7.55403 11.0319 7.53234C11.0714 7.52616 11.1118 7.52815 11.1506 7.53818C11.1894 7.54821 11.2258 7.56607 11.2574 7.59067C11.2891 7.61528 11.3155 7.64611 11.335 7.68129C11.3544 7.71647 11.3665 7.75526 11.3706 7.7953C11.3742 7.82639 11.3759 7.85768 11.3757 7.88898C11.3757 8.74053 11.3787 9.59208 11.3757 10.4436C11.3727 11.1503 10.9887 11.7069 10.3503 11.9142C10.1756 11.9685 9.99364 11.9958 9.81076 11.9949C7.06184 11.9999 4.31301 12.0008 1.56429 11.9976C0.79728 11.9976 0.213706 11.5431 0.0398628 10.8229C0.0290725 10.7783 0.0161859 10.7325 0.00419666 10.6897L0 2.47336Z"
+                        fill="url(#paint0_linear_2727_287)"
+                      />
+                      <path
+                        d="M10.3347 0C10.6659 0.00192513 10.9833 0.133038 11.2201 0.365681C11.3999 0.539485 11.5852 0.712385 11.7359 0.909985C12.1094 1.39947 12.0821 2.09047 11.6901 2.56429C11.6427 2.62152 11.5912 2.67574 11.5402 2.72815C9.81198 4.46559 8.08403 6.20262 6.35639 7.93925C6.26936 8.02883 6.15976 8.09297 6.03928 8.1248C5.26208 8.33837 4.48638 8.55645 3.70978 8.77303C3.67981 8.78116 3.64983 8.7908 3.61986 8.79743C3.38008 8.85195 3.18225 8.65977 3.24669 8.42151C3.47409 7.5799 3.70618 6.73939 3.94297 5.89999C3.96634 5.82967 4.00634 5.7661 4.05956 5.71474C5.81658 3.94538 7.57499 2.17752 9.33481 0.411165C9.60186 0.142778 9.92618 0.0015061 10.3347 0ZM6.07524 7.32838L10.4072 2.97455L9.03268 1.59315L4.70068 5.94668L6.07524 7.32838ZM10.8742 2.54561C10.9971 2.41608 11.1323 2.29078 11.2471 2.1483C11.3474 2.01908 11.4009 1.85929 11.3985 1.6954C11.3962 1.5315 11.3382 1.37332 11.2342 1.24705C11.0878 1.07399 10.9274 0.913394 10.7546 0.766906C10.5247 0.57533 10.2472 0.538581 9.99031 0.685275C9.79249 0.797931 9.63064 0.973844 9.455 1.11903L10.8742 2.54561ZM4.38447 6.55183C4.24929 7.04282 4.11112 7.54586 3.96485 8.07601L5.48208 7.6543L4.38447 6.55183Z"
+                        fill="url(#paint1_linear_2727_287)"
+                      />
+                      <defs>
+                        <linearGradient
+                          id="paint0_linear_2727_287"
+                          x1="5.68849"
+                          y1="1.16211"
+                          x2="5.68849"
+                          y2="11.9995"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop stop-color="#253477" />
+                          <stop offset="1" stop-color="#C8102E" />
+                        </linearGradient>
+                        <linearGradient
+                          id="paint1_linear_2727_287"
+                          x1="7.61755"
+                          y1="0"
+                          x2="7.61755"
+                          y2="8.80676"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop stop-color="#253477" />
+                          <stop offset="1" stop-color="#C8102E" />
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                  </button>
+                  <button type="button">
+                    <svg
+                      width="10"
+                      height="13"
+                      viewBox="0 0 10 13"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0.746953 3.68529C0.583833 3.68378 0.4257 3.62914 0.296427 3.52965C0.167155 3.43015 0.0737293 3.29123 0.0305077 3.13394C0.00932855 3.06985 -0.000663648 3.00263 0.000655862 2.93515C0.000655862 2.6726 0.000655862 2.4138 0.000655862 2.15125C-0.00359012 2.05161 0.0128091 1.95217 0.0490049 1.85924C0.0852007 1.7663 0.140379 1.6819 0.210901 1.61138C0.281423 1.54086 0.365756 1.48575 0.45869 1.44955C0.551623 1.41335 0.651156 1.39686 0.750799 1.40111H2.67853C2.67853 1.21732 2.67853 1.04854 2.67853 0.879755C2.67024 0.762687 2.68723 0.645204 2.72816 0.535211C2.7691 0.425218 2.83307 0.325271 2.91588 0.242106C2.99869 0.158941 3.09836 0.0944844 3.20818 0.0530824C3.31799 0.0116805 3.43538 -0.00570699 3.55248 0.00208931C4.53517 0.0245936 5.52531 0.00208931 6.508 0.00208931C6.61634 -0.00589433 6.72522 0.00905899 6.82739 0.0459743C6.92957 0.0828896 7.02279 0.140939 7.10101 0.216329C7.17923 0.291719 7.24074 0.382753 7.2814 0.483497C7.32206 0.58424 7.34088 0.692428 7.33689 0.800993C7.33689 0.988529 7.33689 1.17606 7.33689 1.3936H9.21225C9.31872 1.38479 9.42583 1.39954 9.52597 1.43679C9.6261 1.47404 9.71688 1.53289 9.7917 1.60915C9.86653 1.6854 9.92356 1.77721 9.95891 1.87803C9.99426 1.97885 10.0071 2.08622 9.99627 2.1925V2.85639C10.0133 3.04961 9.95478 3.24192 9.83309 3.39298C9.71141 3.54403 9.53598 3.64208 9.34356 3.66654L9.24979 3.68529V11.6781C9.25649 11.9177 9.17867 12.152 9.02984 12.3399C8.88101 12.5279 8.6707 12.6574 8.43592 12.7058C8.3693 12.7194 8.30136 12.7257 8.23336 12.7245H1.77089C1.63604 12.727 1.50208 12.7024 1.37696 12.6521C1.25183 12.6018 1.13808 12.5268 1.04254 12.4316C0.946999 12.3364 0.871543 12.2229 0.820758 12.098C0.769974 11.9731 0.744916 11.8392 0.746953 11.7043C0.746953 9.10133 0.746953 6.49958 0.746953 3.89909V3.68529ZM1.2233 3.68529V11.6068C1.21078 11.6949 1.21893 11.7848 1.24711 11.8692C1.27529 11.9536 1.3228 12.0304 1.38575 12.0933C1.44869 12.1562 1.52529 12.2037 1.60973 12.2319C1.69416 12.26 1.78404 12.2682 1.87217 12.2557H8.12842C8.2162 12.2681 8.30565 12.2599 8.38976 12.232C8.47388 12.204 8.55033 12.1569 8.6132 12.0944C8.67606 12.0319 8.72355 11.9557 8.75202 11.8717C8.78048 11.7878 8.78917 11.6984 8.77729 11.6106V3.68529H1.2233ZM5.00771 1.8812H0.82204C0.566992 1.8812 0.476821 1.97121 0.476821 2.22626V2.73636C0.476821 3.13769 0.525741 3.1902 0.923317 3.1902H9.20474C9.42978 3.1902 9.52359 3.09268 9.52359 2.86764C9.52359 2.6426 9.52359 2.45881 9.52359 2.25627C9.52359 1.96372 9.44107 1.8812 9.14851 1.8812H5.00771ZM6.84186 1.3936V0.800993C6.84582 0.756981 6.84014 0.71264 6.8252 0.671055C6.81025 0.62947 6.78649 0.591646 6.75542 0.560221C6.72435 0.528796 6.68676 0.504526 6.64535 0.489105C6.60394 0.473684 6.55956 0.467478 6.51551 0.470929H3.53746C3.32367 0.470929 3.16239 0.557193 3.16239 0.714723C3.16239 0.932264 3.16239 1.15356 3.16239 1.37861L6.84186 1.3936Z"
+                        fill="url(#paint0_linear_2727_288)"
+                      />
+                      <path
+                        d="M2.67198 7.96883V5.67715C2.67198 5.61714 2.67198 5.56088 2.67198 5.50462C2.67247 5.47457 2.67889 5.44491 2.69085 5.41734C2.7028 5.38977 2.72016 5.36482 2.74176 5.34392C2.76335 5.32303 2.78872 5.30658 2.81666 5.29554C2.84461 5.2845 2.87452 5.27908 2.90457 5.27957C2.9361 5.27806 2.96772 5.28278 2.99742 5.29347C3.02713 5.30415 3.0543 5.32059 3.07764 5.34184C3.10098 5.36309 3.1199 5.38874 3.13331 5.41732C3.14673 5.44589 3.1544 5.47683 3.15584 5.50836C3.15772 5.54209 3.15772 5.57591 3.15584 5.60964C3.15584 7.18994 3.15584 8.77023 3.15584 10.3505C3.15584 10.4968 3.12967 10.6243 2.96464 10.6693C2.92899 10.6796 2.89132 10.6811 2.85494 10.6739C2.81856 10.6666 2.7845 10.6508 2.7555 10.6276C2.72649 10.6045 2.70345 10.5748 2.68828 10.5409C2.67311 10.5071 2.66628 10.4701 2.66832 10.433C2.66832 10.2455 2.66832 10.058 2.66832 9.8742L2.67198 7.96883Z"
+                        fill="url(#paint1_linear_2727_288)"
+                      />
+                      <path
+                        d="M7.32974 7.96451V10.2599C7.33348 10.3224 7.33348 10.385 7.32974 10.4475C7.32682 10.5045 7.3017 10.5581 7.2596 10.5967C7.21749 10.6353 7.16193 10.6558 7.10484 10.6538C7.07498 10.6569 7.04475 10.6539 7.01602 10.6452C6.9873 10.6364 6.96052 10.622 6.93745 10.6028C6.91439 10.5836 6.89539 10.5599 6.8816 10.5333C6.86781 10.5066 6.85958 10.4774 6.85724 10.4475C6.84967 10.3915 6.84967 10.3347 6.85724 10.2787V5.63907C6.85349 5.58913 6.85349 5.53898 6.85724 5.48904C6.85768 5.45751 6.86455 5.4264 6.87738 5.39761C6.89022 5.36881 6.90881 5.34294 6.93196 5.32154C6.95511 5.30014 6.98228 5.28366 7.01199 5.27313C7.04171 5.26259 7.07338 5.25821 7.10484 5.26025C7.13489 5.25976 7.16462 5.26518 7.19257 5.27622C7.22052 5.28726 7.24606 5.3037 7.26766 5.3246C7.28925 5.3455 7.30662 5.37045 7.31857 5.39802C7.33052 5.42559 7.33676 5.45524 7.33725 5.48529C7.33725 5.54155 7.33725 5.59781 7.33725 5.65407L7.32974 7.96451Z"
+                        fill="url(#paint2_linear_2727_288)"
+                      />
+                      <path
+                        d="M5.24197 7.95271V10.2969C5.24197 10.5557 5.17825 10.6532 5.00572 10.6532C4.83319 10.6532 4.76562 10.5557 4.76562 10.3082V5.601C4.76562 5.37221 4.84068 5.2597 4.99821 5.25594C5.15574 5.25219 5.24197 5.37222 5.24197 5.60851V7.95271Z"
+                        fill="url(#paint3_linear_2727_288)"
+                      />
+                      <defs>
+                        <linearGradient
+                          id="paint0_linear_2727_288"
+                          x1="5"
+                          y1="0"
+                          x2="5"
+                          y2="12.7247"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop stop-color="#253477" />
+                          <stop offset="1" stop-color="#C8102E" />
+                        </linearGradient>
+                        <linearGradient
+                          id="paint1_linear_2727_288"
+                          x1="2.91261"
+                          y1="5.2793"
+                          x2="2.91261"
+                          y2="10.6784"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop stop-color="#253477" />
+                          <stop offset="1" stop-color="#C8102E" />
+                        </linearGradient>
+                        <linearGradient
+                          id="paint2_linear_2727_288"
+                          x1="7.09441"
+                          y1="5.25977"
+                          x2="7.09441"
+                          y2="10.655"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop stop-color="#253477" />
+                          <stop offset="1" stop-color="#C8102E" />
+                        </linearGradient>
+                        <linearGradient
+                          id="paint3_linear_2727_288"
+                          x1="5.0038"
+                          y1="5.25586"
+                          x2="5.0038"
+                          y2="10.6532"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop stop-color="#253477" />
+                          <stop offset="1" stop-color="#C8102E" />
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="req-btn prove-btn">
+                <button type="button">Accepte</button>
+              </div>
+            </div>
+            <div class="col-md-4 col-12">
+              <div class="req-card">
+                <div class="card-item">
+                  <p><span>City:</span> South West, England</p>
+                  <p><span>PostCode:</span> TQ264779</p>
+                  <p><span>Date:</span> 02/02/2022</p>
+                  <p><span>Request Time:</span> 14:00-16:00</p>
+                </div>
+                <div class="card-icon">
+                  <button type="button">
+                    <svg
+                      width="12"
+                      height="12"
+                      viewBox="0 0 12 12"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 2.47336C0.02218 2.39112 0.0416619 2.30829 0.0668392 2.22696C0.26616 1.58235 0.828753 1.16998 1.53552 1.16486C2.38675 1.15884 3.23798 1.16486 4.08922 1.16305C4.23339 1.16305 4.34998 1.20914 4.41892 1.34378C4.47437 1.45343 4.45459 1.55735 4.38115 1.65163C4.30772 1.74591 4.2154 1.76971 4.10271 1.76941C3.25927 1.767 2.41582 1.767 1.57238 1.76941C1.25527 1.76941 0.982214 1.86911 0.785291 2.13087C0.678449 2.26745 0.616728 2.43415 0.60875 2.6077C0.606952 2.65078 0.604257 2.69385 0.604257 2.73692C0.604257 5.2995 0.604257 7.86197 0.604257 10.4243C0.604257 10.7476 0.707962 11.0141 0.96603 11.2135C1.13718 11.3458 1.3365 11.3943 1.54661 11.3943C4.30712 11.3957 7.06774 11.3957 9.82845 11.3943C10.2933 11.3943 10.6308 11.1379 10.7441 10.7051C10.7677 10.6021 10.7783 10.4966 10.7759 10.3909C10.7786 9.55111 10.7759 8.71161 10.7777 7.87181C10.7777 7.67994 10.8745 7.55403 11.0319 7.53234C11.0714 7.52616 11.1118 7.52815 11.1506 7.53818C11.1894 7.54821 11.2258 7.56607 11.2574 7.59067C11.2891 7.61528 11.3155 7.64611 11.335 7.68129C11.3544 7.71647 11.3665 7.75526 11.3706 7.7953C11.3742 7.82639 11.3759 7.85768 11.3757 7.88898C11.3757 8.74053 11.3787 9.59208 11.3757 10.4436C11.3727 11.1503 10.9887 11.7069 10.3503 11.9142C10.1756 11.9685 9.99364 11.9958 9.81076 11.9949C7.06184 11.9999 4.31301 12.0008 1.56429 11.9976C0.79728 11.9976 0.213706 11.5431 0.0398628 10.8229C0.0290725 10.7783 0.0161859 10.7325 0.00419666 10.6897L0 2.47336Z"
+                        fill="url(#paint0_linear_2727_287)"
+                      />
+                      <path
+                        d="M10.3347 0C10.6659 0.00192513 10.9833 0.133038 11.2201 0.365681C11.3999 0.539485 11.5852 0.712385 11.7359 0.909985C12.1094 1.39947 12.0821 2.09047 11.6901 2.56429C11.6427 2.62152 11.5912 2.67574 11.5402 2.72815C9.81198 4.46559 8.08403 6.20262 6.35639 7.93925C6.26936 8.02883 6.15976 8.09297 6.03928 8.1248C5.26208 8.33837 4.48638 8.55645 3.70978 8.77303C3.67981 8.78116 3.64983 8.7908 3.61986 8.79743C3.38008 8.85195 3.18225 8.65977 3.24669 8.42151C3.47409 7.5799 3.70618 6.73939 3.94297 5.89999C3.96634 5.82967 4.00634 5.7661 4.05956 5.71474C5.81658 3.94538 7.57499 2.17752 9.33481 0.411165C9.60186 0.142778 9.92618 0.0015061 10.3347 0ZM6.07524 7.32838L10.4072 2.97455L9.03268 1.59315L4.70068 5.94668L6.07524 7.32838ZM10.8742 2.54561C10.9971 2.41608 11.1323 2.29078 11.2471 2.1483C11.3474 2.01908 11.4009 1.85929 11.3985 1.6954C11.3962 1.5315 11.3382 1.37332 11.2342 1.24705C11.0878 1.07399 10.9274 0.913394 10.7546 0.766906C10.5247 0.57533 10.2472 0.538581 9.99031 0.685275C9.79249 0.797931 9.63064 0.973844 9.455 1.11903L10.8742 2.54561ZM4.38447 6.55183C4.24929 7.04282 4.11112 7.54586 3.96485 8.07601L5.48208 7.6543L4.38447 6.55183Z"
+                        fill="url(#paint1_linear_2727_287)"
+                      />
+                      <defs>
+                        <linearGradient
+                          id="paint0_linear_2727_287"
+                          x1="5.68849"
+                          y1="1.16211"
+                          x2="5.68849"
+                          y2="11.9995"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop stop-color="#253477" />
+                          <stop offset="1" stop-color="#C8102E" />
+                        </linearGradient>
+                        <linearGradient
+                          id="paint1_linear_2727_287"
+                          x1="7.61755"
+                          y1="0"
+                          x2="7.61755"
+                          y2="8.80676"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop stop-color="#253477" />
+                          <stop offset="1" stop-color="#C8102E" />
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                  </button>
+                  <button type="button">
+                    <svg
+                      width="10"
+                      height="13"
+                      viewBox="0 0 10 13"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0.746953 3.68529C0.583833 3.68378 0.4257 3.62914 0.296427 3.52965C0.167155 3.43015 0.0737293 3.29123 0.0305077 3.13394C0.00932855 3.06985 -0.000663648 3.00263 0.000655862 2.93515C0.000655862 2.6726 0.000655862 2.4138 0.000655862 2.15125C-0.00359012 2.05161 0.0128091 1.95217 0.0490049 1.85924C0.0852007 1.7663 0.140379 1.6819 0.210901 1.61138C0.281423 1.54086 0.365756 1.48575 0.45869 1.44955C0.551623 1.41335 0.651156 1.39686 0.750799 1.40111H2.67853C2.67853 1.21732 2.67853 1.04854 2.67853 0.879755C2.67024 0.762687 2.68723 0.645204 2.72816 0.535211C2.7691 0.425218 2.83307 0.325271 2.91588 0.242106C2.99869 0.158941 3.09836 0.0944844 3.20818 0.0530824C3.31799 0.0116805 3.43538 -0.00570699 3.55248 0.00208931C4.53517 0.0245936 5.52531 0.00208931 6.508 0.00208931C6.61634 -0.00589433 6.72522 0.00905899 6.82739 0.0459743C6.92957 0.0828896 7.02279 0.140939 7.10101 0.216329C7.17923 0.291719 7.24074 0.382753 7.2814 0.483497C7.32206 0.58424 7.34088 0.692428 7.33689 0.800993C7.33689 0.988529 7.33689 1.17606 7.33689 1.3936H9.21225C9.31872 1.38479 9.42583 1.39954 9.52597 1.43679C9.6261 1.47404 9.71688 1.53289 9.7917 1.60915C9.86653 1.6854 9.92356 1.77721 9.95891 1.87803C9.99426 1.97885 10.0071 2.08622 9.99627 2.1925V2.85639C10.0133 3.04961 9.95478 3.24192 9.83309 3.39298C9.71141 3.54403 9.53598 3.64208 9.34356 3.66654L9.24979 3.68529V11.6781C9.25649 11.9177 9.17867 12.152 9.02984 12.3399C8.88101 12.5279 8.6707 12.6574 8.43592 12.7058C8.3693 12.7194 8.30136 12.7257 8.23336 12.7245H1.77089C1.63604 12.727 1.50208 12.7024 1.37696 12.6521C1.25183 12.6018 1.13808 12.5268 1.04254 12.4316C0.946999 12.3364 0.871543 12.2229 0.820758 12.098C0.769974 11.9731 0.744916 11.8392 0.746953 11.7043C0.746953 9.10133 0.746953 6.49958 0.746953 3.89909V3.68529ZM1.2233 3.68529V11.6068C1.21078 11.6949 1.21893 11.7848 1.24711 11.8692C1.27529 11.9536 1.3228 12.0304 1.38575 12.0933C1.44869 12.1562 1.52529 12.2037 1.60973 12.2319C1.69416 12.26 1.78404 12.2682 1.87217 12.2557H8.12842C8.2162 12.2681 8.30565 12.2599 8.38976 12.232C8.47388 12.204 8.55033 12.1569 8.6132 12.0944C8.67606 12.0319 8.72355 11.9557 8.75202 11.8717C8.78048 11.7878 8.78917 11.6984 8.77729 11.6106V3.68529H1.2233ZM5.00771 1.8812H0.82204C0.566992 1.8812 0.476821 1.97121 0.476821 2.22626V2.73636C0.476821 3.13769 0.525741 3.1902 0.923317 3.1902H9.20474C9.42978 3.1902 9.52359 3.09268 9.52359 2.86764C9.52359 2.6426 9.52359 2.45881 9.52359 2.25627C9.52359 1.96372 9.44107 1.8812 9.14851 1.8812H5.00771ZM6.84186 1.3936V0.800993C6.84582 0.756981 6.84014 0.71264 6.8252 0.671055C6.81025 0.62947 6.78649 0.591646 6.75542 0.560221C6.72435 0.528796 6.68676 0.504526 6.64535 0.489105C6.60394 0.473684 6.55956 0.467478 6.51551 0.470929H3.53746C3.32367 0.470929 3.16239 0.557193 3.16239 0.714723C3.16239 0.932264 3.16239 1.15356 3.16239 1.37861L6.84186 1.3936Z"
+                        fill="url(#paint0_linear_2727_288)"
+                      />
+                      <path
+                        d="M2.67198 7.96883V5.67715C2.67198 5.61714 2.67198 5.56088 2.67198 5.50462C2.67247 5.47457 2.67889 5.44491 2.69085 5.41734C2.7028 5.38977 2.72016 5.36482 2.74176 5.34392C2.76335 5.32303 2.78872 5.30658 2.81666 5.29554C2.84461 5.2845 2.87452 5.27908 2.90457 5.27957C2.9361 5.27806 2.96772 5.28278 2.99742 5.29347C3.02713 5.30415 3.0543 5.32059 3.07764 5.34184C3.10098 5.36309 3.1199 5.38874 3.13331 5.41732C3.14673 5.44589 3.1544 5.47683 3.15584 5.50836C3.15772 5.54209 3.15772 5.57591 3.15584 5.60964C3.15584 7.18994 3.15584 8.77023 3.15584 10.3505C3.15584 10.4968 3.12967 10.6243 2.96464 10.6693C2.92899 10.6796 2.89132 10.6811 2.85494 10.6739C2.81856 10.6666 2.7845 10.6508 2.7555 10.6276C2.72649 10.6045 2.70345 10.5748 2.68828 10.5409C2.67311 10.5071 2.66628 10.4701 2.66832 10.433C2.66832 10.2455 2.66832 10.058 2.66832 9.8742L2.67198 7.96883Z"
+                        fill="url(#paint1_linear_2727_288)"
+                      />
+                      <path
+                        d="M7.32974 7.96451V10.2599C7.33348 10.3224 7.33348 10.385 7.32974 10.4475C7.32682 10.5045 7.3017 10.5581 7.2596 10.5967C7.21749 10.6353 7.16193 10.6558 7.10484 10.6538C7.07498 10.6569 7.04475 10.6539 7.01602 10.6452C6.9873 10.6364 6.96052 10.622 6.93745 10.6028C6.91439 10.5836 6.89539 10.5599 6.8816 10.5333C6.86781 10.5066 6.85958 10.4774 6.85724 10.4475C6.84967 10.3915 6.84967 10.3347 6.85724 10.2787V5.63907C6.85349 5.58913 6.85349 5.53898 6.85724 5.48904C6.85768 5.45751 6.86455 5.4264 6.87738 5.39761C6.89022 5.36881 6.90881 5.34294 6.93196 5.32154C6.95511 5.30014 6.98228 5.28366 7.01199 5.27313C7.04171 5.26259 7.07338 5.25821 7.10484 5.26025C7.13489 5.25976 7.16462 5.26518 7.19257 5.27622C7.22052 5.28726 7.24606 5.3037 7.26766 5.3246C7.28925 5.3455 7.30662 5.37045 7.31857 5.39802C7.33052 5.42559 7.33676 5.45524 7.33725 5.48529C7.33725 5.54155 7.33725 5.59781 7.33725 5.65407L7.32974 7.96451Z"
+                        fill="url(#paint2_linear_2727_288)"
+                      />
+                      <path
+                        d="M5.24197 7.95271V10.2969C5.24197 10.5557 5.17825 10.6532 5.00572 10.6532C4.83319 10.6532 4.76562 10.5557 4.76562 10.3082V5.601C4.76562 5.37221 4.84068 5.2597 4.99821 5.25594C5.15574 5.25219 5.24197 5.37222 5.24197 5.60851V7.95271Z"
+                        fill="url(#paint3_linear_2727_288)"
+                      />
+                      <defs>
+                        <linearGradient
+                          id="paint0_linear_2727_288"
+                          x1="5"
+                          y1="0"
+                          x2="5"
+                          y2="12.7247"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop stop-color="#253477" />
+                          <stop offset="1" stop-color="#C8102E" />
+                        </linearGradient>
+                        <linearGradient
+                          id="paint1_linear_2727_288"
+                          x1="2.91261"
+                          y1="5.2793"
+                          x2="2.91261"
+                          y2="10.6784"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop stop-color="#253477" />
+                          <stop offset="1" stop-color="#C8102E" />
+                        </linearGradient>
+                        <linearGradient
+                          id="paint2_linear_2727_288"
+                          x1="7.09441"
+                          y1="5.25977"
+                          x2="7.09441"
+                          y2="10.655"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop stop-color="#253477" />
+                          <stop offset="1" stop-color="#C8102E" />
+                        </linearGradient>
+                        <linearGradient
+                          id="paint3_linear_2727_288"
+                          x1="5.0038"
+                          y1="5.25586"
+                          x2="5.0038"
+                          y2="10.6532"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop stop-color="#253477" />
+                          <stop offset="1" stop-color="#C8102E" />
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="req-btn process-btn">
+                <button type="button">Your request has been processing</button>
+              </div>
+            </div>
+            <div class="col-md-4 col-12">
+              <div class="req-card">
+                <div class="card-item">
+                  <p><span>City:</span> South West, England</p>
+                  <p><span>PostCode:</span> TQ264779</p>
+                  <p><span>Date:</span> 02/02/2022</p>
+                  <p><span>Request Time:</span> 14:00-16:00</p>
+                </div>
+              </div>
+              <div class="req-btn rejecy-btn">
+                <button
+                  type="button"
+                  data-toggle="modal"
+                  data-target="#exampleModalCenter"
+                >
+                  Reject
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-jobs">
+          <div class="timejobs-header">
+            <h4>Available Jobs</h4>
+          </div>
+          <div class="jobs-wrapper style-one">
+            <div class="row">
+              <div class="col-md-6 col-12">
+                <div class="job-card">
+                  <div class="card-inner">
+                    <div class="card-id">
+                      <p class="mb-1">Order ID: <span>#12345HD</span></p>
+                      <p>Time: <strong>13:00-14:00</strong></p>
+                    </div>
+                    <div class="card-info">
+                      <div class="vendor-info">
+                        <h6>Vendor info</h6>
+                        <p class="shop-name">Tesco Express Grocery</p>
+                        <p><span>Address:</span> South West, England</p>
+                        <p><span>Phone:</span> (+44) 3987625367</p>
+                      </div>
+                      <div class="user-info">
+                        <h6>User info</h6>
+                        <p class="user-name">Justeen Biber</p>
+                        <p><span>Address:</span> South West, England</p>
+                        <p><span>Phone:</span> (+44) 3987625367</p>
+                      </div>
+                    </div>
+                    <div class="card-btn apply-btn">
+                      <button
+                        type="button"
+                        data-toggle="modal"
+                        data-target="#applyModalExample"
+                      >
+                        Apply
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-12">
+                <div class="job-card">
+                  <div class="card-inner">
+                    <div class="card-id">
+                      <p class="mb-1">Order ID: <span>#12345HD</span></p>
+                      <p>Time: <strong>13:00-14:00</strong></p>
+                    </div>
+                    <div class="card-info">
+                      <div class="vendor-info">
+                        <h6>Vendor info</h6>
+                        <p class="shop-name">Tesco Express Grocery</p>
+                        <p><span>Address:</span> South West, England</p>
+                        <p><span>Phone:</span> (+44) 3987625367</p>
+                      </div>
+                      <div class="user-info">
+                        <h6>User info</h6>
+                        <p class="user-name">Justeen Biber</p>
+                        <p><span>Address:</span> South West, England</p>
+                        <p><span>Phone:</span> (+44) 3987625367</p>
+                      </div>
+                    </div>
+                    <div class="card-btn pending-btn">
+                      <button type="button">Apply</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-12 mt-4">
+                <div class="job-card">
+                  <div class="card-inner">
+                    <div class="card-id">
+                      <p class="mb-1">Order ID: <span>#12345HD</span></p>
+                      <p>Time: <strong>13:00-14:00</strong></p>
+                    </div>
+                    <div class="card-info">
+                      <div class="vendor-info">
+                        <h6>Vendor info</h6>
+                        <p class="shop-name">Tesco Express Grocery</p>
+                        <p><span>Address:</span> South West, England</p>
+                        <p><span>Phone:</span> (+44) 3987625367</p>
+                      </div>
+                      <div class="user-info">
+                        <h6>User info</h6>
+                        <p class="user-name">Justeen Biber</p>
+                        <p><span>Address:</span> South West, England</p>
+                        <p><span>Phone:</span> (+44) 3987625367</p>
+                      </div>
+                    </div>
+                    <div class="card-btn reject-btn">
+                      <button type="button">Apply</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-12 mt-4">
+                <div class="job-card">
+                  <div class="card-inner">
+                    <div class="card-id">
+                      <p class="mb-1">Order ID: <span>#12345HD</span></p>
+                      <p>Time: <strong>13:00-14:00</strong></p>
+                    </div>
+                    <div class="card-info">
+                      <div class="vendor-info">
+                        <h6>Vendor info</h6>
+                        <p class="shop-name">Tesco Express Grocery</p>
+                        <p><span>Address:</span> South West, England</p>
+                        <p><span>Phone:</span> (+44) 3987625367</p>
+                      </div>
+                      <div class="user-info">
+                        <h6>User info</h6>
+                        <p class="user-name">Justeen Biber</p>
+                        <p><span>Address:</span> South West, England</p>
+                        <p><span>Phone:</span> (+44) 3987625367</p>
+                      </div>
+                    </div>
+                    <div class="card-btn appreved-btn">
+                      <button type="button">Apply</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- admin delivery ends  -->
+
+    <!-- reject modal -->
+    <div
+      class="modal fade rap-modal"
+      id="exampleModalCenter"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="20"
+                width="20"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="#fff"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="reject-content">
+              <img src="assets/images/dashboard/rap-modal/reject.png" alt="" />
+              <h6>Are you sure?</h6>
+              <p>To change status</p>
+              <button type="button">Cancel your Request</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- apply modal -->
+    <div
+      class="modal fade rap-modal"
+      id="applyModalExample"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="20"
+                width="20"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="#fff"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="reject-content">
+              <img src="assets/images/dashboard/rap-modal/apply.png" alt="" />
+              <h6>Are you sure?</h6>
+              <p>To change status</p>
+              <div class="flex justify-content-center align-items-center">
+                <button type="button" class="ap-btn">Apply</button>
+                <button type="button" class="trash-btn">Cancle</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- optional js -->
+    <script src="assets/js/vendors.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/nstslider.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/function.js"></script>
+  </body>
+</html>
