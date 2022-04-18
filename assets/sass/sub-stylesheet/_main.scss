@@ -4278,6 +4278,62 @@
       }
     }
   }
+  &.mb-adderss {
+    @include breakpoint (sm) {
+      display: none;
+    }
+    .address-book {
+      .addbook-header {
+        ul.ad-menu {
+          li {
+            &:nth-child(1) a {
+             @include breakpoint (max-sm) {
+               border-right: 0;
+             }
+            }
+          }
+        }
+      }
+      .mb-address-list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        border-bottom: .5px solid #ddd;
+        li {
+          .ad-name, .ad-address, .ad-phone, .edit-btn {
+            h4 {
+              margin: 0;
+              font-size: 16px;
+              padding-top: 12px;
+              font-family: "Rubik", sans-serif;
+            }
+            p {
+              margin: 0;
+              font-size: 14px;
+              font-family: "Rubik", sans-serif;
+            }
+            .ad-loc {
+              padding-bottom: 6px;
+              p {
+                margin: 0;
+                font-size: 12px;
+                color: #fff;
+                padding: 4px 12px;
+                border-radius: 4px;
+                background: #33aa7d;
+                display: inline-block;
+              }
+            }
+            button.btn {
+              &:focus {
+                box-shadow: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 //*=== order history css ends  ===*//
 

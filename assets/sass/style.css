@@ -5337,6 +5337,57 @@ video {
   border-bottom: 0;
 }
 
+@media (min-width: 576px) {
+  .order-history.mb-adderss {
+    display: none;
+  }
+}
+
+@media (max-width: 575px) {
+  .order-history.mb-adderss .address-book .addbook-header ul.ad-menu li:nth-child(1) a {
+    border-right: 0;
+  }
+}
+
+.order-history.mb-adderss .address-book .mb-address-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-bottom: .5px solid #ddd;
+}
+
+.order-history.mb-adderss .address-book .mb-address-list li .ad-name h4, .order-history.mb-adderss .address-book .mb-address-list li .ad-address h4, .order-history.mb-adderss .address-book .mb-address-list li .ad-phone h4, .order-history.mb-adderss .address-book .mb-address-list li .edit-btn h4 {
+  margin: 0;
+  font-size: 16px;
+  padding-top: 12px;
+  font-family: "Rubik", sans-serif;
+}
+
+.order-history.mb-adderss .address-book .mb-address-list li .ad-name p, .order-history.mb-adderss .address-book .mb-address-list li .ad-address p, .order-history.mb-adderss .address-book .mb-address-list li .ad-phone p, .order-history.mb-adderss .address-book .mb-address-list li .edit-btn p {
+  margin: 0;
+  font-size: 14px;
+  font-family: "Rubik", sans-serif;
+}
+
+.order-history.mb-adderss .address-book .mb-address-list li .ad-name .ad-loc, .order-history.mb-adderss .address-book .mb-address-list li .ad-address .ad-loc, .order-history.mb-adderss .address-book .mb-address-list li .ad-phone .ad-loc, .order-history.mb-adderss .address-book .mb-address-list li .edit-btn .ad-loc {
+  padding-bottom: 6px;
+}
+
+.order-history.mb-adderss .address-book .mb-address-list li .ad-name .ad-loc p, .order-history.mb-adderss .address-book .mb-address-list li .ad-address .ad-loc p, .order-history.mb-adderss .address-book .mb-address-list li .ad-phone .ad-loc p, .order-history.mb-adderss .address-book .mb-address-list li .edit-btn .ad-loc p {
+  margin: 0;
+  font-size: 12px;
+  color: #fff;
+  padding: 4px 12px;
+  border-radius: 4px;
+  background: #33aa7d;
+  display: inline-block;
+}
+
+.order-history.mb-adderss .address-book .mb-address-list li .ad-name button.btn:focus, .order-history.mb-adderss .address-book .mb-address-list li .ad-address button.btn:focus, .order-history.mb-adderss .address-book .mb-address-list li .ad-phone button.btn:focus, .order-history.mb-adderss .address-book .mb-address-list li .edit-btn button.btn:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 .our-partner {
   padding: 30px 0;
 }
