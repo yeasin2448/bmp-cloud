@@ -5353,27 +5353,39 @@ video {
   margin: 0;
   padding: 0;
   list-style: none;
-  border-bottom: .5px solid #ddd;
+  border-bottom: 0.5px solid #ddd;
 }
 
-.order-history.mb-adderss .address-book .mb-address-list li .ad-name h4, .order-history.mb-adderss .address-book .mb-address-list li .ad-address h4, .order-history.mb-adderss .address-book .mb-address-list li .ad-phone h4, .order-history.mb-adderss .address-book .mb-address-list li .edit-btn h4 {
+.order-history.mb-adderss .address-book .mb-address-list li .ad-name h4,
+.order-history.mb-adderss .address-book .mb-address-list li .ad-address h4,
+.order-history.mb-adderss .address-book .mb-address-list li .ad-phone h4,
+.order-history.mb-adderss .address-book .mb-address-list li .edit-btn h4 {
   margin: 0;
   font-size: 16px;
   padding-top: 12px;
   font-family: "Rubik", sans-serif;
 }
 
-.order-history.mb-adderss .address-book .mb-address-list li .ad-name p, .order-history.mb-adderss .address-book .mb-address-list li .ad-address p, .order-history.mb-adderss .address-book .mb-address-list li .ad-phone p, .order-history.mb-adderss .address-book .mb-address-list li .edit-btn p {
+.order-history.mb-adderss .address-book .mb-address-list li .ad-name p,
+.order-history.mb-adderss .address-book .mb-address-list li .ad-address p,
+.order-history.mb-adderss .address-book .mb-address-list li .ad-phone p,
+.order-history.mb-adderss .address-book .mb-address-list li .edit-btn p {
   margin: 0;
   font-size: 14px;
   font-family: "Rubik", sans-serif;
 }
 
-.order-history.mb-adderss .address-book .mb-address-list li .ad-name .ad-loc, .order-history.mb-adderss .address-book .mb-address-list li .ad-address .ad-loc, .order-history.mb-adderss .address-book .mb-address-list li .ad-phone .ad-loc, .order-history.mb-adderss .address-book .mb-address-list li .edit-btn .ad-loc {
+.order-history.mb-adderss .address-book .mb-address-list li .ad-name .ad-loc,
+.order-history.mb-adderss .address-book .mb-address-list li .ad-address .ad-loc,
+.order-history.mb-adderss .address-book .mb-address-list li .ad-phone .ad-loc,
+.order-history.mb-adderss .address-book .mb-address-list li .edit-btn .ad-loc {
   padding-bottom: 6px;
 }
 
-.order-history.mb-adderss .address-book .mb-address-list li .ad-name .ad-loc p, .order-history.mb-adderss .address-book .mb-address-list li .ad-address .ad-loc p, .order-history.mb-adderss .address-book .mb-address-list li .ad-phone .ad-loc p, .order-history.mb-adderss .address-book .mb-address-list li .edit-btn .ad-loc p {
+.order-history.mb-adderss .address-book .mb-address-list li .ad-name .ad-loc p,
+.order-history.mb-adderss .address-book .mb-address-list li .ad-address .ad-loc p,
+.order-history.mb-adderss .address-book .mb-address-list li .ad-phone .ad-loc p,
+.order-history.mb-adderss .address-book .mb-address-list li .edit-btn .ad-loc p {
   margin: 0;
   font-size: 12px;
   color: #fff;
@@ -5383,7 +5395,10 @@ video {
   display: inline-block;
 }
 
-.order-history.mb-adderss .address-book .mb-address-list li .ad-name button.btn:focus, .order-history.mb-adderss .address-book .mb-address-list li .ad-address button.btn:focus, .order-history.mb-adderss .address-book .mb-address-list li .ad-phone button.btn:focus, .order-history.mb-adderss .address-book .mb-address-list li .edit-btn button.btn:focus {
+.order-history.mb-adderss .address-book .mb-address-list li .ad-name button.btn:focus,
+.order-history.mb-adderss .address-book .mb-address-list li .ad-address button.btn:focus,
+.order-history.mb-adderss .address-book .mb-address-list li .ad-phone button.btn:focus,
+.order-history.mb-adderss .address-book .mb-address-list li .edit-btn button.btn:focus {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
@@ -11813,5 +11828,114 @@ strong {
   background: #cf142b;
   border-radius: 100%;
   display: inline-block;
+}
+
+.faster_app_btn {
+  height: 100%;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+
+.faster_app_btn button.btn {
+  border: 0;
+  padding: 8px 36px;
+  text-align: center;
+  background: -webkit-gradient(linear, left top, right top, from(#012169), to(#c8102e));
+  background: linear-gradient(90deg, #012169, #c8102e);
+}
+
+.faster_app_btn button.btn span {
+  color: #fff;
+}
+
+.faster_app_modal .modal-dialog .modal-content {
+  border: 0;
+}
+
+.faster_app_modal .modal-dialog .modal-content .modal-header {
+  min-height: 200px;
+  border-bottom: 0;
+  background-size: cover;
+  background-position: center;
+  background-image: url(../../assets/images/faster-app/01.webp);
+}
+
+.faster_app_modal .modal-dialog .modal-content .modal-body {
+  text-align: center;
+}
+
+.faster_app_modal .modal-dialog .modal-content .modal-body h3 {
+  margin: 0;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 16px;
+  font-style: normal;
+  font-family: "Oswald", sans-serif;
+}
+
+@media (min-width: 576px) {
+  .faster_app_modal .modal-dialog .modal-content .modal-body h3 {
+    line-height: 74px;
+    font-size: 24px;
+  }
+}
+
+.faster_app_modal .modal-dialog .modal-content .modal-body .app-logo {
+  margin: 12px 10px;
+  padding: 10px;
+  border-radius: 6px;
+  background: #fff;
+  -webkit-box-shadow: 0px 1px 11px rgba(51, 73, 167, 0.15);
+          box-shadow: 0px 1px 11px rgba(51, 73, 167, 0.15);
+}
+
+@media (min-width: 576px) {
+  .faster_app_modal .modal-dialog .modal-content .modal-body .app-logo {
+    margin: 24px 10px;
+  }
+}
+
+.faster_app_modal .modal-dialog .modal-content .modal-body a.app_link {
+  color: #4f4f4f;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  display: block;
+  font-family: "Rubik", sans-serif;
+}
+
+@media (min-width: 576px) {
+  .faster_app_modal .modal-dialog .modal-content .modal-body a.app_link {
+    font-size: 20px;
+    line-height: 34px;
+  }
+}
+
+.faster_app_modal .modal-dialog .modal-content .modal-body button.app_btn {
+  margin-top: 24px;
+  padding: 8px 32px;
+  color: #fff;
+  border-radius: 6px;
+  background: linear-gradient(89.76deg, #076faf 0.1%, #253477 99.72%);
+}
+
+.faster_app_modal .modal-dialog .modal-content .modal-body a.web_link {
+  font-weight: 500;
+  font-size: 14px;
+  color: #000000;
+  line-height: 24px;
+  padding-top: 16px;
+  display: block;
+  font-style: normal;
+  font-family: "Rubik",sans-serif;
+}
+
+@media (min-width: 576px) {
+  .faster_app_modal .modal-dialog .modal-content .modal-body a.web_link {
+    font-size: 20px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
